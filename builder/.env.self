@@ -1,3 +1,0 @@
-VITE_API_BASE_URL=http://localhost:9999/api/v1
-VITE_INSTANCE_ID=SELF_HOST
-NODE_ENV=production

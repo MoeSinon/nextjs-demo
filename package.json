@@ -35,8 +35,8 @@
     "build-cloud": "cross-env NODE_OPTIONS=--max-old-space-size=14336 turbo run build-cloud",
     "build-self": "cross-env NODE_OPTIONS=--max-old-space-size=14336 turbo run build-self",
     "prepare": "husky install",
-    "format": "prettier --write \"apps/**/*.{ts,tsx}\"",
-    "lint": "eslint apps/**/src/ --ext .ts,.tsx --config .eslintrc.js"
+    "format": "prettier --write \"builder/**/*.{ts,tsx}\"",
+    "lint": "eslint builder/**/src/ --ext .ts,.tsx --config .eslintrc.js"
   },
   "devDependencies": {
     "cypress":"11.0.1",

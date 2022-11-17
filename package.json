@@ -30,9 +30,10 @@
   },
   "scripts": {
     "dev": "turbo run dev",
-    "build-cloud": "cross-env NODE_OPTIONS=--max-old-space-size=14336 turbo run build-cloud",
-    "build-self": "cross-env NODE_OPTIONS=--max-old-space-size=14336 turbo run build-self",
-    "prepare": "husky install",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "types": "turbo run types",
+    "prettier-fix": "prettier --write .",
     "format": "prettier --write \"builder/**/*.{ts,tsx}\"",
     "lint": "eslint builder/**/src/ --ext .ts,.tsx --config .eslintrc.js"
   },

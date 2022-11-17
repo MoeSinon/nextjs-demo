@@ -5,9 +5,7 @@
   "private": true,
   "author": "RedQ, Inc.",
   "workspaces": [
-    "admin/*",
-    "shop",
-    "api/*"
+    "builder/*"
   ],
   ".": {
     "scripts": {

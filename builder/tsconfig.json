@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "noEmit": true,
+    "useDefineForClassFields": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "baseUrl": ".",
+    "paths": {
+      "@/api/*": [
+        "src/api/graphql/*"
+      ],
+      "@/api/static/*": [
+        "src/api/static/*"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+      "@assets/*": [
+        "public/assets/*"
+      ]
+    },
+    "incremental": true,
+  },
+  "include": [
+    "next-env.d.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.ts",
+    "public/style.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/framework/rest",
+    "./src/**/tests/*.e2e.tsx",
+    "./src/**/tests/*.e2e.ts"
+  ]
+}

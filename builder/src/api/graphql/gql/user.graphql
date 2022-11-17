@@ -1,0 +1,8 @@
+query GetCurrentUser {
+  users {
+  userId
+  nickname
+  language
+  email
+  }
+}

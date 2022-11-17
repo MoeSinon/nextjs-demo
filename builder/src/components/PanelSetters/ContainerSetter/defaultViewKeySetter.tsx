@@ -1,0 +1,65 @@
+import { FC, useCallback, useMemo } from "react"
+import { ContainerDefaultViewKeySetterProps } from "@/components/PanelSetters/ContainerSetter/interface"
+import { BaseInput } from "@/components/PanelSetters/InputSetter/baseInput"
+import { useSelector } from "react-redux"
+import { RootState } from "@/store/store"
+import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { get } from "lodash"
+import { ViewItemShape } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/interface"
+
+export const ContainerDefaultViewKeySetter: FC<ContainerDefaultViewKeySetterProps> = (
+  props,
+) => {
+  const {
+    attrName,
+    handleUpdateMultiAttrDSL,
+    expectedType,
+    widgetDisplayName,
+    widgetType,
+    widgetOrAction,
+    value,
+  } = props
+
+  const targetComponentProps = useSelector<RootState, Record<string, any>>(
+    (rootState) => {
+      const executionTree = getExecutionResult(rootState)
+      return get(executionTree, widgetDisplayName, {})
+    },
+  )
+
+  const realViews = useMemo(() => {
+    return get(targetComponentProps, "viewList", []) as ViewItemShape[]
+  }, [targetComponentProps])
+
+  const handleUpdateDefaultView = useCallback(
+    (attrPath: string, value: string) => {
+      const defaultViewIndex = realViews.findIndex((view) => view.key === value)
+      let currentIndex = 0
+      let currentKey = realViews[currentIndex].key
+      if (defaultViewIndex > -1) {
+        currentIndex = defaultViewIndex
+        currentKey = realViews[currentIndex].key
+      }
+      handleUpdateMultiAttrDSL?.({
+        [attrPath]: value,
+        currentIndex,
+        currentKey,
+      })
+    },
+    [handleUpdateMultiAttrDSL, realViews],
+  )
+
+  return (
+    <BaseInput
+      attrName={attrName}
+      handleUpdateDsl={handleUpdateDefaultView}
+      expectedType={expectedType}
+      widgetDisplayName={widgetDisplayName}
+      widgetType={widgetType}
+      widgetOrAction={widgetOrAction}
+      value={value}
+    />
+  )
+}
+
+ContainerDefaultViewKeySetter.displayName = "ContainerDefaultViewKeySetter"

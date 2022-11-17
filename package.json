@@ -1,0 +1,63 @@
+{
+  "name": "icode-react",
+  "version": "8.1.0",
+  "license": "MIT",
+  "private": true,
+  "author": "RedQ, Inc.",
+  "workspaces": [
+    "admin/*",
+    "shop",
+    "api/*"
+  ],
+  ".": {
+    "scripts": {
+      "clean": "yarn workspaces run rimraf \"{.next,node_modules,__generated__,.cache,src/graphql/*.d.ts,src/framework/graphql/**/*.d.ts}\" && rimraf node_modules",
+      "gql-clean": "yarn workspaces run rimraf \"{__generated__,src/graphql/*.d.ts,src/framework/graphql/**/*.d.ts}\"",
+      "dev:shop-rest": "yarn workspace @pick-bazar/shop dev:rest",
+      "build:shop-rest": "yarn workspace @pick-bazar/shop build:rest",
+      "start:shop-rest": "yarn workspace @pick-bazar/shop start",
+      "dev:admin-rest": "yarn workspace @marvel/admin-rest dev",
+      "build:admin-rest": "yarn workspace @marvel/admin-rest build",
+      "start:admin-rest": "yarn workspace @marvel/admin-rest start",
+      "dev:shop-gql": "yarn workspace @pick-bazar/shop dev:gql",
+      "build:shop-gql": "yarn workspace @pick-bazar/shop build:gql",
+      "start:shop-gql": "yarn workspace @pick-bazar/shop start",
+      "dev:admin-gql": "yarn workspace @marvel/admin-graphql dev",
+      "build:admin-gql": "yarn workspace @marvel/admin-graphql build",
+      "start:admin-gql": "yarn workspace @marvel/admin-graphql start",
+      "dev:api-gql": "yarn workspace @marvel-mock/api start:dev",
+      "debug:api-gql": "yarn workspace @marvel-mock/api start:debug",
+      "prod:api-gql": "yarn workspace @marvel-mock/api start:prod"
+    }
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build-cloud": "cross-env NODE_OPTIONS=--max-old-space-size=14336 turbo run build-cloud",
+    "build-self": "cross-env NODE_OPTIONS=--max-old-space-size=14336 turbo run build-self",
+    "prepare": "husky install",
+    "format": "prettier --write \"apps/**/*.{ts,tsx}\"",
+    "lint": "eslint apps/**/src/ --ext .ts,.tsx --config .eslintrc.js"
+  },
+  "devDependencies": {
+    "cypress":"11.0.1",
+    "axios-mock-adapter": "^1.21.2",
+    "cross-env": "^7.0.3",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-import-resolver-typescript": "^3.4.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "turbo": "^1.6.3",
+    "rimraf": "3.0.2"
+  }
+}

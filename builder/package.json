@@ -99,7 +99,6 @@
     "@changesets/cli": "^2.18.1",
     "@cypress/code-coverage": "^3.9.12",
     "@cypress/react": "^5.12.4",
-    "@cypress/vite-dev-server": "^2.2.2",
     "@emotion/jest": "^11.7.1",
     "@testing-library/cypress": "^8.0.3",
     "@testing-library/jest-dom": "^5.15.1",

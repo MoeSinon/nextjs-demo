@@ -71,7 +71,7 @@ export class Connection {
     loading: (loading: boolean) => void,
     errorState: (errorState: boolean) => void,
   ) {
-    let instanceId = import.meta.env.VITE_INSTANCE_ID
+    let instanceId = import.meta.url
     let config: AxiosRequestConfig
     switch (type) {
       case "dashboard":

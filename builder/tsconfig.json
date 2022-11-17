@@ -45,7 +45,7 @@
   ],
   "exclude": [
     "node_modules",
-    "src/framework/rest",
+    "src/api/rest",
     "./src/**/tests/*.e2e.tsx",
     "./src/**/tests/*.e2e.ts"
   ]

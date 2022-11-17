@@ -4,11 +4,17 @@ const runtimeCaching = require('next-pwa/cache');
 const { i18n } = require('./next-i18next.config');
 const nextConfig = {
   reactStrictMode: true,
-  i18n,
+  i18n: {
+    locales: ['en-US', 'es'],
+    defaultLocale: 'en-US',
+  },,
   pwa: {
     disable: process.env.NODE_ENV === 'development',
     dest: 'public',
     runtimeCaching,
+  },
+  experimental: {
+    esmExternals: 'loose',
   },
   images: {
     domains: [
@@ -46,4 +52,5 @@ const nextConfig = {
   }),
 };
 
+console.log('next.config.js', JSON.stringify(module.exports, null, 2))
 module.exports = withPWA(nextConfig);

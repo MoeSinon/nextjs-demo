@@ -24,6 +24,6 @@ module.exports = {
     locales: generateLocales(),
     localeDetection: isMultilangEnable,
   },
-  localePath: path.resolve('./public/locales'),
+  localePath: path.resolve('./public/locale'),
   reloadOnPrerender: process.env.NODE_ENV === 'development',
 };

@@ -11,7 +11,7 @@ module.exports = {
     },
     "import/resolver": {
       typescript: {
-        project: "apps/*/tsconfig.json",
+        project: "builder/tsconfig.json",
       },
     },
   },

@@ -1,9 +1,9 @@
 import { FC } from "react"
-import { MenuItemLabelProps } from "@/widgetLibrary/MenuWidget/interface"
+import { MenuItemLabelProps } from "@widgetLibrary/MenuWidget/interface"
 import {
   applyMenuItemIconStyle,
   menuItemLabelStyle,
-} from "@/widgetLibrary/MenuWidget/style"
+} from "@widgetLibrary/MenuWidget/style"
 
 export const MenuItemLabel: FC<MenuItemLabelProps> = (props) => {
   const { title, icon, mode } = props

@@ -5,7 +5,7 @@
   "private": true,
   "author": "RedQ, Inc.",
   "workspaces": [
-    "builder/*"
+    "site/*"
   ],
   ".": {
     "scripts": {
@@ -34,11 +34,11 @@
     "start": "turbo run start",
     "types": "turbo run types",
     "prettier-fix": "prettier --write .",
-    "format": "prettier --write \"builder/**/*.{ts,tsx}\"",
-    "lint": "eslint builder/**/src/ --ext .ts,.tsx --config .eslintrc.js"
+    "format": "prettier --write \"site/**/*.{ts,tsx}\"",
+    "lint": "eslint site/**/src/ --ext .ts,.tsx --config .eslintrc.js"
   },
   "devDependencies": {
-    "cypress":"11.0.1",
+    "cypress": "11.0.1",
     "axios-mock-adapter": "^1.21.2",
     "cross-env": "^7.0.3",
     "@commitlint/cli": "^17.0.3",

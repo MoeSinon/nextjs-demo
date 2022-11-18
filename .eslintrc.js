@@ -11,7 +11,7 @@ module.exports = {
     },
     "import/resolver": {
       typescript: {
-        project: "builder/tsconfig.json",
+        project: "site/tsconfig.json",
       },
     },
   },
@@ -65,7 +65,7 @@ module.exports = {
     "@typescript-eslint/no-useless-constructor": 0,
     '@typescript-eslint/dot-notation': 0, // for lint performance
     '@typescript-eslint/restrict-plus-operands': 0, // for lint performance
-    
+
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',

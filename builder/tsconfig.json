@@ -23,7 +23,7 @@
     "baseUrl": ".",
     "paths": {
       "@/api/*": [
-        "api/graphql/*"
+        "pages/api/graphql/*"
       ],
       "@/api/static/*": [
         "api/static/*"

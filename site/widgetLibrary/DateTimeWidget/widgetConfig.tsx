@@ -1,5 +1,5 @@
-import { ReactComponent as DateTimeWidgetIcon } from "@/assets/widgetCover/dateTime.svg"
-import { RESIZE_DIRECTION, WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as DateTimeWidgetIcon } from "@assets/widgetCover/dateTime.svg"
+import { RESIZE_DIRECTION, WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();
 

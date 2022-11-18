@@ -2,9 +2,9 @@ import { Button, PlusIcon } from "@illa-design/react"
 import { FC, useCallback } from "react"
 import { useTranslation } from "next-i18next"
 import { useDispatch } from "react-redux"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { SectionViewShape } from "@/redux/currentApp/editor/components/componentsState"
-import { generateSectionContainerConfig } from "@/utils/generators/generatePageOrSectionConfig"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { SectionViewShape } from "@redux/currentApp/editor/components/componentsState"
+import { generateSectionContainerConfig } from "@utils/generators/generatePageOrSectionConfig"
 import { HeaderProps } from "./interface"
 import {
   headerAddIconStyle,

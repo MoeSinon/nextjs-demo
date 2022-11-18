@@ -1,6 +1,6 @@
 import { FC, useCallback, useMemo, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { configActions } from "@/redux/config/configSlice"
+import { configActions } from "@redux/config/configSlice"
 import {
   errorIconStyle,
   errorItemStyle,
@@ -19,10 +19,10 @@ import { motion } from "framer-motion"
 import {
   getCanvas,
   searchDsl,
-} from "@/redux/currentApp/editor/components/componentsSelector"
-import { getDisplayNameAndPropertyPath } from "@/utils/executionTreeHelper/utils"
+} from "@redux/currentApp/editor/components/componentsSelector"
+import { getDisplayNameAndPropertyPath } from "@utils/executionTreeHelper/utils"
 import { get } from "lodash"
-import { JsonView } from "@/components/Debugger/components/JsonView"
+import { JsonView } from "@components/Debugger/components/JsonView"
 
 export const ErrorItem: FC<ErrorItemProps> = (props) => {
   const { item, pathName } = props

@@ -1,6 +1,6 @@
-import { BaseComponentNodeProps } from "@/widgetLibrary/interface"
+import { BaseComponentNodeProps } from "@widgetLibrarys/interface"
 import { ChartDataset, ChartType } from "chart.js"
-import { ChartDatasetShape } from "@/components/PanelSetters/ChartSetter/chartDatasetsSetter/interface"
+import { ChartDatasetShape } from "@components/PanelSetters/ChartSetter/chartDatasetsSetter/interface"
 
 export interface WrappedChartProps
   extends Omit<ChartWidgetProps, "xAxis" | "datasets"> {

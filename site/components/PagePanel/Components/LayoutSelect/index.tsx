@@ -12,15 +12,15 @@ import {
   layoutOptionsPanelWrapperStyle,
   layoutSelectWrapperStyle,
 } from "./style"
-import { ReactComponent as DefaultIcon } from "@/assets/rightPagePanel/layout/default.svg"
-import { ReactComponent as PresetAIcon } from "@/assets/rightPagePanel/layout/preset-a.svg"
-import { ReactComponent as PresetBIcon } from "@/assets/rightPagePanel/layout/preset-b.svg"
-import { ReactComponent as PresetCIcon } from "@/assets/rightPagePanel/layout/preset-c.svg"
-import { ReactComponent as PresetDIcon } from "@/assets/rightPagePanel/layout/preset-d.svg"
-import { ReactComponent as PresetEIcon } from "@/assets/rightPagePanel/layout/preset-e.svg"
+import { ReactComponent as DefaultIcon } from "@assets/rightPagePanel/layout/default.svg"
+import { ReactComponent as PresetAIcon } from "@assets/rightPagePanel/layout/preset-a.svg"
+import { ReactComponent as PresetBIcon } from "@assets/rightPagePanel/layout/preset-b.svg"
+import { ReactComponent as PresetCIcon } from "@assets/rightPagePanel/layout/preset-c.svg"
+import { ReactComponent as PresetDIcon } from "@assets/rightPagePanel/layout/preset-d.svg"
+import { ReactComponent as PresetEIcon } from "@assets/rightPagePanel/layout/preset-e.svg"
 import { useDispatch, useSelector } from "react-redux"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { getCurrentPageDisplayName } from "@/redux/currentApp/editor/components/componentsSelector"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { getCurrentPageDisplayName } from "@redux/currentApp/editor/components/componentsSelector"
 import { useTranslation } from "next-i18next"
 
 export const LAYOUT_OPTIONS = [

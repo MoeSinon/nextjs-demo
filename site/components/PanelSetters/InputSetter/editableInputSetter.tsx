@@ -3,8 +3,8 @@ import { Input } from "@illa-design/input"
 import {
   editableInputIconStyle,
   editableInputSetterStyle,
-} from "@/components/PanelSetters/InputSetter/style"
-import { EditableInputSetterProps } from "@/components/PanelSetters/InputSetter/interface"
+} from "@components/PanelSetters/InputSetter/style"
+import { EditableInputSetterProps } from "@components/PanelSetters/InputSetter/interface"
 
 export const EditableInputSetter: FC<EditableInputSetterProps> = (props) => {
   const { value, handleUpdateDsl, attrName, icon } = props

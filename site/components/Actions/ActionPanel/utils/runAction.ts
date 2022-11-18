@@ -3,25 +3,25 @@ import {
   ActionItem,
   Events,
   Transformer,
-} from "@/redux/currentApp/action/actionState"
-import store from "@/store/store"
-import { evaluateDynamicString } from "@/utils/evaluateDynamicString"
+} from "@redux/currentApp/action/actionState"
+import store from "@store/store"
+import { evaluateDynamicString } from "@utils/evaluateDynamicString"
 import {
   isDynamicString,
   wrapFunctionCode,
-} from "@/utils/evaluateDynamicString/utils"
-import { Api } from "@//api/base"
-import { getAppId } from "@/redux/currentApp/appInfo/appInfoSelector"
-import { runEventHandler } from "@/utils/eventHandlerHelper"
-import { BUILDER_CALC_CONTEXT } from "@/pages/App/context/globalDataProvider"
-import { MysqlLikeAction } from "@/redux/currentApp/action/mysqlLikeAction"
+} from "@utils/evaluateDynamicString/utils"
+import { Api } from "@api/base"
+import { getAppId } from "@redux/currentApp/appInfo/appInfoSelector"
+import { runEventHandler } from "@utils/eventHandlerHelper"
+import { BUILDER_CALC_CONTEXT } from "@pages/App/context/globalDataProvider"
+import { MysqlLikeAction } from "@redux/currentApp/action/mysqlLikeAction"
 import { Message } from "@illa-design/message"
 import {
   BodyContent,
   RestApiAction,
-} from "@/redux/currentApp/action/restapiAction"
-import { isObject } from "@/utils/typeHelper"
-import { executionActions } from "@/redux/currentApp/executionTree/executionSlice"
+} from "@redux/currentApp/action/restapiAction"
+import { isObject } from "@utils/typeHelper"
+import { executionActions } from "@redux/currentApp/executionTree/executionSlice"
 
 export const actionDisplayNameMapFetchResult: Record<string, any> = {}
 

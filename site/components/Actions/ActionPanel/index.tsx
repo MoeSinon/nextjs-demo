@@ -2,19 +2,19 @@ import { FC, useCallback, useMemo, useRef, useState } from "react"
 import {
   actionContentStyle,
   actionPanelStyle,
-} from "@/components/Actions/ActionPanel/style"
+} from "@components/Actions/ActionPanel/style"
 import { useSelector } from "react-redux"
-import { getCachedAction } from "@/redux/config/configSelector"
-import { ActionTitleBar } from "@/components/Actions/ActionPanel/ActionTitleBar"
+import { getCachedAction } from "@redux/config/configSelector"
+import { ActionTitleBar } from "@components/Actions/ActionPanel/ActionTitleBar"
 import { MysqlLikePanel } from "./MysqlLikePanel"
-import { RestApiPanel } from "@/components/Actions/ActionPanel/RestApiPanel"
-import { TransformerPanel } from "@/components/Actions/ActionPanel/TransformerPanel"
-import { ActionResult } from "@/components/Actions/ActionPanel/ActionResult"
-import { ActionResultType } from "@/components/Actions/ActionPanel/ActionResult/interface"
-import { RedisPanel } from "@/components/Actions/ActionPanel/RedisPanel"
-import { MongoDbPanel } from "@/components/Actions/ActionPanel/MongoDbPanel"
-import { ActionPanelContainerProps } from "@/components/Actions/ActionPanel/interface"
-import { ActionPanelContext } from "@/components/Actions/ActionPanel/actionPanelContext"
+import { RestApiPanel } from "@components/Actions/ActionPanel/RestApiPanel"
+import { TransformerPanel } from "@components/Actions/ActionPanel/TransformerPanel"
+import { ActionResult } from "@components/Actions/ActionPanel/ActionResult"
+import { ActionResultType } from "@components/Actions/ActionPanel/ActionResult/interface"
+import { RedisPanel } from "@components/Actions/ActionPanel/RedisPanel"
+import { MongoDbPanel } from "@components/Actions/ActionPanel/MongoDbPanel"
+import { ActionPanelContainerProps } from "@components/Actions/ActionPanel/interface"
+import { ActionPanelContext } from "@components/Actions/ActionPanel/actionPanelContext"
 
 export const ActionPanel: FC<ActionPanelContainerProps> = (props) => {
   const { maxHeight } = props

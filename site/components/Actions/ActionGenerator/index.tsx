@@ -2,17 +2,17 @@ import { FC, useEffect, useState } from "react"
 import { Modal } from "@illa-design/modal"
 import { ActionCreatorPage, ActionGeneratorProps } from "./interface"
 import { ActionTypeSelector } from "./ActionTypeSelector"
-import { ActionResourceSelector } from "@/components/Actions/ActionGenerator/ActionResourceSelector"
-import { ActionType } from "@/redux/currentApp/action/actionState"
-import { ActionResourceCreator } from "@/components/Actions/ActionGenerator/ActionResourceCreator"
+import { ActionResourceSelector } from "@components/Actions/ActionGenerator/ActionResourceSelector"
+import { ActionType } from "@redux/currentApp/action/actionState"
+import { ActionResourceCreator } from "@components/Actions/ActionGenerator/ActionResourceCreator"
 import { useTranslation } from "next-i18next"
 import {
   getResourceNameFromResourceType,
   getResourceTypeFromActionType,
-} from "@/utils/actionResourceTransformer"
-import { modalContentStyle } from "@/pages/Dashboard/components/ResourceGenerator/style"
+} from "@utils/actionResourceTransformer"
+import { modalContentStyle } from "@pages/Dashboard/components/ResourceGenerator/style"
 import { useSelector } from "react-redux"
-import { getAllResources } from "@/redux/resource/resourceSelector"
+import { getAllResources } from "@redux/resource/resourceSelector"
 
 export const ActionGenerator: FC<ActionGeneratorProps> = function (props) {
   const { visible, onClose } = props

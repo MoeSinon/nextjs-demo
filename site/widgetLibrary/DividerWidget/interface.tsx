@@ -1,4 +1,4 @@
-import { BaseWidgetProps } from "@/widgetLibrary/interface"
+import { BaseWidgetProps } from "@widgetLibrarys/interface"
 import { DividerTextAlign } from "@illa-design/divider"
 
 export interface WrappedDividerProps {
@@ -9,4 +9,4 @@ export interface WrappedDividerProps {
 
 export interface DividerWidgetProps
   extends WrappedDividerProps,
-    BaseWidgetProps {}
+  BaseWidgetProps { }

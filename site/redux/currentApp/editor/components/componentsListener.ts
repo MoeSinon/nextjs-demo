@@ -1,15 +1,15 @@
 import {
   getCanvas,
   searchDsl,
-} from "@/redux/currentApp/editor/components/componentsSelector"
-import { AppListenerEffectAPI, AppStartListening } from "@/store/store"
+} from "@redux/currentApp/editor/components/componentsSelector"
+import { AppListenerEffectAPI, AppStartListening } from "@store/store"
 import { Unsubscribe, isAnyOf, AnyAction } from "@reduxjs/toolkit"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { getReflowResult } from "@/components/DotPanel/calc"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { getReflowResult } from "@components/DotPanel/calc"
 import { ComponentNode, CONTAINER_TYPE } from "./componentsState"
-import { configActions } from "@/redux/config/configSlice"
-import { executionActions } from "@/redux/currentApp/executionTree/executionSlice"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { configActions } from "@redux/config/configSlice"
+import { executionActions } from "@redux/currentApp/executionTree/executionSlice"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 
 function handleCopyComponentReflowEffect(
   action: ReturnType<typeof componentsActions.copyComponentReducer>,

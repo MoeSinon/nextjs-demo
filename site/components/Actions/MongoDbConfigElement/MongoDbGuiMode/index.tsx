@@ -1,5 +1,5 @@
 import { FC, useState } from "react"
-import { MongoDbConfigModeProps } from "@/components/Actions/MongoDbConfigElement/interface"
+import { MongoDbConfigModeProps } from "@components/Actions/MongoDbConfigElement/interface"
 import {
   applyConfigItemLabelText,
   configItem,
@@ -7,7 +7,7 @@ import {
   connectTypeStyle,
   hostInputContainer,
   labelContainer,
-} from "@/components/Actions/MongoDbConfigElement/style"
+} from "@components/Actions/MongoDbConfigElement/style"
 import { getColor } from "@illa-design/theme"
 import { Controller } from "react-hook-form"
 import { Input, Password } from "@illa-design/input"
@@ -19,10 +19,10 @@ import {
   MongoDbGuiConfigContent,
   MongoDbGuiConfigContentInitial,
   MongoDbResource,
-} from "@/redux/resource/mongodbResource"
+} from "@redux/resource/mongodbResource"
 import { useSelector } from "react-redux"
-import { RootState } from "@/store/store"
-import { Resource, ResourceContent } from "@/redux/resource/resourceState"
+import { RootState } from "@store/store"
+import { Resource, ResourceContent } from "@redux/resource/resourceState"
 
 export const MongoDbGuiMode: FC<MongoDbConfigModeProps> = (props) => {
   const { control, resourceId } = props

@@ -5,9 +5,9 @@ import { useTranslation } from "next-i18next"
 import { Input } from "@illa-design/input"
 import { Modal } from "@illa-design/modal"
 import { Message } from "@illa-design/message"
-import { DashboardApp } from "@/redux/dashboard/apps/dashboardAppState"
-import { Api } from "@//api/base"
-import { dashboardAppActions } from "@/redux/dashboard/apps/dashboardAppSlice"
+import { DashboardApp } from "@redux/dashboard/apps/dashboardAppState"
+import { Api } from "@api/base"
+import { dashboardAppActions } from "@redux/dashboard/apps/dashboardAppSlice"
 import { useRouter } from 'next/router'
 import { BASIC_APP_CONFIG } from "@/config/newAppConfig"
 

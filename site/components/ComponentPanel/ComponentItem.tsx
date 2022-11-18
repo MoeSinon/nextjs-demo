@@ -6,19 +6,19 @@ import {
   nameStyle,
 } from "./style"
 import { useDrag } from "react-dnd"
-import { generateComponentNode } from "@/utils/generators/generateComponentNode"
+import { generateComponentNode } from "@utils/generators/generateComponentNode"
 import {
   DragCollectedInfo,
   DragInfo,
   DropResultInfo,
-} from "@/components/DotPanel/interface"
+} from "@components/DotPanel/interface"
 import { useSelector } from "react-redux"
-import { getIllaMode } from "@/redux/config/configSelector"
-import { endDrag, startDrag } from "@/utils/drag/drag"
-import store from "@/store/store"
-import { getFlattenArrayComponentNodes } from "@/redux/currentApp/editor/components/componentsSelector"
+import { getIllaMode } from "@redux/config/configSelector"
+import { endDrag, startDrag } from "@utils/drag/drag"
+import store from "@store/store"
+import { getFlattenArrayComponentNodes } from "@redux/currentApp/editor/components/componentsSelector"
 import { cloneDeep } from "lodash"
-import { ComponentItemProps } from "@/components/ComponentPanel/interface"
+import { ComponentItemProps } from "@components/ComponentPanel/interface"
 
 export const ComponentItem: FC<ComponentItemProps> = memo(
   (props: ComponentItemProps) => {

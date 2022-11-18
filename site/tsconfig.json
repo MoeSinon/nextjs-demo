@@ -23,10 +23,13 @@
     "baseUrl": ".",
     "paths": {
       "@api/*": [
-        "api/*"
+        "pages/api/*"
       ],
       "@utils/*": [
         "utils/*"
+      ],
+      "@pages/*": [
+        "pages/*"
       ],
       "@widgetLibrarys/*": [
         "widgetLibrary/*"
@@ -43,22 +46,25 @@
       "@config/*": [
         "config/*"
       ],
-      "@components*": [
+      "@components/*": [
         "components/*"
       ],
       "@hooks/*": [
         "hooks/*"
       ],
-      "@/*": [
-        "/*"
-      ],
       "@assets/*": [
-        "public/assets/*"
+        "public/*"
       ]
     },
     "incremental": true,
   },
-  "include": ["next-env.d.ts", "**/*.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ],
   "exclude": [
     "node_modules",
     "**/*.e2e.tsx",

@@ -1,4 +1,4 @@
-import { isObject } from "@/utils/typeHelper"
+import { isObject } from "@utils/typeHelper"
 
 export enum VALIDATION_TYPES {
   STRING = "String",

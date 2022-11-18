@@ -2,10 +2,10 @@ import {
   PanelConfig,
   PanelFieldConfig,
   PanelFieldGroupConfig,
-} from "@/components/InspectPanel/interface"
-import { PanelBar } from "@/components/PanelBar"
-import { Setter } from "@/components/InspectPanel/setter"
-import { ghostEmptyStyle } from "@/components/InspectPanel/style"
+} from "@components/InspectPanel/interface"
+import { PanelBar } from "@components/PanelBar"
+import { Setter } from "@components/InspectPanel/setter"
+import { ghostEmptyStyle } from "@components/InspectPanel/style"
 
 export const renderFieldAndLabel = (
   config: PanelFieldConfig,

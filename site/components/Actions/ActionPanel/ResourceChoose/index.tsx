@@ -11,26 +11,26 @@ import {
 import { useTranslation } from "next-i18next"
 import { Option, Select } from "@illa-design/select"
 import { useDispatch, useSelector } from "react-redux"
-import { getAllResources } from "@/redux/resource/resourceSelector"
+import { getAllResources } from "@redux/resource/resourceSelector"
 import { Space } from "@illa-design/space"
 import { AddIcon, PenIcon } from "@illa-design/icon"
-import { getIconFromResourceType } from "@/components/Actions/getIcon"
-import { configActions } from "@/redux/config/configSlice"
+import { getIconFromResourceType } from "@components/Actions/getIcon"
+import { configActions } from "@redux/config/configSlice"
 import { ButtonProps } from "@illa-design/button"
-import { getInitialContent } from "@/redux/currentApp/action/getInitialContent"
+import { getInitialContent } from "@redux/currentApp/action/getInitialContent"
 import { globalColor, illaPrefix } from "@illa-design/theme"
 import { Modal } from "@illa-design/modal"
-import { ResourceCreator } from "@/pages/Dashboard/components/ResourceGenerator/ResourceCreator"
+import { ResourceCreator } from "@pages/Dashboard/components/ResourceGenerator/ResourceCreator"
 import {
   getResourceNameFromResourceType,
   getResourceTypeFromActionType,
-} from "@/utils/actionResourceTransformer"
-import { ResourceGenerator } from "@/pages/Dashboard/components/ResourceGenerator"
+} from "@utils/actionResourceTransformer"
+import { ResourceGenerator } from "@pages/Dashboard/components/ResourceGenerator"
 import {
   getCachedAction,
   getSelectedAction,
-} from "@/redux/config/configSelector"
-import { ActionPanelContext } from "@/components/Actions/ActionPanel/actionPanelContext"
+} from "@redux/config/configSelector"
+import { ActionPanelContext } from "@components/Actions/ActionPanel/actionPanelContext"
 
 export const ResourceChoose: FC = () => {
   const { t } = useTranslation()

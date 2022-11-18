@@ -2,8 +2,8 @@
 import { parse, Node } from "acorn"
 import { ancestor } from "acorn-walk"
 import { isFinite } from "lodash"
-import { wrapCode } from "@/utils/evaluateDynamicString/utils"
-import { unescapeJS } from "@/utils/ast/unescapeJs"
+import { wrapCode } from "@utils/evaluateDynamicString/utils"
+import { unescapeJS } from "@utils/ast/unescapeJs"
 
 type Pattern = IdentifierNode | AssignmentPatternNode
 

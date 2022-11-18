@@ -1,8 +1,8 @@
-import { ReactComponent as FormWidgetIcon } from "@/assets/widgetCover/form.svg"
-import { WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as FormWidgetIcon } from "@assets/widgetCover/form.svg"
+import { WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
-import { TEXT_WIDGET_CONFIG } from "@/widgetLibrary/TextWidget"
-import { BasicContainerConfig } from "@/widgetLibrary/BasicContainer/BasicContainer"
+import { TEXT_WIDGET_CONFIG } from "@widgetLibrarys/TextWidget"
+import { BasicContainerConfig } from "@widgetLibrarys/BasicContainer/BasicContainer"
 import { BUTTON_WIDGET_CONFIG } from "../ButtonWidget"
 import { v4 } from "uuid"
 const { t } = useTranslation();

@@ -1,9 +1,9 @@
-import { PanelConfig } from "@/components/InspectPanel/interface"
+import { PanelConfig } from "@components/InspectPanel/interface"
 import { useTranslation } from "next-i18next"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
-import { generatorEventHandlerConfig } from "@/widgetLibrary/PublicSector/utils/generatorEventHandlerConfig"
-import { ColumnTypeOption } from "@/widgetLibrary/TableWidget/interface"
-import { TABLE_EVENT_HANDLER_CONFIG } from "@/widgetLibrary/TableWidget/eventHandlerConfig"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
+import { generatorEventHandlerConfig } from "@widgetLibrarys/PublicSector/utils/generatorEventHandlerConfig"
+import { ColumnTypeOption } from "@widgetLibrarys/TableWidget/interface"
+import { TABLE_EVENT_HANDLER_CONFIG } from "@widgetLibrarys/TableWidget/eventHandlerConfig"
 const { t } = useTranslation();
 const baseWidgetName = "table"
 

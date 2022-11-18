@@ -1,22 +1,22 @@
 import { FC, useEffect, useState } from "react"
-import { Api } from "@//api/base"
-import { sqlInputStyle } from "@/components/Actions/ActionPanel/MysqlLikePanel/style"
-import { ResourceChoose } from "@/components/Actions/ActionPanel/ResourceChoose"
-import { CodeEditor } from "@/components/CodeEditor"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
-import { TransformerComponent } from "@/components/Actions/ActionPanel/TransformerComponent"
-import { ActionEventHandler } from "@/components/Actions/ActionPanel/ActionEventHandler"
+import { Api } from "@api/base"
+import { sqlInputStyle } from "@components/Actions/ActionPanel/MysqlLikePanel/style"
+import { ResourceChoose } from "@components/Actions/ActionPanel/ResourceChoose"
+import { CodeEditor } from "@components/CodeEditor"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
+import { TransformerComponent } from "@components/Actions/ActionPanel/TransformerComponent"
+import { ActionEventHandler } from "@components/Actions/ActionPanel/ActionEventHandler"
 import { isObject } from "@illa-design/system"
-import { ResourcesData } from "@/redux/resource/resourceState"
-import { redisContainerStyle } from "@/components/Actions/ActionPanel/RedisPanel/style"
+import { ResourcesData } from "@redux/resource/resourceState"
+import { redisContainerStyle } from "@components/Actions/ActionPanel/RedisPanel/style"
 import {
   RedisAction,
   RedisActionInitial,
-} from "@/redux/currentApp/action/redisAction"
+} from "@redux/currentApp/action/redisAction"
 import { Controller, useForm } from "react-hook-form"
 import { useDispatch, useSelector } from "react-redux"
-import { getCachedAction } from "@/redux/config/configSelector"
-import { configActions } from "@/redux/config/configSlice"
+import { getCachedAction } from "@redux/config/configSelector"
+import { configActions } from "@redux/config/configSlice"
 
 const convertResourcesToTables = (data: Record<string, unknown>) => {
   let res: Record<string, string[]> = {}

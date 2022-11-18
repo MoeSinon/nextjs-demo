@@ -1,5 +1,5 @@
-import { ReactComponent as RadioButtonWidgetIcon } from "@/assets/widgetCover/radioButton.svg"
-import { RESIZE_DIRECTION, WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as RadioButtonWidgetIcon } from "@assets/widgetCover/radioButton.svg"
+import { RESIZE_DIRECTION, WidgetConfig } from "@widgetLibrarys/interface"
 import { v4 } from "uuid"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();

@@ -1,5 +1,5 @@
 import { HTMLAttributes } from "react"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 
 export enum EditorModes {
   TEXT = "text/plain",

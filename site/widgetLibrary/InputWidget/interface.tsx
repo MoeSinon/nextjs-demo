@@ -1,15 +1,15 @@
 import { InputProps } from "@illa-design/input"
-import { BaseWidgetProps } from "@/widgetLibrary/interface"
-import LabelProps from "@/widgetLibrary/PublicSector/Label/interface"
-import { ValidateMessageOldProps } from "@/widgetLibrary/PublicSector/InvalidMessage/interface"
-import { TooltipWrapperProps } from "@/widgetLibrary/PublicSector/TooltipWrapper/interface"
+import { BaseWidgetProps } from "@widgetLibrarys/interface"
+import LabelProps from "@widgetLibrarys/PublicSector/Label/interface"
+import { ValidateMessageOldProps } from "@widgetLibrarys/PublicSector/InvalidMessage/interface"
+import { TooltipWrapperProps } from "@widgetLibrarys/PublicSector/TooltipWrapper/interface"
 
 export interface WrappedInputProps
   extends Pick<
-      InputProps,
-      "placeholder" | "disabled" | "readOnly" | "maxLength" | "minLength"
-    >,
-    BaseWidgetProps {
+    InputProps,
+    "placeholder" | "disabled" | "readOnly" | "maxLength" | "minLength"
+  >,
+  BaseWidgetProps {
   showCharacterCount?: InputProps["showCount"]
   value?: string
   prefixIcon?: InputProps["prefix"]
@@ -30,9 +30,9 @@ export interface WrappedInputProps
 
 export interface InputWidgetProps
   extends WrappedInputProps,
-    BaseWidgetProps,
-    LabelProps,
-    TooltipWrapperProps,
-    Omit<ValidateMessageOldProps, "value"> {
+  BaseWidgetProps,
+  LabelProps,
+  TooltipWrapperProps,
+  Omit<ValidateMessageOldProps, "value"> {
   validateMessage: string
 }

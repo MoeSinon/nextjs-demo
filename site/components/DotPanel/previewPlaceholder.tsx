@@ -3,7 +3,7 @@ import { PreviewPlaceholderProps } from "./interface"
 import {
   applyDotLintRectangleStyle,
   applyRectangleStyle,
-} from "@/components/DotPanel/style"
+} from "@components/DotPanel/style"
 
 export const PreviewPlaceholder: FC<PreviewPlaceholderProps> = (props) => {
   const { w, h, x, y, lunchX, lunchY, canDrop } = props

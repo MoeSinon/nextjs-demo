@@ -1,24 +1,24 @@
-import { SectionViewShape } from "@/redux/currentApp/editor/components/componentsState"
+import { SectionViewShape } from "@redux/currentApp/editor/components/componentsState"
 import {
   searchDsl,
   getCanvas,
-} from "@/redux/currentApp/editor/components/componentsSelector"
-import { getIllaMode } from "@/redux/config/configSelector"
-import { executionActions } from "@/redux/currentApp/executionTree/executionSlice"
-import store from "@/store/store"
-import { getActionItemByDisplayName } from "@/redux/currentApp/action/actionSelector"
-import { runAction } from "@/components/Actions/ActionPanel/utils/runAction"
-import { isDynamicString } from "@/utils/evaluateDynamicString/utils"
-import { evaluateDynamicString } from "@/utils/evaluateDynamicString"
+} from "@redux/currentApp/editor/components/componentsSelector"
+import { getIllaMode } from "@redux/config/configSelector"
+import { executionActions } from "@redux/currentApp/executionTree/executionSlice"
+import store from "@store/store"
+import { getActionItemByDisplayName } from "@redux/currentApp/action/actionSelector"
+import { runAction } from "@components/Actions/ActionPanel/utils/runAction"
+import { isDynamicString } from "@utils/evaluateDynamicString/utils"
+import { evaluateDynamicString } from "@utils/evaluateDynamicString"
 import { Message } from "@illa-design/message"
 import {
   goToURL,
   showNotification,
-} from "@/pages/App/context/globalDataProvider"
+} from "@pages/App/context/globalDataProvider"
 import { get } from "lodash"
-import { getRootNodeExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
-import { ILLARoute } from "@/router"
-import { UpdateExecutionByDisplayNamePayload } from "@/redux/currentApp/executionTree/executionState"
+import { useRouter } from 'next/router'
+import { getRootNodeExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
+import { UpdateExecutionByDisplayNamePayload } from "@redux/currentApp/executionTree/executionState"
 
 export const transformEvents = (
   event: any,
@@ -58,6 +58,7 @@ export const transformEvents = (
     finalPath = viewPath ? finalPath + `/${viewPath}` : finalPath
     return {
       script: () => {
+        const router = useRouter()
         const originPath = window.location.pathname
         const originPathArray = originPath.split("/")
         const mode = getIllaMode(store.getState())
@@ -69,7 +70,7 @@ export const transformEvents = (
         if (index === -1) return
         if (mode === "production" && originPathArray.length >= 6) {
           if (mode === "production") {
-            ILLARoute.navigate(
+            router.push(
               originPathArray.slice(0, 6).join("/") + finalPath,
             )
           }

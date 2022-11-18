@@ -1,4 +1,4 @@
-import { ColumnItemShape } from "@/widgetLibrary/TableWidget/interface"
+import { ColumnItemShape } from "@widgetLibrarys/TableWidget/interface"
 import { dayjsPro, isNumber } from "@illa-design/system"
 import { CellContext } from "@tanstack/table-core"
 import { Link } from "@illa-design/link"

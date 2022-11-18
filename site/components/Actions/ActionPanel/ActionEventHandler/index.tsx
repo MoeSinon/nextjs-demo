@@ -2,17 +2,17 @@ import { FC, useCallback } from "react"
 import {
   actionEventHandlerStyle,
   actionEventHandlerWrapperStyle,
-} from "@/components/Actions/ActionPanel/ActionEventHandler/style"
+} from "@components/Actions/ActionPanel/ActionEventHandler/style"
 import { useTranslation } from "next-i18next"
-import { renderFieldAndLabel } from "@/components/InspectPanel/utils/fieldFactory"
-import { generatorEventHandlerConfig } from "@/widgetLibrary/PublicSector/utils/generatorEventHandlerConfig"
+import { renderFieldAndLabel } from "@components/InspectPanel/utils/fieldFactory"
+import { generatorEventHandlerConfig } from "@widgetLibrarys/PublicSector/utils/generatorEventHandlerConfig"
 import { useDispatch, useSelector } from "react-redux"
-import { getCachedAction } from "@/redux/config/configSelector"
-import { SelectedProvider } from "@/components/InspectPanel/context/selectedContext"
-import { configActions } from "@/redux/config/configSlice"
-import { ActionContent } from "@/redux/currentApp/action/actionState"
+import { getCachedAction } from "@redux/config/configSelector"
+import { SelectedProvider } from "@components/InspectPanel/context/selectedContext"
+import { configActions } from "@redux/config/configSlice"
+import { ActionContent } from "@redux/currentApp/action/actionState"
 import { cloneDeep } from "lodash"
-import { getNewWidgetPropsByUpdateSlice } from "@/utils/componentNode"
+import { getNewWidgetPropsByUpdateSlice } from "@utils/componentNode"
 
 export const ActionEventHandler: FC = () => {
   const { t } = useTranslation()

@@ -3,9 +3,9 @@ import {
   PageNode,
   SectionNode,
   SECTION_POSITION,
-} from "@/redux/currentApp/editor/components/componentsState"
+} from "@redux/currentApp/editor/components/componentsState"
 import { RefObject } from "react"
-import { IllaMode } from "@/redux/config/configState"
+import { IllaMode } from "@redux/config/configState"
 
 export interface DragPosition {
   squareX: number

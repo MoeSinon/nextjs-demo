@@ -3,8 +3,8 @@ import {
   navBarLogoStyle,
   navBarStyle,
   navBarTabStyle,
-} from "@/pages/Setting/style"
-import { ReactComponent as Logo } from "@/assets/illa-logo.svg"
+} from "@pages/Setting/style"
+import { ReactComponent as Logo } from "@assets/illa-logo.svg"
 import { useTranslation } from "next-i18next"
 import { useRouter } from 'next/router'
 

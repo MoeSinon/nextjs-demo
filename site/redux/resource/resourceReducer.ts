@@ -3,7 +3,7 @@ import {
   Resource,
   ResourceContent,
   ResourceListState,
-} from "@/redux/resource/resourceState"
+} from "@redux/resource/resourceState"
 
 export const updateResourceListReducer: CaseReducer<
   ResourceListState,

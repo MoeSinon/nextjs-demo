@@ -4,11 +4,11 @@ import { useTranslation } from "next-i18next"
 import { DropList } from "@illa-design/dropdown"
 import { globalColor, illaPrefix } from "@illa-design/theme"
 import { PanelHeaderActionProps } from "./interface"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { ShortCutContext } from "@/utils/shortcut/shortcutProvider"
-import { searchDSLByDisplayName } from "@/redux/currentApp/editor/components/componentsSelector"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
-import { defaultPageProps } from "@/utils/generators/generatePageOrSectionConfig"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { ShortCutContext } from "@utils/shortcut/shortcutProvider"
+import { searchDSLByDisplayName } from "@redux/currentApp/editor/components/componentsSelector"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
+import { defaultPageProps } from "@utils/generators/generatePageOrSectionConfig"
 
 const { Item } = DropList
 

@@ -4,7 +4,7 @@ import {
   emptyStateStyle,
   emptyStateWrapperStyle,
   keyPressComponentStyle,
-} from "@/widgetLibrary/ContainerWidget/style"
+} from "@widgetLibrarys/ContainerWidget/style"
 
 export const KeyPressComponent: FC = (props) => {
   return <span css={keyPressComponentStyle}>{props.children}</span>

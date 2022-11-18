@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import { WrappedDivider } from "@/widgetLibrary/DividerWidget"
+import { WrappedDivider } from "@widgetLibrarys/DividerWidget"
 import "@testing-library/jest-dom"
 
 test("WrappedDivider renders correctly", () => {

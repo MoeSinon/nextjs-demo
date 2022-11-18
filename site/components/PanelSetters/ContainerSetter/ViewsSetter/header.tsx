@@ -4,7 +4,7 @@ import { AddIcon } from "@illa-design/icon"
 import {
   HeaderLabelStyle,
   HeaderWrapperStyle,
-} from "@/components/PanelSetters/ContainerSetter/ViewsSetter/style"
+} from "@components/PanelSetters/ContainerSetter/ViewsSetter/style"
 import { useTranslation } from "next-i18next"
 
 export interface HeaderProps {

@@ -2,13 +2,13 @@ import { FC, useState } from "react"
 import {
   ResourceCreatorPage,
   ResourceGeneratorProps,
-} from "@/pages/Dashboard/components/ResourceGenerator/interface"
+} from "@pages/Dashboard/components/ResourceGenerator/interface"
 import { Modal } from "@illa-design/modal"
 import { useTranslation } from "next-i18next"
-import { ResourceType } from "@/redux/resource/resourceState"
-import { ResourceTypeSelector } from "@/pages/Dashboard/components/ResourceGenerator/ResourceTypeSelector"
-import { ResourceCreator } from "@/pages/Dashboard/components/ResourceGenerator/ResourceCreator"
-import { getResourceNameFromResourceType } from "@/utils/actionResourceTransformer"
+import { ResourceType } from "@redux/resource/resourceState"
+import { ResourceTypeSelector } from "@pages/Dashboard/components/ResourceGenerator/ResourceTypeSelector"
+import { ResourceCreator } from "@pages/Dashboard/components/ResourceGenerator/ResourceCreator"
+import { getResourceNameFromResourceType } from "@utils/actionResourceTransformer"
 import { modalContentStyle } from "./style"
 
 export const ResourceGenerator: FC<ResourceGeneratorProps> = (props) => {

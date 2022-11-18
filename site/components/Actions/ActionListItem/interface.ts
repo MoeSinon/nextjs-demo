@@ -1,7 +1,7 @@
 import {
   ActionContent,
   ActionItem,
-} from "@/redux/currentApp/action/actionState"
+} from "@redux/currentApp/action/actionState"
 import { HTMLAttributes } from "react"
 
 export interface ActionListItemProps extends HTMLAttributes<HTMLDivElement> {

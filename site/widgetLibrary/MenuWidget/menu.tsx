@@ -1,7 +1,7 @@
 import { FC, forwardRef, useCallback, useEffect, useRef } from "react"
 import { Menu } from "@illa-design/menu"
 import { MenuWidgetProps, WrappedMenuProps } from "./interface"
-import { MenuItemLabel } from "@/widgetLibrary/MenuWidget/MenuItemLabel"
+import { MenuItemLabel } from "@widgetLibrarys/MenuWidget/MenuItemLabel"
 
 export const WrappedMenu = forwardRef<HTMLDivElement, WrappedMenuProps>(
   (props, ref) => {

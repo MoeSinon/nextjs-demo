@@ -1,13 +1,13 @@
-import { getLayout as getSiteLayout } from "@/components/layouts/tabPanel";
+import { getLayout as getSiteLayout } from "@components/layouts/tabPanel";
 import { useCallback, useMemo, useState, ChangeEvent } from "react"
 import { useTranslation } from "next-i18next"
 import { Password } from "@illa-design/input"
-import { publicButtonWrapperStyle } from "@/pages/Setting/Account/style"
+import { publicButtonWrapperStyle } from "@pages/Setting/Account/style"
 import { Button } from "@illa-design/button"
-import { LabelAndSetter } from "@/components/layouts/LabelAndSetter"
-import { Api } from "@//api/base"
+import { LabelAndSetter } from "@components/layouts/LabelAndSetter"
+import { Api } from "@api/base"
 import { Message } from "@illa-design/message"
-import { SettingNavBar } from "@/components/layouts/navBar"
+import { SettingNavBar } from "@components/layouts/navBar"
 
 const validatePasswordEmpty = (password: string) => {
   return !password

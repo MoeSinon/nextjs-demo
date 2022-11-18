@@ -1,9 +1,9 @@
 import { FC, forwardRef, useEffect, useMemo, useRef } from "react"
 import { Progress } from "@illa-design/progress"
 import { BarProgressWidgetProps, WrappedBarProgressProps } from "./interface"
-import { Label } from "@/widgetLibrary/PublicSector/Label"
-import { applyCenterLabelAndComponentWrapperStyle } from "@/widgetLibrary/PublicSector/TransformWidgetWrapper/style"
-import { TooltipWrapper } from "@/widgetLibrary/PublicSector/TooltipWrapper"
+import { Label } from "@widgetLibrarys/PublicSector/Label"
+import { applyCenterLabelAndComponentWrapperStyle } from "@widgetLibrarys/PublicSector/TransformWidgetWrapper/style"
+import { TooltipWrapper } from "@widgetLibrarys/PublicSector/TooltipWrapper"
 
 export const WrappedBarProgress = forwardRef<any, WrappedBarProgressProps>(
   (props, ref) => {

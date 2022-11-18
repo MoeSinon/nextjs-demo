@@ -1,7 +1,7 @@
 import { css, SerializedStyles } from "@emotion/react"
 import { globalColor, illaPrefix } from "@illa-design/theme"
 import { Variants } from "framer-motion"
-import { publicPaddingStyle } from "@/components/InspectPanel/style"
+import { publicPaddingStyle } from "@components/InspectPanel/style"
 
 export const panelBarHeaderStyle = css`
   display: flex;

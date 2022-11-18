@@ -1,9 +1,9 @@
-import { PanelConfig } from "@/components/InspectPanel/interface"
+import { PanelConfig } from "@components/InspectPanel/interface"
 import { useTranslation } from "next-i18next"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
-import { generatorEventHandlerConfig } from "@/widgetLibrary/PublicSector/utils/generatorEventHandlerConfig"
-import { ReactComponent as RadioIcon } from "@/assets/radius-icon.svg"
-import { ReactComponent as StrokeWidthIcon } from "@/assets/stroke-width-icon.svg"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
+import { generatorEventHandlerConfig } from "@widgetLibrarys/PublicSector/utils/generatorEventHandlerConfig"
+import { ReactComponent as RadioIcon } from "@assets/radius-icon.svg"
+import { ReactComponent as StrokeWidthIcon } from "@assets/stroke-width-icon.svg"
 import { FORM_EVENT_HANDLER_CONFIG } from "./eventHandlerConfig"
 const { t } = useTranslation();
 

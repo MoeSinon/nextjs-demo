@@ -1,5 +1,5 @@
-import { ReactComponent as TabsWidgetIcon } from "@/assets/widgetCover/tabs.svg"
-import { WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as TabsWidgetIcon } from "@assets/widgetCover/tabs.svg"
+import { WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 import { v4 } from "uuid"
 const { t } = useTranslation();

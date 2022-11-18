@@ -16,8 +16,8 @@ import {
   movableIconWrapperStyle,
 } from "./style"
 import { DragIconAndLabelProps } from "./interface"
-import { BaseModal } from "@/components/PanelSetters/PublicComponent/Modal"
-import { ColumnListSetterContext } from "@/components/PanelSetters/TableSetter/ColumnSetter/context/columnListContext"
+import { BaseModal } from "@components/PanelSetters/PublicComponent/Modal"
+import { ColumnListSetterContext } from "@components/PanelSetters/TableSetter/ColumnSetter/context/columnListContext"
 
 export const DragIconAndLabel: FC<DragIconAndLabelProps> = (props) => {
   const { index, label, visible, custom } = props

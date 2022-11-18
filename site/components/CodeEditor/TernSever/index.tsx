@@ -6,7 +6,7 @@ import CodeMirror from "codemirror"
 import { render } from "react-dom"
 import { TypeQueryResult } from "tern/lib/tern"
 import { isObject } from "@illa-design/system"
-import { getValueType } from "@/components/CodeEditor/utils"
+import { getValueType } from "@components/CodeEditor/utils"
 import { HintTooltip } from "./HintTooltip"
 import demoUs from "./defs/demo_us.json"
 import demoZh from "./defs/demo_zh.json"
@@ -134,7 +134,7 @@ const filterDataWithCallBack = (
   callback?: (key: string) => boolean,
 ) => {
   return JSON.parse(
-    JSON.stringify(data, function(key, value) {
+    JSON.stringify(data, function (key, value) {
       if (callback && callback(key)) {
         return undefined
       } else {

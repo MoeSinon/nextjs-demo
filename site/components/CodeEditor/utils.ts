@@ -1,5 +1,5 @@
 //
-import { evalScript } from "@/utils/evaluateDynamicString/codeSandbox"
+import { evalScript } from "@utils/evaluateDynamicString/codeSandbox"
 
 export const ignoreToken = (text?: string[]) => {
   const ignoreStr = " ,#,!,-,=,@,$,%,&,+,;,(,),*,(),{}"
@@ -36,7 +36,7 @@ export function getEvalValue(type: ExpectedType, content: any) {
       const res = new DataTypeList[type](content)
       return res.valueOf()
     }
-  } catch (e) {}
+  } catch (e) { }
   return content
 }
 

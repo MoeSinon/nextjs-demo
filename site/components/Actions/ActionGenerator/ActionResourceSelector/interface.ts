@@ -1,6 +1,6 @@
-import { ResourceType } from "@/redux/resource/resourceState"
-import { ActionType } from "@/redux/currentApp/action/actionState"
-import { ActionCreatorPage } from "@/components/Actions/ActionGenerator/interface"
+import { ResourceType } from "@redux/resource/resourceState"
+import { ActionType } from "@redux/currentApp/action/actionState"
+import { ActionCreatorPage } from "@components/Actions/ActionGenerator/interface"
 
 export interface ActionResourceSelectorProps {
   actionType: ActionType

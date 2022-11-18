@@ -1,9 +1,9 @@
 import {
   ActionContent,
   ActionItem,
-} from "@/redux/currentApp/action/actionState"
-import { isObject } from "@/utils/typeHelper"
-import { isDynamicString } from "@/utils/evaluateDynamicString/utils"
+} from "@redux/currentApp/action/actionState"
+import { isObject } from "@utils/typeHelper"
+import { isDynamicString } from "@utils/evaluateDynamicString/utils"
 
 interface RawAction {
   [key: string]: any

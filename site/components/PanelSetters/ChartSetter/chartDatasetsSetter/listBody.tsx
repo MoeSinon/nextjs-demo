@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { ListItem } from "./listItem"
-import { ListBodyProps } from "@/components/PanelSetters/ChartSetter/chartDatasetsSetter/interface"
+import { ListBodyProps } from "@components/PanelSetters/ChartSetter/chartDatasetsSetter/interface"
 
 export const ListBody: FC<ListBodyProps> = (props) => {
   const { datasets } = props

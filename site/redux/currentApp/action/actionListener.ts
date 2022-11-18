@@ -1,7 +1,7 @@
 import { Unsubscribe } from "@reduxjs/toolkit"
-import store, { AppListenerEffectAPI, AppStartListening } from "@/store/store"
-import { actionActions } from "@/redux/currentApp/action/actionSlice"
-import { configActions } from "@/redux/config/configSlice"
+import store, { AppListenerEffectAPI, AppStartListening } from "@store/store"
+import { actionActions } from "@redux/currentApp/action/actionSlice"
+import { configActions } from "@redux/config/configSlice"
 
 async function handleRemoveActionItem(
   action: ReturnType<typeof actionActions.removeActionItemReducer>,

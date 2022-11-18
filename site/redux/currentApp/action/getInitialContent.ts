@@ -2,8 +2,8 @@ import { ActionContent, ActionType } from "./actionState"
 import { TransformerActionInitial } from "./transformerAction"
 import { MysqlLikeActionInitial } from "./mysqlLikeAction"
 import { RestApiActionInitial } from "./restapiAction"
-import { RedisActionInitial } from "@/redux/currentApp/action/redisAction"
-import { MongoDbActionInitial } from "@/redux/currentApp/action/mongoDbAction"
+import { RedisActionInitial } from "@redux/currentApp/action/redisAction"
+import { MongoDbActionInitial } from "@redux/currentApp/action/mongoDbAction"
 
 export function getInitialContent(actionType: ActionType): ActionContent {
   switch (actionType) {

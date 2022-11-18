@@ -3,19 +3,19 @@ import {
   codeEditorLabelStyle,
   mongoItemCodeEditorStyle,
   mongoItemStyle,
-} from "@/components/Actions/ActionPanel/MongoDbPanel/style"
+} from "@components/Actions/ActionPanel/MongoDbPanel/style"
 import { Controller } from "react-hook-form"
-import { CodeEditor } from "@/components/CodeEditor"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { CodeEditor } from "@components/CodeEditor"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
-import { MongoDbActionPartProps } from "@/components/Actions/ActionPanel/MongoDbPanel/interface"
+import { MongoDbActionPartProps } from "@components/Actions/ActionPanel/MongoDbPanel/interface"
 import { useDispatch, useSelector } from "react-redux"
-import { getCachedAction } from "@/redux/config/configSelector"
+import { getCachedAction } from "@redux/config/configSelector"
 import {
   AggregateContent,
   BulkWriteContent,
-} from "@/redux/currentApp/action/mongoDbAction"
-import { configActions } from "@/redux/config/configSlice"
+} from "@redux/currentApp/action/mongoDbAction"
+import { configActions } from "@redux/config/configSlice"
 
 export const BulkWritePart: FC<MongoDbActionPartProps> = (props) => {
   const { t } = useTranslation()

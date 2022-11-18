@@ -1,5 +1,5 @@
 import { TableProps } from "@illa-design/table"
-import { BaseWidgetProps } from "@/widgetLibrary/interface"
+import { BaseWidgetProps } from "@widgetLibrarys/interface"
 import { HTMLAttributes } from "react"
 import { ColumnDef } from "@tanstack/react-table"
 
@@ -30,19 +30,19 @@ export interface ColumnItemShape
 
 export interface WrappedTableProps
   extends HTMLAttributes<HTMLDivElement>,
-    Pick<
-      TableProps<any, any>,
-      | "loading"
-      | "columns"
-      | "filter"
-      | "download"
-      | "overFlow"
-      | "pagination"
-      | "defaultSort"
-      | "columnVisibility"
-      | "multiRowSelection"
-      | "data"
-    > {
+  Pick<
+    TableProps<any, any>,
+    | "loading"
+    | "columns"
+    | "filter"
+    | "download"
+    | "overFlow"
+    | "pagination"
+    | "defaultSort"
+    | "columnVisibility"
+    | "multiRowSelection"
+    | "data"
+  > {
   emptyState?: string
   pageSize?: number
   defaultSortKey?: string
@@ -52,4 +52,4 @@ export interface WrappedTableProps
   handleOnColumnFiltersChange?: () => void
 }
 
-export interface TableWidgetProps extends WrappedTableProps, BaseWidgetProps {}
+export interface TableWidgetProps extends WrappedTableProps, BaseWidgetProps { }

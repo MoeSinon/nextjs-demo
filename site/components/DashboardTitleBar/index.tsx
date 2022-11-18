@@ -7,7 +7,7 @@ import { DownIcon } from "@illa-design/icon"
 import { globalColor, illaPrefix } from "@illa-design/theme"
 import { Divider } from "@illa-design/divider"
 import { Dropdown } from "@illa-design/dropdown"
-import { ReactComponent as Logo } from "@/assets/illa-logo.svg"
+import { ReactComponent as Logo } from "@assets/illa-logo.svg"
 import {
   containerStyle,
   expandStyle,
@@ -20,8 +20,8 @@ import {
   settingItemStyle,
   settingListStyle,
 } from "./style"
-import { clearLocalStorage } from "@/utils/storage"
-import { getCurrentUser } from "@/redux/currentUser/currentUserSelector"
+import { clearLocalStorage } from "@utils/storage"
+import { getCurrentUser } from "@redux/currentUser/currentUserSelector"
 
 const SettingTrigger: FC<{
   avatarBgColor: string
@@ -128,10 +128,10 @@ export const DashboardTitleBar: FC = () => {
       onChange={(key) => {
         switch (key) {
           case "apps":
-            router.push("./apps" , undefined)
+            router.push("./apps", undefined)
             break
           case "resources":
-            router.push("./resources" , undefined)
+            router.push("./resources", undefined)
             break
         }
       }}

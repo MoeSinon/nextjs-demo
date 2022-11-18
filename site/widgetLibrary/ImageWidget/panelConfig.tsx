@@ -1,9 +1,9 @@
-import { PanelConfig } from "@/components/InspectPanel/interface"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { PanelConfig } from "@components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
-import { ReactComponent as RadioIcon } from "@/assets/radius-icon.svg"
-import { generatorEventHandlerConfig } from "@/widgetLibrary/PublicSector/utils/generatorEventHandlerConfig"
-import { IMAGE_EVENT_HANDLER_CONFIG } from "@/widgetLibrary/ImageWidget/eventHandlerConfig"
+import { ReactComponent as RadioIcon } from "@assets/radius-icon.svg"
+import { generatorEventHandlerConfig } from "@widgetLibrarys/PublicSector/utils/generatorEventHandlerConfig"
+import { IMAGE_EVENT_HANDLER_CONFIG } from "@widgetLibrarys/ImageWidget/eventHandlerConfig"
 const { t } = useTranslation();
 
 const baseWidgetName = "input"

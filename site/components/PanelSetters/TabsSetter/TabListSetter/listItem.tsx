@@ -9,11 +9,11 @@ import { ViewItemShape } from "./interface"
 import { CopyIcon, ReduceIcon } from "@illa-design/icon"
 import { DragIconAndLabel } from "./dragIconAndLabel"
 import { TabListSetterContext } from "./context/tabListContext"
-import { BaseModal } from "@/components/PanelSetters/PublicComponent/Modal"
+import { BaseModal } from "@components/PanelSetters/PublicComponent/Modal"
 import { Trigger } from "@illa-design/trigger"
 import { useTranslation } from "next-i18next"
 import { useDrag, useDrop, XYCoord } from "react-dnd"
-import { DragItem } from "@/components/PanelSetters/OptionListSetter/interface"
+import { DragItem } from "@components/PanelSetters/OptionListSetter/interface"
 import { Identifier } from "dnd-core"
 
 interface ListItemProps {

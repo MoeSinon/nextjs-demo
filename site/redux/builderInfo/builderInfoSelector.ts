@@ -1,4 +1,4 @@
-import { RootState } from "@/store/store"
+import { RootState } from "@store/store"
 
 export const getBuilderInfo = (state: RootState) => {
   return state.builderInfo

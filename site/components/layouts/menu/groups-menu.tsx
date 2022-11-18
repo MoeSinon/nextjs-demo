@@ -1,13 +1,13 @@
-import Scrollbar from '@/components/ui/scrollbar';
+import Scrollbar from '@components/ui/scrollbar';
 import { Menu, Transition } from '@headlessui/react';
 import cn from 'classnames';
 import { Fragment } from 'react';
 import { getIcon } from '@/lib/get-icon';
-import { CaretDown } from '@/components/icons/caret-down';
-import * as groupIcons from '@/components/icons/groups';
+import { CaretDown } from '@components/icons/caret-down';
+import * as groupIcons from '@components/icons/groups';
 import { useRouter } from 'next/router';
-import Link from '@/components/ui/link';
-import { ArrowDownIcon } from '@/components/icons/arrow-down';
+import Link from '@components/ui/link';
+import { ArrowDownIcon } from '@components/icons/arrow-down';
 import { useTypes } from '@/framework/type';
 import useHomepage from '@/lib/hooks/use-homepage';
 import type { Type } from '@/types';

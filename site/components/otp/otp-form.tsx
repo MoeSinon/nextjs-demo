@@ -1,9 +1,9 @@
 import { useTranslation } from 'next-i18next';
 import { useAtom } from 'jotai';
-import Alert from '@/components/ui/alert';
-import PhoneNumberForm from '@/components/otp/phone-number-form';
-import { optAtom } from '@/components/otp/atom';
-import OtpCodeForm from '@/components/otp/code-verify-form';
+import Alert from '@components/ui/alert';
+import PhoneNumberForm from '@components/otp/phone-number-form';
+import { optAtom } from '@components/otp/atom';
+import OtpCodeForm from '@components/otp/code-verify-form';
 import { useSendOtpCode, useVerifyOtpCode } from '@/framework/user';
 
 interface OtpFormProps {

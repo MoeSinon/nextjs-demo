@@ -11,8 +11,8 @@ import {
   jsonContentAnimation,
 } from "./style"
 import { useDispatch, useSelector } from "react-redux"
-import { getExpandedKeys } from "@/redux/config/configSelector"
-import { configActions } from "@/redux/config/configSlice"
+import { getExpandedKeys } from "@redux/config/configSelector"
+import { configActions } from "@redux/config/configSlice"
 import { WorkSpaceTreeNode } from "./WorkSpaceTreeNode"
 
 export const WorkSpaceTreeItem: FC<WorkSpaceTreeItemProps> = memo(

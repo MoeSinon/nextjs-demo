@@ -1,5 +1,5 @@
-import { ReactComponent as MenuWidgetIcon } from "@/assets/widgetCover/menu.svg"
-import { WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as MenuWidgetIcon } from "@assets/widgetCover/menu.svg"
+import { WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 
 const menuList = [

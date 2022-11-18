@@ -1,7 +1,7 @@
 import { FC, useEffect } from "react"
-import { PageNavBar } from "@/components/PageNavBar"
+import { PageNavBar } from "@components/PageNavBar"
 import { useRouter } from 'next/router'
-import { DataWorkspace } from "@/components/DataWorkspace"
+import { DataWorkspace } from "@components/DataWorkspace"
 import {
   bottomPanelStyle,
   centerPanelStyle,
@@ -12,31 +12,31 @@ import {
   navbarStyle,
   rightPanelStyle,
 } from "./style"
-import { Connection } from "@//api/ws"
+import { Connection } from "@api/ws"
 import { useDispatch, useSelector } from "react-redux"
 import {
   isOpenBottomPanel,
   isOpenDebugger,
   isOpenLeftPanel,
   isOpenRightPanel,
-} from "@/redux/config/configSelector"
-import { CanvasPanel } from "@/components/CanvasPanel"
-import { setupComponentsListeners } from "@/redux/currentApp/editor/components/componentsListener"
-import { startAppListening } from "@/store/store"
+} from "@redux/config/configSelector"
+import { CanvasPanel } from "@components/CanvasPanel"
+import { setupComponentsListeners } from "@redux/currentApp/editor/components/componentsListener"
+import { startAppListening } from "@store/store"
 import { Unsubscribe } from "@reduxjs/toolkit"
-import { Api } from "@//api/base"
-import { Shortcut } from "@/utils/shortcut"
-import { getCurrentUser } from "@/redux/currentUser/currentUserSelector"
-import { AppLoading } from "@/components/AppLoading"
-import { ActionEditor } from "@/components/Actions"
-import { Resource, ResourceContent } from "@/redux/resource/resourceState"
-import { resourceActions } from "@/redux/resource/resourceSlice"
+import { Api } from "@api/base"
+import { Shortcut } from "@utils/shortcut"
+import { getCurrentUser } from "@redux/currentUser/currentUserSelector"
+import { AppLoading } from "@components/AppLoading"
+import { ActionEditor } from "@components/Actions"
+import { Resource, ResourceContent } from "@redux/resource/resourceState"
+import { resourceActions } from "@redux/resource/resourceSlice"
 import { useInitBuilderApp } from "@/hooks/useInitApp"
-import { setupExecutionListeners } from "@/redux/currentApp/executionTree/executionListener"
-import { Debugger } from "@/components/Debugger"
-import { ComponentsManager } from "@/components/ComponentManager"
-import { setupActionListeners } from "@/redux/currentApp/action/actionListener"
-import { setupConfigListeners } from "@/redux/config/configListener"
+import { setupExecutionListeners } from "@redux/currentApp/executionTree/executionListener"
+import { Debugger } from "@components/Debugger"
+import { ComponentsManager } from "@components/ComponentManager"
+import { setupActionListeners } from "@redux/currentApp/action/actionListener"
+import { setupConfigListeners } from "@redux/config/configListener"
 
 export const Editor: FC = () => {
   const dispatch = useDispatch()

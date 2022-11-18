@@ -1,17 +1,17 @@
 import { FC, useMemo } from "react"
 import { Select } from "@illa-design/select"
 import { ChartColorSelectSetterProps } from "./interface"
-import { applyBaseSelectWrapperStyle } from "@/components/PanelSetters/SelectSetter/style"
+import { applyBaseSelectWrapperStyle } from "@components/PanelSetters/SelectSetter/style"
 import { useSelector } from "react-redux"
-import { RootState } from "@/store/store"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { RootState } from "@store/store"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 import { get } from "lodash"
 import {
   CHART_COLOR_TYPE_CONFIG,
   CHART_COLOR_TYPE_CONFIG_KEYS,
   ColorArea,
-} from "@/components/PanelSetters/ChartSetter/chartDatasetsSetter/listItem"
-import { chartColorLabelStyle } from "@/components/PanelSetters/ChartSetter/style"
+} from "@components/PanelSetters/ChartSetter/chartDatasetsSetter/listItem"
+import { chartColorLabelStyle } from "@components/PanelSetters/ChartSetter/style"
 
 interface CHartColorLabelProps {
   color: string

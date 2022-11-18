@@ -1,11 +1,11 @@
 import { FC, useMemo } from "react"
-import { ResourceCreatorProps } from "@/pages/Dashboard/components/ResourceGenerator/ResourceCreator/interface"
-import { MysqlLikeConfigElement } from "@/components/Actions/MysqlLikeConfigElement"
+import { ResourceCreatorProps } from "@pages/Dashboard/components/ResourceGenerator/ResourceCreator/interface"
+import { MysqlLikeConfigElement } from "@components/Actions/MysqlLikeConfigElement"
 import { useSelector } from "react-redux"
-import { RootState } from "@/store/store"
-import { RestApiConfigElement } from "@/components/Actions/RestApiConfigElement"
-import { RedisConfigElement } from "@/components/Actions/RedisConfigElement"
-import { MongoDbConfigElement } from "@/components/Actions/MongoDbConfigElement"
+import { RootState } from "@store/store"
+import { RestApiConfigElement } from "@components/Actions/RestApiConfigElement"
+import { RedisConfigElement } from "@components/Actions/RedisConfigElement"
+import { MongoDbConfigElement } from "@components/Actions/MongoDbConfigElement"
 
 export const ResourceCreator: FC<ResourceCreatorProps> = (props) => {
   const { resourceType, resourceId, onBack, onFinished } = props

@@ -1,9 +1,9 @@
 import { FC, useEffect, useRef } from "react"
 import { Switch } from "@illa-design/switch"
 import { SwitchWidgetProps, WrappedSwitchProps } from "./interface"
-import { Label } from "@/widgetLibrary/PublicSector/Label"
-import { applyCenterLabelAndComponentWrapperStyle } from "@/widgetLibrary/PublicSector/TransformWidgetWrapper/style"
-import { TooltipWrapper } from "@/widgetLibrary/PublicSector/TooltipWrapper"
+import { Label } from "@widgetLibrarys/PublicSector/Label"
+import { applyCenterLabelAndComponentWrapperStyle } from "@widgetLibrarys/PublicSector/TransformWidgetWrapper/style"
+import { TooltipWrapper } from "@widgetLibrarys/PublicSector/TooltipWrapper"
 
 export const WrappedSwitch: FC<WrappedSwitchProps> = (props) => {
   const {

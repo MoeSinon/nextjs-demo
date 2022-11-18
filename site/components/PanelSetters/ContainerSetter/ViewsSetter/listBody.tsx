@@ -1,5 +1,5 @@
 import { FC, useContext } from "react"
-import { ViewListSetterContext } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/context/viewsListContext"
+import { ViewListSetterContext } from "@components/PanelSetters/ContainerSetter/ViewsSetter/context/viewsListContext"
 import { ListItem } from "./listItem"
 
 export const ListBody: FC = () => {

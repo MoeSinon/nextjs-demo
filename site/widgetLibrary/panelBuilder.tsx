@@ -1,5 +1,5 @@
 import { widgetBuilder, WidgetType } from "./widgetBuilder"
-import { PanelConfig } from "@/components/InspectPanel/interface"
+import { PanelConfig } from "@components/InspectPanel/interface"
 
 export const panelBuilder = (type: WidgetType): PanelConfig[] | null => {
   if (!type) return null

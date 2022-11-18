@@ -1,5 +1,5 @@
-import { ReactComponent as DateWidgetIcon } from "@/assets/widgetCover/date.svg"
-import { RESIZE_DIRECTION, WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as DateWidgetIcon } from "@assets/widgetCover/date.svg"
+import { RESIZE_DIRECTION, WidgetConfig } from "@widgetLibrarys/interface"
 import dayjs from "dayjs"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();

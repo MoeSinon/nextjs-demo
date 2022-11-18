@@ -1,4 +1,4 @@
-import { Events } from "@/redux/currentApp/action/actionState"
+import { Events } from "@redux/currentApp/action/actionState"
 
 export const MongoDbActionList = [
   "aggregate",

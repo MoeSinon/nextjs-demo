@@ -1,12 +1,12 @@
-import { PanelConfig } from "@/components/InspectPanel/interface"
+import { PanelConfig } from "@components/InspectPanel/interface"
 import { useTranslation } from "next-i18next"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { BarChartIcon, LineChartIcon, ScatterPlotIcon } from "@illa-design/icon"
 import {
   chartTypeIconCss,
   chartTypeStringCss,
-} from "@/components/PanelSetters/ChartSetter/style"
-import { CHART_DATASET_AGGREGATION_METHOD } from "@/widgetLibrary/Chart/interface"
+} from "@components/PanelSetters/ChartSetter/style"
+import { CHART_DATASET_AGGREGATION_METHOD } from "@widgetLibrarys/Chart/interface"
 const { t } = useTranslation();
 
 const datasetsTypeOption = [

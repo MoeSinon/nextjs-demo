@@ -2,7 +2,7 @@ import { CaseReducer, PayloadAction } from "@reduxjs/toolkit"
 import {
   DottedLineSquare,
   DottedLineSquareState,
-} from "@/redux/currentApp/editor/dottedLineSquare/dottedLineSquareState"
+} from "@redux/currentApp/editor/dottedLineSquare/dottedLineSquareState"
 
 export const addOrUpdateDottedLineSquareReducer: CaseReducer<
   DottedLineSquareState,

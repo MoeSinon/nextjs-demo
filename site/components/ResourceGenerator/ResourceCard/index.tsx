@@ -1,8 +1,8 @@
 import { FC } from "react"
 import { applyItemStyle, comingStyle, nameStyle } from "./style"
 import { ResourceCardSelectorProps } from "./interface"
-import { getIconFromResourceType } from "@/components/Actions/getIcon"
-import { getResourceNameFromResourceType } from "@/utils/actionResourceTransformer"
+import { getIconFromResourceType } from "@components/Actions/getIcon"
+import { getResourceNameFromResourceType } from "@utils/actionResourceTransformer"
 import { useTranslation } from "next-i18next"
 
 export const ResourceCard: FC<ResourceCardSelectorProps> = (props) => {

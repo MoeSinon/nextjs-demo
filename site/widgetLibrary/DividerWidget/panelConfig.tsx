@@ -3,10 +3,10 @@ import {
   HorizontalEndIcon,
   HorizontalStartIcon,
 } from "@illa-design/icon"
-import { PanelConfig } from "@/components/InspectPanel/interface"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { PanelConfig } from "@components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
-import { ReactComponent as TextSizeIcon } from "@/assets/text-size-icon.svg"
+import { ReactComponent as TextSizeIcon } from "@assets/text-size-icon.svg"
 const { t } = useTranslation();
 
 const baseWidgetName = "divider"

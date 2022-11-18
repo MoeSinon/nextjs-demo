@@ -1,11 +1,11 @@
 import { FC, useCallback, useMemo } from "react"
 import { useSelector } from "react-redux"
-import { RootState } from "@/store/store"
+import { RootState } from "@store/store"
 import { get } from "lodash"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
-import { BaseSelectSetter } from "@/components/PanelSetters/SelectSetter/baseSelect"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
+import { BaseSelectSetter } from "@components/PanelSetters/SelectSetter/baseSelect"
 import { ColumnsSelectSetterProps, SelectOptions } from "./interface"
-import { ColumnItemShape } from "@/widgetLibrary/TableWidget/interface"
+import { ColumnItemShape } from "@widgetLibrarys/TableWidget/interface"
 
 export const ColumnsSelectSetter: FC<ColumnsSelectSetterProps> = (props) => {
   const {

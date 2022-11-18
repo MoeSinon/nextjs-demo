@@ -20,7 +20,7 @@ import { Resizable, ResizeCallback, ResizeStartCallback } from "re-resizable"
 import {
   applyDashedLineStyle,
   applyXDirectionDashedLineStyle,
-} from "@/components/ScaleSquare/style"
+} from "@components/ScaleSquare/style"
 import useMeasure from "react-use-measure"
 import {
   FORM_BODY_MIN_HEIGHT,
@@ -29,21 +29,21 @@ import {
   FORM_BODY_MARGIN,
   FORM_CAN_BIND_WIDGET_TYPE,
 } from "./widgetConfig"
-import { ReactComponent as ResizeBar } from "@/assets/resizeBar.svg"
+import { ReactComponent as ResizeBar } from "@assets/resizeBar.svg"
 import { useDrop } from "react-dnd"
 import {
   DragInfo,
   DropResultInfo,
-} from "@/components/DotPanel/interface"
+} from "@components/DotPanel/interface"
 import { useDispatch, useSelector } from "react-redux"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
-import { executionActions } from "@/redux/currentApp/executionTree/executionSlice"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
-import { evaluateDynamicString } from "@/utils/evaluateDynamicString"
-import { BUILDER_CALC_CONTEXT } from "@/pages/App/context/globalDataProvider"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
+import { executionActions } from "@redux/currentApp/executionTree/executionSlice"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
+import { evaluateDynamicString } from "@utils/evaluateDynamicString"
+import { BUILDER_CALC_CONTEXT } from "@pages/App/context/globalDataProvider"
 import { Message } from "@illa-design/react"
-import { isObject } from "@/utils/typeHelper"
+import { isObject } from "@utils/typeHelper"
 import { get, set } from "lodash"
 
 function getLikeInputChildrenNode(

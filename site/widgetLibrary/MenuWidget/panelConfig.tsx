@@ -1,8 +1,8 @@
-import { PanelConfig } from "@/components/InspectPanel/interface"
+import { PanelConfig } from "@components/InspectPanel/interface"
 import { useTranslation } from "next-i18next"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
-import { generatorEventHandlerConfig } from "@/widgetLibrary/PublicSector/utils/generatorEventHandlerConfig"
-import { MENU_EVENT_HANDLER_CONFIG } from "@/widgetLibrary/MenuWidget/eventHandlerConfig"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
+import { generatorEventHandlerConfig } from "@widgetLibrarys/PublicSector/utils/generatorEventHandlerConfig"
+import { MENU_EVENT_HANDLER_CONFIG } from "@widgetLibrarys/MenuWidget/eventHandlerConfig"
 import {
   HorizontalCenterIcon,
   HorizontalEndIcon,

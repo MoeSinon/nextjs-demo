@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-named-as-default
 import Axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios"
-import { clearLocalStorage, getLocalStorage } from "@/utils/storage"
+import { clearLocalStorage, getLocalStorage } from "@utils/storage"
 import {
   addRequestPendingPool,
   removeRequestPendingPool,

@@ -22,12 +22,12 @@ import { Chart as ReactChart, Pie } from "react-chartjs-2"
 import {
   ChartWidgetProps,
   WrappedChartProps,
-} from "@/widgetLibrary/Chart/interface"
-import { formatDataAsObject } from "@/utils/formatData"
+} from "@widgetLibrarys/Chart/interface"
+import { formatDataAsObject } from "@utils/formatData"
 import { get, groupBy as groupByFunc } from "lodash"
 import { globalColor, illaPrefix } from "@illa-design/theme"
-import { CHART_COLOR_TYPE_CONFIG } from "@/components/PanelSetters/ChartSetter/chartDatasetsSetter/listItem"
-import { formatData, rotateGroupByData } from "@/widgetLibrary/Chart/utils"
+import { CHART_COLOR_TYPE_CONFIG } from "@components/PanelSetters/ChartSetter/chartDatasetsSetter/listItem"
+import { formatData, rotateGroupByData } from "@widgetLibrarys/Chart/utils"
 
 ChartJS.register(
   /** Bar chart**/

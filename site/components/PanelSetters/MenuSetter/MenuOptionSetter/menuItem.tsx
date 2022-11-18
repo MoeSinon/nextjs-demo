@@ -3,9 +3,9 @@ import { MenuItemProps } from "./interface"
 import { optionListItemStyle } from "./style"
 import { DragIconAndLabel } from "./dragIconAndLabel"
 import { Reorder } from "framer-motion"
-import { removeNativeStyle } from "@/components/PanelSetters/TableSetter/ColumnSetter/style"
-import { MenuListSetterContext } from "@/components/PanelSetters/MenuSetter/MenuOptionSetter/context/menuListContext"
-import { SubMenuLabel } from "@/components/PanelSetters/MenuSetter/MenuOptionSetter/subMenuLabel"
+import { removeNativeStyle } from "@components/PanelSetters/TableSetter/ColumnSetter/style"
+import { MenuListSetterContext } from "@components/PanelSetters/MenuSetter/MenuOptionSetter/context/menuListContext"
+import { SubMenuLabel } from "@components/PanelSetters/MenuSetter/MenuOptionSetter/subMenuLabel"
 
 export const MenuItem: FC<MenuItemProps> = (props) => {
   const { handleUpdateDsl, attrPath } = useContext(MenuListSetterContext)

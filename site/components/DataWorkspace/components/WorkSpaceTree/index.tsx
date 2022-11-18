@@ -1,9 +1,9 @@
 import { FC, useMemo } from "react"
 import { omit } from "@illa-design/system"
-import { PanelBar } from "@/components/PanelBar"
+import { PanelBar } from "@components/PanelBar"
 import { WorkSpaceTreeProps } from "./interface"
 import { applyTreeContainerStyle } from "./style"
-import { WorkSpaceTreeItem } from "@/components/DataWorkspace/components/WorkSpaceTreeItem"
+import { WorkSpaceTreeItem } from "@components/DataWorkspace/components/WorkSpaceTreeItem"
 
 const hiddenFields = ["displayName", "userId"]
 

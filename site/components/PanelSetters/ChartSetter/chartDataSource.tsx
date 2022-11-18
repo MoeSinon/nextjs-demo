@@ -1,14 +1,14 @@
 import { FC, useCallback, useMemo } from "react"
-import { ChartDataSourceSetterProps } from "@/components/PanelSetters/ChartSetter/interface"
-import { BaseDynamicSelect } from "@/components/PanelSetters/SelectSetter/baseDynamicSelect"
+import { ChartDataSourceSetterProps } from "@components/PanelSetters/ChartSetter/interface"
+import { BaseDynamicSelect } from "@components/PanelSetters/SelectSetter/baseDynamicSelect"
 import { useSelector } from "react-redux"
-import { getActionList } from "@/redux/currentApp/action/actionSelector"
-import { searchDSLByDisplayName } from "@/redux/currentApp/editor/components/componentsSelector"
-import { RootState } from "@/store/store"
+import { getActionList } from "@redux/currentApp/action/actionSelector"
+import { searchDSLByDisplayName } from "@redux/currentApp/editor/components/componentsSelector"
+import { RootState } from "@store/store"
 import { debounce, get } from "lodash"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
-import { getExecutionError } from "@/redux/currentApp/executionTree/executionSelector"
-import { publicPaddingStyle } from "@/components/InspectPanel/style"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
+import { getExecutionError } from "@redux/currentApp/executionTree/executionSelector"
+import { publicPaddingStyle } from "@components/InspectPanel/style"
 
 export const ChartDataSourceSetter: FC<ChartDataSourceSetterProps> = (
   props,

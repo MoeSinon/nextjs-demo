@@ -9,7 +9,7 @@ import {
 import {
   ScaleSquareProps,
   ScaleSquareType,
-} from "@/components/ScaleSquare/interface"
+} from "@components/ScaleSquare/interface"
 import {
   applyBarHandlerStyle,
   applyBarPointerStyle,
@@ -17,42 +17,42 @@ import {
   applyRNDWrapperStyle,
   applySquarePointerStyle,
   applyWrapperPendingStyle,
-} from "@/components/ScaleSquare/style"
-import { TransformWidgetWrapper } from "@/widgetLibrary/PublicSector/TransformWidgetWrapper"
+} from "@components/ScaleSquare/style"
+import { TransformWidgetWrapper } from "@widgetLibrarys/PublicSector/TransformWidgetWrapper"
 import { useDispatch, useSelector } from "react-redux"
-import { configActions } from "@/redux/config/configSlice"
+import { configActions } from "@redux/config/configSlice"
 import { globalColor, illaPrefix } from "@illa-design/theme"
 import { Dropdown, DropList } from "@illa-design/dropdown"
 import { useTranslation } from "next-i18next"
 import {
   getExecutionError,
   getExecutionResult,
-} from "@/redux/currentApp/executionTree/executionSelector"
+} from "@redux/currentApp/executionTree/executionSelector"
 import {
   getIllaMode,
   getSelectedComponents,
   isShowDot,
-} from "@/redux/config/configSelector"
-import { ShortCutContext } from "@/utils/shortcut/shortcutProvider"
+} from "@redux/config/configSelector"
+import { ShortCutContext } from "@utils/shortcut/shortcutProvider"
 import { Rnd, RndResizeCallback, RndResizeStartCallback } from "react-rnd"
-import { MoveBar } from "@/components/ScaleSquare/moveBar"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
+import { MoveBar } from "@components/ScaleSquare/moveBar"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
 import { useDrag } from "react-dnd"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
 import {
   DragCollectedInfo,
   DragInfo,
   DropResultInfo,
-} from "@/components/DotPanel/interface"
-import { endDrag, startDrag } from "@/utils/drag/drag"
+} from "@components/DotPanel/interface"
+import { endDrag, startDrag } from "@utils/drag/drag"
 import { cloneDeep, get, throttle } from "lodash"
-import { getReflowResult } from "@/components/DotPanel/calc"
-import { CopyManager } from "@/utils/copyManager"
-import { dragPreviewStyle } from "@/components/ComponentPanel/style"
-import { widgetBuilder } from "@/widgetLibrary/widgetBuilder"
-import { RESIZE_DIRECTION } from "@/widgetLibrary/interface"
-import store, { RootState } from "@/store/store"
-import { getFlattenArrayComponentNodes } from "@/redux/currentApp/editor/components/componentsSelector"
+import { getReflowResult } from "@components/DotPanel/calc"
+import { CopyManager } from "@utils/copyManager"
+import { dragPreviewStyle } from "@components/ComponentPanel/style"
+import { widgetBuilder } from "@widgetLibrarys/widgetBuilder"
+import { RESIZE_DIRECTION } from "@widgetLibrarys/interface"
+import store, { RootState } from "@store/store"
+import { getFlattenArrayComponentNodes } from "@redux/currentApp/editor/components/componentsSelector"
 
 const { Item } = DropList
 

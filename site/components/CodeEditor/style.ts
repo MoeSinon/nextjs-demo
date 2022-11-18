@@ -3,7 +3,7 @@ import chroma from "chroma-js"
 import { css, SerializedStyles } from "@emotion/react"
 import { globalColor, illaPrefix } from "@illa-design/theme"
 import { EditorInputState } from "./interface"
-import { ternStyle } from "@/components/CodeEditor/TernSever/style"
+import { ternStyle } from "@components/CodeEditor/TernSever/style"
 
 export const codemirrorStyle = css`
   .CodeMirror {
@@ -16,14 +16,14 @@ export const codemirrorStyle = css`
 
   .CodeMirror-selected {
     background: ${chroma(globalColor(`--${illaPrefix}-techPurple-01`))
-      .alpha(0.12)
-      .hex()};
+    .alpha(0.12)
+    .hex()};
   }
 
   .CodeMirror-focused .CodeMirror-selected {
     background: ${chroma(globalColor(`--${illaPrefix}-techPurple-01`))
-      .alpha(0.12)
-      .hex()};
+    .alpha(0.12)
+    .hex()};
   }
 
   .CodeMirror-crosshair {
@@ -43,16 +43,16 @@ export const codemirrorStyle = css`
   .CodeMirror-line > span::selection,
   .CodeMirror-line > span > span::selection {
     background: ${chroma(globalColor(`--${illaPrefix}-techPurple-01`))
-      .alpha(0.12)
-      .hex()};
+    .alpha(0.12)
+    .hex()};
   }
 
   .CodeMirror-line::-moz-selection,
   .CodeMirror-line > span::-moz-selection,
   .CodeMirror-line > span > span::-moz-selection {
     background: ${chroma(globalColor(`--${illaPrefix}-techPurple-01`))
-      .alpha(0.12)
-      .hex()};
+    .alpha(0.12)
+    .hex()};
   }
 
   ${ternStyle}
@@ -87,15 +87,15 @@ export const codemirrorStyle = css`
 
   .cm-default .cm-illa-expression {
     background: ${chroma(globalColor(`--${illaPrefix}-green-03`))
-      .alpha(0.08)
-      .hex()};
+    .alpha(0.08)
+    .hex()};
     color: ${globalColor(`--${illaPrefix}-green-03`)};
   }
 
   .cm-error .cm-illa-expression {
     background: ${chroma(globalColor(`--${illaPrefix}-red-03`))
-      .alpha(0.08)
-      .hex()};
+    .alpha(0.08)
+    .hex()};
     color: ${globalColor(`--${illaPrefix}-red-03`)};
   }
 `
@@ -120,8 +120,8 @@ export function applyCodeEditorStyle(
       border-color: ${globalColor(`--${illaPrefix}-${stateColor}-03`)};
       box-shadow: 0 0 8px 0
         ${chroma(globalColor(`--${illaPrefix}-${stateColor}-01`))
-          .alpha(0.15)
-          .hex()};
+        .alpha(0.15)
+        .hex()};
       z-index: 1;
     `
   } else if (inputState.error) {

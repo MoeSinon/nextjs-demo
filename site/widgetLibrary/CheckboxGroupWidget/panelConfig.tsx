@@ -1,9 +1,9 @@
-import { PanelConfig } from "@/components/InspectPanel/interface"
+import { PanelConfig } from "@components/InspectPanel/interface"
 import { HorizontalEndIcon, HorizontalStartIcon } from "@illa-design/icon"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
-import { generatorEventHandlerConfig } from "@/widgetLibrary/PublicSector/utils/generatorEventHandlerConfig"
-import { CHECK_BOX_GROUP_EVENT_HANDLER_CONFIG } from "@/widgetLibrary/CheckboxGroupWidget/eventHandlerConfig"
+import { generatorEventHandlerConfig } from "@widgetLibrarys/PublicSector/utils/generatorEventHandlerConfig"
+import { CHECK_BOX_GROUP_EVENT_HANDLER_CONFIG } from "@widgetLibrarys/CheckboxGroupWidget/eventHandlerConfig"
 const { t } = useTranslation();
 
 const baseWidgetName = "checkboxGroup"

@@ -3,8 +3,8 @@ import { ActionList } from "./ActionList"
 import { ActionPanel } from "./ActionPanel"
 import { applyActionEditorStyle, contentContainerStyle } from "./styles"
 import { Divider } from "@illa-design/divider"
-import { DragBar } from "@/components/Actions/DragBar"
-import { FocusManager } from "@/utils/focusManager"
+import { DragBar } from "@components/Actions/DragBar"
+import { FocusManager } from "@utils/focusManager"
 
 const ActionEditorDefaultHeight = 300
 

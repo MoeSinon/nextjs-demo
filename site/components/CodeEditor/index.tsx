@@ -15,20 +15,20 @@ import "./hinter"
 import "./lintHelper"
 import { BaseTern, TernServer } from "./TernSever"
 import { Trigger } from "@illa-design/trigger"
-import { evaluateDynamicString } from "@/utils/evaluateDynamicString"
+import { evaluateDynamicString } from "@utils/evaluateDynamicString"
 import { CodePreview } from "./CodePreview"
 import { CodeEditorProps, EditorModes, ResultPreview } from "./interface"
 import { applyCodeEditorStyle, codemirrorStyle } from "./style"
 import { isCloseKey, isExpectType } from "./utils"
-import { GLOBAL_DATA_CONTEXT } from "@/pages/App/context/globalDataProvider"
+import { GLOBAL_DATA_CONTEXT } from "@pages/App/context/globalDataProvider"
 import { useSelector } from "react-redux"
-import { getLanguageValue } from "@/redux/builderInfo/builderInfoSelector"
+import { getLanguageValue } from "@redux/builderInfo/builderInfoSelector"
 import {
   getExecutionError,
   getExecutionResult,
-} from "@/redux/currentApp/executionTree/executionSelector"
-import { clearMarks, lineMarker } from "@/components/CodeEditor/lintHelper"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+} from "@redux/currentApp/executionTree/executionSelector"
+import { clearMarks, lineMarker } from "@components/CodeEditor/lintHelper"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 
 export const CodeEditor = forwardRef<HTMLDivElement, CodeEditorProps>(
   (props, ref) => {

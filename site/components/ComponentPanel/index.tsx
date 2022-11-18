@@ -9,7 +9,7 @@ import { ComponentPanelProps, ComponentSessionProps } from "./interface"
 import { ComponentSession } from "./ComponentSession"
 import { getMatchComponent } from "./utils"
 import { EmptySearchResult } from "./Empty"
-import { buildComponentList } from "@/widgetLibrary/componentListBuilder"
+import { buildComponentList } from "@widgetLibrarys/componentListBuilder"
 import { useTranslation } from "next-i18next"
 
 export const ComponentPanel: FC<ComponentPanelProps> = (props) => {

@@ -1,7 +1,7 @@
 import { FC } from "react"
-import { ErrorPage } from "@/components/layouts/errorPage"
+import { ErrorPage } from "@components/layouts/errorPage"
 import { Result404Icon } from "@illa-design/icon"
-import { buttonStyle, iconStyle } from "@/pages/Setting/Others/style"
+import { buttonStyle, iconStyle } from "@pages/Setting/Others/style"
 import { Button } from "@illa-design/button"
 import { useRouter } from 'next/router'
 import { useTranslation } from "next-i18next"

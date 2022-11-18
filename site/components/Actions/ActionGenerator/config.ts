@@ -1,4 +1,4 @@
-import { ActionType } from "@/redux/currentApp/action/actionState"
+import { ActionType } from "@redux/currentApp/action/actionState"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();
 

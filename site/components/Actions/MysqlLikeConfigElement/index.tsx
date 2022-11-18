@@ -24,12 +24,12 @@ import { Controller, useForm } from "react-hook-form"
 import { Button, ButtonGroup } from "@illa-design/button"
 import { PaginationPreIcon } from "@illa-design/icon"
 import { useDispatch, useSelector } from "react-redux"
-import { RootState } from "@/store/store"
-import { generateSSLConfig, Resource } from "@/redux/resource/resourceState"
-import { Api } from "@//api/base"
-import { resourceActions } from "@/redux/resource/resourceSlice"
+import { RootState } from "@store/store"
+import { generateSSLConfig, Resource } from "@redux/resource/resourceState"
+import { Api } from "@api/base"
+import { resourceActions } from "@redux/resource/resourceSlice"
 import { Message } from "@illa-design/message"
-import { MysqlLikeResource } from "@/redux/resource/mysqlLikeResource"
+import { MysqlLikeResource } from "@redux/resource/mysqlLikeResource"
 
 /**
  * include mariadb or tidb

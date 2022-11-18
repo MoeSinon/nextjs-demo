@@ -1,5 +1,5 @@
 import { ComponentSessionProps } from "./interface"
-import { sessionTypeMapSessionNameKey } from "@/widgetLibrary/componentListBuilder"
+import { sessionTypeMapSessionNameKey } from "@widgetLibrarys/componentListBuilder"
 export function getMatchComponent(
   value?: string,
   options?: ComponentSessionProps[],

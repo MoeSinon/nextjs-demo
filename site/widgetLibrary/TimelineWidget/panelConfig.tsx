@@ -1,5 +1,5 @@
-import { PanelConfig } from "@/components/InspectPanel/interface"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { PanelConfig } from "@components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();
 const baseWidgetName = "timeline"

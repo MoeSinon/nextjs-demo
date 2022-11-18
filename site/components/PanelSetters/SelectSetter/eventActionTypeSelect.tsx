@@ -2,10 +2,10 @@ import { FC, useMemo } from "react"
 import { Select } from "@illa-design/select"
 import { get } from "lodash"
 import { BaseSelectSetterProps } from "./interface"
-import { applyBaseSelectWrapperStyle } from "@/components/PanelSetters/SelectSetter/style"
+import { applyBaseSelectWrapperStyle } from "@components/PanelSetters/SelectSetter/style"
 import { useSelector } from "react-redux"
-import { getWidgetExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
-import { getCachedAction } from "@/redux/config/configSelector"
+import { getWidgetExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
+import { getCachedAction } from "@redux/config/configSelector"
 
 export const EventActionTypeSelect: FC<BaseSelectSetterProps> = (props) => {
   const {

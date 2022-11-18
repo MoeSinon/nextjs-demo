@@ -1,13 +1,13 @@
 import { FC, useMemo } from "react"
 import { useSelector } from "react-redux"
-import { getIllaMode } from "@/redux/config/configSelector"
-import { getCanvas } from "@/redux/currentApp/editor/components/componentsSelector"
+import { getIllaMode } from "@redux/config/configSelector"
+import { getCanvas } from "@redux/currentApp/editor/components/componentsSelector"
 import {
   PageNode,
   RootComponentNode,
-} from "@/redux/currentApp/editor/components/componentsState"
+} from "@redux/currentApp/editor/components/componentsState"
 import { RenderPage } from "./renderPage"
-import { getRootNodeExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { getRootNodeExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 import { useRouter } from 'next/router'
 
 export const DotPanel: FC = () => {

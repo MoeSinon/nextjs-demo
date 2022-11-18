@@ -5,7 +5,7 @@ import {
   ExecutionState,
   setExecutionResultPayload,
   UpdateExecutionByDisplayNamePayload,
-} from "@/redux/currentApp/executionTree/executionState"
+} from "@redux/currentApp/executionTree/executionState"
 import { applyChange } from "deep-diff"
 
 export const setDependenciesReducer: CaseReducer<

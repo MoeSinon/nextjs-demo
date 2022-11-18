@@ -12,10 +12,10 @@ import {
   successIconStyle,
   successResultWrapperStyle,
 } from "./style"
-import { CodeEditor } from "@/components/CodeEditor"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
-import { ApiError } from "@//api/base"
-import { DragBar } from "@/components/Actions/DragBar"
+import { CodeEditor } from "@components/CodeEditor"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
+import { ApiError } from "@api/base"
+import { DragBar } from "@components/Actions/DragBar"
 import { useTranslation } from "next-i18next"
 
 interface ActionResultProps {

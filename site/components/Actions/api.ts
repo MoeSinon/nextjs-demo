@@ -1,16 +1,16 @@
 import {
   ActionContent,
   ActionItem,
-} from "@/redux/currentApp/action/actionState"
+} from "@redux/currentApp/action/actionState"
 import { omit } from "@illa-design/system"
-import { DisplayNameGenerator } from "@/utils/generators/generateDisplayName"
-import { Api } from "@//api/base"
+import { DisplayNameGenerator } from "@utils/generators/generateDisplayName"
+import { Api } from "@api/base"
 import { Message } from "@illa-design/message"
-import {useTranslation} from "next-i18next"
-import { actionActions } from "@/redux/currentApp/action/actionSlice"
-import { configActions } from "@/redux/config/configSlice"
-import store from "@/store/store"
-import { getAppId } from "@/redux/currentApp/appInfo/appInfoSelector"
+import { useTranslation } from "next-i18next"
+import { actionActions } from "@redux/currentApp/action/actionSlice"
+import { configActions } from "@redux/config/configSlice"
+import store from "@store/store"
+import { getAppId } from "@redux/currentApp/appInfo/appInfoSelector"
 const { t } = useTranslation()
 
 function getBaseActionUrl() {

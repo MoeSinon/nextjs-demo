@@ -1,13 +1,13 @@
 import { FC } from "react"
-import { DynamicIcon } from "@/components/PanelSetters/PublicComponent/DynamicIcon"
-import { PanelLabel } from "@/components/InspectPanel/label"
+import { DynamicIcon } from "@components/PanelSetters/PublicComponent/DynamicIcon"
+import { PanelLabel } from "@components/InspectPanel/label"
 import {
   dynamicSelectHeaderStyle,
   dynamicSelectSetterStyle,
-} from "@/components/PanelSetters/SelectSetter/style"
-import { BaseDynamicSelectSetterProps } from "@/components/PanelSetters/SelectSetter/interface"
+} from "@components/PanelSetters/SelectSetter/style"
+import { BaseDynamicSelectSetterProps } from "@components/PanelSetters/SelectSetter/interface"
 import { Select } from "@illa-design/select"
-import { CodeEditor } from "@/components/CodeEditor"
+import { CodeEditor } from "@components/CodeEditor"
 import { css } from "@emotion/react"
 
 export const BaseDynamicSelect: FC<BaseDynamicSelectSetterProps> = (props) => {

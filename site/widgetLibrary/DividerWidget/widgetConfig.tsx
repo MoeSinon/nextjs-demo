@@ -1,5 +1,5 @@
-import { ReactComponent as DividerWidgetIcon } from "@/assets/widgetCover/divider.svg"
-import { WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as DividerWidgetIcon } from "@assets/widgetCover/divider.svg"
+import { WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();
 

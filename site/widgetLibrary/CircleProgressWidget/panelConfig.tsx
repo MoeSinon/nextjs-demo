@@ -3,10 +3,10 @@ import {
   HorizontalEndIcon,
   HorizontalStartIcon,
 } from "@illa-design/icon"
-import { PanelConfig } from "@/components/InspectPanel/interface"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { PanelConfig } from "@components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
-import { ReactComponent as StrokeWidthIcon } from "@/assets/stroke-width-icon.svg"
+import { ReactComponent as StrokeWidthIcon } from "@assets/stroke-width-icon.svg"
 const { t } = useTranslation();
 
 const baseWidgetName = "circle-progress"

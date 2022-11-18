@@ -20,21 +20,21 @@ import {
   DeleteSectionViewPayload,
   SectionViewShape,
   UpdateSectionViewPropsPayload,
-} from "@/redux/currentApp/editor/components/componentsState"
+} from "@redux/currentApp/editor/components/componentsState"
 import { cloneDeep } from "lodash"
-import { searchDsl } from "@/redux/currentApp/editor/components/componentsSelector"
-import { getNewWidgetPropsByUpdateSlice } from "@/utils/componentNode"
-import { isObject } from "@/utils/typeHelper"
+import { searchDsl } from "@redux/currentApp/editor/components/componentsSelector"
+import { getNewWidgetPropsByUpdateSlice } from "@utils/componentNode"
+import { isObject } from "@utils/typeHelper"
 import {
   UpdateComponentContainerPayload,
   UpdateComponentsShapePayload,
-} from "@/redux/currentApp/editor/components/componentsPayload"
-import { DisplayNameGenerator } from "@/utils/generators/generateDisplayName"
+} from "@redux/currentApp/editor/components/componentsPayload"
+import { DisplayNameGenerator } from "@utils/generators/generateDisplayName"
 import {
   generateSectionConfig,
   generateSectionContainerConfig,
   layoutValueMapGenerateConfig,
-} from "@/utils/generators/generatePageOrSectionConfig"
+} from "@utils/generators/generatePageOrSectionConfig"
 
 export const updateComponentReducer: CaseReducer<
   ComponentsState,
@@ -160,7 +160,7 @@ export const deletePageNodeReducer: CaseReducer<
   if (
     indexOfSortedKey !== 0 &&
     parentNode.props.pageSortedKey[parentNode.props.currentPageIndex] ===
-      displayName
+    displayName
   ) {
     parentNode.props.currentPageIndex = 0
   }

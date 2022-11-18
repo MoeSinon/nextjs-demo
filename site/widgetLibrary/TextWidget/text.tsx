@@ -5,7 +5,7 @@ import { applyAlignStyle, fullWidthAndFullHeightStyle } from "./style"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import { Link } from "@illa-design/link"
-import { TooltipWrapper } from "@/widgetLibrary/PublicSector/TooltipWrapper"
+import { TooltipWrapper } from "@widgetLibrarys/PublicSector/TooltipWrapper"
 
 export const Text: FC<TextProps> = (props) => {
   const {

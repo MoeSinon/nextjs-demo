@@ -4,7 +4,7 @@ import {
   applyConfigItemLabelText,
   configItem,
   labelContainer,
-} from "@/components/Actions/RestApiConfigElement/style"
+} from "@components/Actions/RestApiConfigElement/style"
 import { getColor } from "@illa-design/theme"
 import { Controller } from "react-hook-form"
 import { Input, Password } from "@illa-design/input"

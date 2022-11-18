@@ -1,15 +1,15 @@
 import { FC, useCallback, useContext } from "react"
 import { useSelector } from "react-redux"
-import { getSelectedComponents } from "@/redux/config/configSelector"
+import { getSelectedComponents } from "@redux/config/configSelector"
 import {
   formContentItemStyle,
   formContentStyle,
   formHeaderStyle,
   multiSelectedPanelWrapper,
-} from "@/components/InspectPanel/style"
+} from "@components/InspectPanel/style"
 import { Button } from "@illa-design/button"
 import { useTranslation } from "next-i18next"
-import { ShortCutContext } from "@/utils/shortcut/shortcutProvider"
+import { ShortCutContext } from "@utils/shortcut/shortcutProvider"
 
 export const MultiSelectedPanel: FC = () => {
   const selectedComponents = useSelector(getSelectedComponents)

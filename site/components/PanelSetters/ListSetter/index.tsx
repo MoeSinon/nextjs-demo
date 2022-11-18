@@ -1,8 +1,8 @@
 import { FC, memo, useCallback, useMemo } from "react"
 import { get, isEqual, set } from "lodash"
-import { PanelLabel } from "@/components/InspectPanel/label"
+import { PanelLabel } from "@components/InspectPanel/label"
 import { ListSetterProps } from "./interface"
-import { renderFieldAndLabel } from "@/components/InspectPanel/utils/fieldFactory"
+import { renderFieldAndLabel } from "@components/InspectPanel/utils/fieldFactory"
 import {
   labelStyle,
   listSetterWrapperStyle,

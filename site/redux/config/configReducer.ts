@@ -3,11 +3,11 @@ import {
   ConfigInitialState,
   ConfigState,
   IllaMode,
-} from "@/redux/config/configState"
+} from "@redux/config/configState"
 import {
   ActionContent,
   ActionItem,
-} from "@/redux/currentApp/action/actionState"
+} from "@redux/currentApp/action/actionState"
 import { UpdateCanvasShapePayload } from "./configPayload"
 
 export const updateLeftPanel: CaseReducer<

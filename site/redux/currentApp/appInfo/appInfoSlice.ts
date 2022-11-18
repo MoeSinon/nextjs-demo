@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit"
 import { SliceCaseReducers } from "@reduxjs/toolkit/src/createSlice"
-import { updateAppInfoReducer } from "@/redux/currentApp/appInfo/appInfoReducer"
+import { updateAppInfoReducer } from "@redux/currentApp/appInfo/appInfoReducer"
 import {
   DashboardApp,
   DashboardAppInitialState,
-} from "@/redux/dashboard/apps/dashboardAppState"
+} from "@redux/dashboard/apps/dashboardAppState"
 
 const appInfoSlice = createSlice<
   DashboardApp,

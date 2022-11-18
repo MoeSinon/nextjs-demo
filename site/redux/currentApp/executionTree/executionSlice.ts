@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { executionInitialState } from "@/redux/currentApp/executionTree/executionState"
+import { executionInitialState } from "@redux/currentApp/executionTree/executionState"
 import {
   setDependenciesReducer,
   setExecutionDebuggerDataReducer,
@@ -8,7 +8,7 @@ import {
   startExecutionReducer,
   updateExecutionByDisplayNameReducer,
   updateExecutionByMultiDisplayNameReducer,
-} from "@/redux/currentApp/executionTree/executionReducer"
+} from "@redux/currentApp/executionTree/executionReducer"
 
 const executionSlice = createSlice({
   name: "execution",

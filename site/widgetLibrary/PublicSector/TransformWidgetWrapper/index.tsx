@@ -1,30 +1,30 @@
 import { FC, memo, useCallback, useContext, useMemo } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { cloneDeep, get } from "lodash"
-import { widgetBuilder } from "@/widgetLibrary/widgetBuilder"
-import { TransformWidgetProps } from "@/widgetLibrary/PublicSector/TransformWidgetWrapper/interface"
+import { widgetBuilder } from "@widgetLibrarys/widgetBuilder"
+import { TransformWidgetProps } from "@widgetLibrarys/PublicSector/TransformWidgetWrapper/interface"
 import {
   GLOBAL_DATA_CONTEXT,
   BUILDER_CALC_CONTEXT,
-} from "@/pages/App/context/globalDataProvider"
-import { EventsInProps } from "@/widgetLibrary/interface"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
-import { executionActions } from "@/redux/currentApp/executionTree/executionSlice"
-import { runEventHandler } from "@/utils/eventHandlerHelper"
-import { applyWrapperStylesStyle } from "@/widgetLibrary/PublicSector/TransformWidgetWrapper/style"
-import { RootState } from "@/store/store"
+} from "@pages/App/context/globalDataProvider"
+import { EventsInProps } from "@widgetLibrarys/interface"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
+import { executionActions } from "@redux/currentApp/executionTree/executionSlice"
+import { runEventHandler } from "@utils/eventHandlerHelper"
+import { applyWrapperStylesStyle } from "@widgetLibrarys/PublicSector/TransformWidgetWrapper/style"
+import { RootState } from "@store/store"
 import {
   getCanvas,
   searchDsl,
-} from "@/redux/currentApp/editor/components/componentsSelector"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
+} from "@redux/currentApp/editor/components/componentsSelector"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
 import {
   applyEffectMapToComponentNodes,
   getReflowResult,
   getNearComponentNodes,
-} from "@/components/DotPanel/calc"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { isObject } from "@/utils/typeHelper"
+} from "@components/DotPanel/calc"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { isObject } from "@utils/typeHelper"
 
 export const getEventScripts = (events: EventsInProps[], eventType: string) => {
   return events.filter((event) => {

@@ -1,19 +1,19 @@
 import { FC, HTMLAttributes, MouseEvent, useCallback } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useTranslation } from "next-i18next"
-import { configActions } from "@/redux/config/configSlice"
+import { configActions } from "@redux/config/configSlice"
 import {
   getActionExecutionResultArray,
   getWidgetExecutionResultArray,
-} from "@/redux/currentApp/executionTree/executionSelector"
+} from "@redux/currentApp/executionTree/executionSelector"
 import {
   getSelectedAction,
   getSelectedComponents,
-} from "@/redux/config/configSelector"
-import { WorkSpaceTree } from "@/components/DataWorkspace/components/WorkSpaceTree"
-import { getActionList } from "@/redux/currentApp/action/actionSelector"
-import { getGlobalInfoExecutionResult } from "@/redux/currentUser/currentUserSelector"
-import { FocusManager } from "@/utils/focusManager"
+} from "@redux/config/configSelector"
+import { WorkSpaceTree } from "@components/DataWorkspace/components/WorkSpaceTree"
+import { getActionList } from "@redux/currentApp/action/actionSelector"
+import { getGlobalInfoExecutionResult } from "@redux/currentUser/currentUserSelector"
+import { FocusManager } from "@utils/focusManager"
 import { cloneDeep } from "lodash"
 import { PageSpaceTree } from "./components/PageSpaceTree"
 

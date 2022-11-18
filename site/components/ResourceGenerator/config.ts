@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next"
-import { ResourceType } from "@/redux/resource/resourceState"
+import { ResourceType } from "@redux/resource/resourceState"
 const { t } = useTranslation();
 
 export interface ResourceDataItem {

@@ -1,4 +1,4 @@
-import { ResourceType } from "@/redux/resource/resourceState"
+import { ResourceType } from "@redux/resource/resourceState"
 import { ResourceDataItem } from "../config"
 
 export interface ResourceCardSelectorProps extends ResourceDataItem {

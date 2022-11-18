@@ -3,7 +3,7 @@ import {
   PageNode,
   SectionNode,
   SECTION_POSITION,
-} from "@/redux/currentApp/editor/components/componentsState"
+} from "@redux/currentApp/editor/components/componentsState"
 import { RenderPageProps } from "./interface"
 import {
   LEFT_MIN_WIDTH,
@@ -16,8 +16,8 @@ import {
 } from "./renderSection"
 import useMeasure from "react-use-measure"
 import { useDispatch, useSelector } from "react-redux"
-import { getCanvasShape, getIllaMode } from "@/redux/config/configSelector"
-import { configActions } from "@/redux/config/configSlice"
+import { getCanvasShape, getIllaMode } from "@redux/config/configSelector"
+import { configActions } from "@redux/config/configSlice"
 
 const getShowNameMapSectionNode = (pageNode: PageNode) => {
   const { childrenNode = [] } = pageNode
@@ -135,8 +135,8 @@ export const RenderPage: FC<RenderPageProps> = (props) => {
       ? isLeftFold
         ? 32
         : leftWidthPX <= LEFT_MIN_WIDTH
-        ? LEFT_MIN_WIDTH
-        : leftWidthPX
+          ? LEFT_MIN_WIDTH
+          : leftWidthPX
       : 0
   }, [bounds.width, canvasSize, hasLeft, isLeftFold, leftWidth])
 
@@ -150,8 +150,8 @@ export const RenderPage: FC<RenderPageProps> = (props) => {
       ? isRightFold
         ? 32
         : rightWidthPX <= RIGHT_MIN_WIDTH
-        ? RIGHT_MIN_WIDTH
-        : rightWidthPX
+          ? RIGHT_MIN_WIDTH
+          : rightWidthPX
       : 0
   }, [bounds.width, canvasSize, hasRight, isRightFold, rightWidth])
 

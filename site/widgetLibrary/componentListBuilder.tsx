@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next"
 import {
   ComponentSessionProps,
   NewTypeMapComponent,
-} from "@/components/ComponentPanel/interface"
+} from "@components/ComponentPanel/interface"
 const { t } = useTranslation();
 
 export type SessionType = keyof typeof sessionTypeMapSessionNameKey

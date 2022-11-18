@@ -5,13 +5,13 @@ import {
   tabPrefixStyle,
   tabPreTextStyle,
   tabSuffixStyle,
-} from "@/pages/Setting/style"
+} from "@pages/Setting/style"
 import { PreIcon } from "@illa-design/icon"
 import { css } from "@emotion/react"
 import { useRouter } from 'next/router'
 // import { userouter.push, Outlet, useLocation } from "react-router-dom"
 import { useTranslation } from "next-i18next"
-import { SettingLayout } from "@/pages/Setting/Components/Layout"
+import { SettingLayout } from "@pages/Setting/Components/Layout"
 
 export default function SettingTabNavBarLayout({ children }: React.PropsWithChildren<{}>) {
   const router = useRouter()
@@ -85,7 +85,7 @@ export default function SettingTabNavBarLayout({ children }: React.PropsWithChil
         ))}
       </Tabs>
       <SettingLayout>
-        { children }
+        {children}
       </SettingLayout>
     </>
   )

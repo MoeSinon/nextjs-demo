@@ -1,8 +1,8 @@
-import { PanelConfig } from "@/components/InspectPanel/interface"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { PanelConfig } from "@components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
-import { generatorEventHandlerConfig } from "@/widgetLibrary/PublicSector/utils/generatorEventHandlerConfig"
-import { BUTTON_EVENT_HANDLER_CONFIG } from "@/widgetLibrary/ButtonWidget/eventHandlerConfig"
+import { generatorEventHandlerConfig } from "@widgetLibrarys/PublicSector/utils/generatorEventHandlerConfig"
+import { BUTTON_EVENT_HANDLER_CONFIG } from "@widgetLibrarys/ButtonWidget/eventHandlerConfig"
 const { t } = useTranslation();
 
 const baseWidgetName = "button"

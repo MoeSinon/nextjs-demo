@@ -1,7 +1,7 @@
 import {
   ActionContent,
   ActionItem,
-} from "@/redux/currentApp/action/actionState"
+} from "@redux/currentApp/action/actionState"
 
 export type IllaMode = "preview" | "edit" | "production"
 

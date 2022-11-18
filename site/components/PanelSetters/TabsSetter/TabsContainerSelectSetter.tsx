@@ -1,9 +1,9 @@
 import { FC, useCallback, useMemo } from "react"
-import { ChartDataSourceSetterProps } from "@/components/PanelSetters/ChartSetter/interface"
+import { ChartDataSourceSetterProps } from "@components/PanelSetters/ChartSetter/interface"
 import { useSelector } from "react-redux"
-import { getAllContainerWidget } from "@/redux/currentApp/editor/components/componentsSelector"
+import { getAllContainerWidget } from "@redux/currentApp/editor/components/componentsSelector"
 import { get } from "lodash"
-import { BaseSelectSetter } from "@/components/PanelSetters/SelectSetter/baseSelect"
+import { BaseSelectSetter } from "@components/PanelSetters/SelectSetter/baseSelect"
 
 export const TabsContainerSelectSetter: FC<ChartDataSourceSetterProps> = (
   props,

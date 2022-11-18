@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { ResourceChoose } from "@/components/Actions/ActionPanel/ResourceChoose"
+import { ResourceChoose } from "@components/Actions/ActionPanel/ResourceChoose"
 import {
   restapiItemInputStyle,
   restapiItemLabelStyle,
@@ -10,29 +10,29 @@ import {
 import { useTranslation } from "next-i18next"
 import { Select } from "@illa-design/select"
 import { useDispatch, useSelector } from "react-redux"
-import { CodeEditor } from "@/components/CodeEditor"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { CodeEditor } from "@components/CodeEditor"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { Input } from "@illa-design/input"
-import { TransformerComponent } from "@/components/Actions/ActionPanel/TransformerComponent"
-import { RecordEditor } from "@/components/Actions/ActionPanel/RecordEditor"
-import { BodyEditor } from "@/components/Actions/ActionPanel/RestApiPanel/BodyEditor"
-import { ActionEventHandler } from "@/components/Actions/ActionPanel/ActionEventHandler"
+import { TransformerComponent } from "@components/Actions/ActionPanel/TransformerComponent"
+import { RecordEditor } from "@components/Actions/ActionPanel/RecordEditor"
+import { BodyEditor } from "@components/Actions/ActionPanel/RestApiPanel/BodyEditor"
+import { ActionEventHandler } from "@components/Actions/ActionPanel/ActionEventHandler"
 import {
   BodyContent,
   RestApiAction,
-} from "@/redux/currentApp/action/restapiAction"
-import { RootState } from "@/store/store"
-import { Resource } from "@/redux/resource/resourceState"
+} from "@redux/currentApp/action/restapiAction"
+import { RootState } from "@store/store"
+import { Resource } from "@redux/resource/resourceState"
 import {
   Params,
   RestApiAuth,
   RestApiResource,
-} from "@/redux/resource/restapiResource"
+} from "@redux/resource/restapiResource"
 import {
   getCachedAction,
   getSelectedAction,
-} from "@/redux/config/configSelector"
-import { configActions } from "@/redux/config/configSlice"
+} from "@redux/config/configSelector"
+import { configActions } from "@redux/config/configSlice"
 
 export const RestApiPanel: FC = () => {
   const { t } = useTranslation()

@@ -10,21 +10,21 @@ import { useTranslation } from "next-i18next"
 import { Dropdown, DropList } from "@illa-design/dropdown"
 import { globalColor, illaPrefix } from "@illa-design/theme"
 import { useDispatch, useSelector } from "react-redux"
-import { actionActions } from "@/redux/currentApp/action/actionSlice"
-import { Api } from "@//api/base"
-import { getAppInfo } from "@/redux/currentApp/appInfo/appInfoSelector"
+import { actionActions } from "@redux/currentApp/action/actionSlice"
+import { Api } from "@api/base"
+import { getAppInfo } from "@redux/currentApp/appInfo/appInfoSelector"
 import { Message } from "@illa-design/message"
 import { ActionTitleBarProps } from "./interface"
-import { EditableText } from "@/components/EditableText"
-import { runAction } from "@/components/Actions/ActionPanel/utils/runAction"
+import { EditableText } from "@components/EditableText"
+import { runAction } from "@components/Actions/ActionPanel/utils/runAction"
 import {
   getCachedAction,
   getSelectedAction,
-} from "@/redux/config/configSelector"
+} from "@redux/config/configSelector"
 import {
   onCopyActionItem,
   onDeleteActionItem,
-} from "@/components/Actions/api"
+} from "@components/Actions/api"
 
 const Item = DropList.Item
 export type RunMode = "save" | "run" | "save_and_run"

@@ -1,11 +1,11 @@
 import { FC, useCallback, useMemo } from "react"
 import { ListBody } from "./List/body"
-import { publicPaddingStyle } from "@/components/InspectPanel/style"
-import { generateNewEventItem } from "@/components/PanelSetters/EventHandlerSetter/utils"
-import { widgetBuilder } from "@/widgetLibrary/widgetBuilder"
-import { NewBaseEventHandlerSetterProps } from "@/components/PanelSetters/EventHandlerSetter/interface"
-import { BaseEventHandlerProvider } from "@/components/PanelSetters/EventHandlerSetter/context"
-import { AddActionLabel } from "@/components/PanelSetters/PublicComponent/Label/addActionLabel"
+import { publicPaddingStyle } from "@components/InspectPanel/style"
+import { generateNewEventItem } from "@components/PanelSetters/EventHandlerSetter/utils"
+import { widgetBuilder } from "@widgetLibrarys/widgetBuilder"
+import { NewBaseEventHandlerSetterProps } from "@components/PanelSetters/EventHandlerSetter/interface"
+import { BaseEventHandlerProvider } from "@components/PanelSetters/EventHandlerSetter/context"
+import { AddActionLabel } from "@components/PanelSetters/PublicComponent/Label/addActionLabel"
 
 export const EventHandlerSetter: FC<NewBaseEventHandlerSetterProps> = (
   props,

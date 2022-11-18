@@ -1,5 +1,5 @@
-import { ReactComponent as TimelineWidgetIcon } from "@/assets/widgetCover/timeline.svg"
-import { WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as TimelineWidgetIcon } from "@assets/widgetCover/timeline.svg"
+import { WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();
 export const TIMELINE_WIDGET_CONFIG: WidgetConfig = {

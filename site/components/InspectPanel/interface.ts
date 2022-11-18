@@ -1,5 +1,5 @@
-import { SetterType } from "@/components/PanelSetters"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { SetterType } from "@components/PanelSetters"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { ReactNode } from "react"
 
 export interface PanelHeaderActionProps {

@@ -1,13 +1,13 @@
 import { useTranslation } from 'next-i18next';
-import Alert from '@/components/ui/alert';
+import Alert from '@components/ui/alert';
 import { useAtom } from 'jotai';
 import { useOtpLogin, useSendOtpCode } from '@/framework/user';
-import { optAtom } from '@/components/otp/atom';
-import { useModalAction } from '@/components/ui/modal/modal.context';
-import Logo from '@/components/ui/logo';
-import PhoneNumberForm from '@/components/otp/phone-number-form';
-import OtpCodeForm from '@/components/otp/code-verify-form';
-import OtpRegisterForm from '@/components/otp/otp-register-form';
+import { optAtom } from '@components/otp/atom';
+import { useModalAction } from '@components/ui/modal/modal.context';
+import Logo from '@components/ui/logo';
+import PhoneNumberForm from '@components/otp/phone-number-form';
+import OtpCodeForm from '@components/otp/code-verify-form';
+import OtpRegisterForm from '@components/otp/otp-register-form';
 
 function OtpLogin() {
   const { t } = useTranslation('common');

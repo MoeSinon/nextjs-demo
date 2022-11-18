@@ -8,17 +8,17 @@ import {
   Signal,
   Target,
 } from "./interface"
-import store from "@/store/store"
+import store from "@store/store"
 import { AxiosRequestConfig } from "axios"
 import { Api } from "@/api/base"
-import { getLocalStorage } from "@/utils/storage"
+import { getLocalStorage } from "@utils/storage"
 import {
   ADD_DISPLAY_NAME,
   DisplayNameGenerator,
   REMOVE_DISPLAY_NAME,
   UPDATE_DISPLAY_NAME,
-} from "@/utils/generators/generateDisplayName"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
+} from "@utils/generators/generateDisplayName"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
 
 export function transformComponentReduxPayloadToWsPayload(
   componentNodes: ComponentNode[] | ComponentNode,

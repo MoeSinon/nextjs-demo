@@ -1,5 +1,5 @@
 import { CaseReducer, PayloadAction } from "@reduxjs/toolkit"
-import { BuilderInfo } from "@/redux/builderInfo/builderInfoState"
+import { BuilderInfo } from "@redux/builderInfo/builderInfoState"
 
 export const updateLanguageReducer: CaseReducer<
   BuilderInfo,

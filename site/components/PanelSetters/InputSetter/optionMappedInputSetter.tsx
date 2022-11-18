@@ -1,11 +1,11 @@
 import { FC } from "react"
 import { BaseInputSetterProps } from "./interface"
 import { applyInputSetterWrapperStyle } from "./style"
-import { CodeEditor } from "@/components/CodeEditor"
+import { CodeEditor } from "@components/CodeEditor"
 import {
   getNeedComputedValue,
   realInputValue,
-} from "@/utils/InspectHelper/selectWidgetHelper"
+} from "@utils/InspectHelper/selectWidgetHelper"
 
 function getPath(attrName?: string, widgetDisplayName?: string) {
   if (attrName && widgetDisplayName) {

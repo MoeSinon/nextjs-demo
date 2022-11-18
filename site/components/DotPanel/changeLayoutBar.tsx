@@ -10,7 +10,7 @@ import {
   changeLayoutTopBarWrapperStyle,
   changeLayoutVerticalBarStyle,
 } from "./style"
-import { ReactComponent as ChangeLayout } from "@/assets/change-layout.svg"
+import { ReactComponent as ChangeLayout } from "@assets/change-layout.svg"
 import { ChangeLayoutBarProps } from "./interface"
 
 export const ChangeLayoutTopBar: FC<ChangeLayoutBarProps> = (props) => {

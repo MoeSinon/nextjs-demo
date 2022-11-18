@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import {
   useSettingsQuery,
   useSubscribeToNewsletterMutation,
-} from '@//api/graphql/gql/settings.graphql';
+} from '@api/graphql/gql/settings.graphql';
 
 const useSettings() => {
   const { locale } = useRouter();

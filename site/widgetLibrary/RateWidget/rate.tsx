@@ -1,9 +1,9 @@
 import { FC, useEffect, useRef } from "react"
 import { Rate } from "@illa-design/rate"
 import { RateWidgetProps, WrappedRateProps } from "./interface"
-import { Label } from "@/widgetLibrary/PublicSector/Label"
-import { applyLabelAndComponentWrapperStyle } from "@/widgetLibrary/PublicSector/TransformWidgetWrapper/style"
-import { TooltipWrapper } from "@/widgetLibrary/PublicSector/TooltipWrapper"
+import { Label } from "@widgetLibrarys/PublicSector/Label"
+import { applyLabelAndComponentWrapperStyle } from "@widgetLibrarys/PublicSector/TransformWidgetWrapper/style"
+import { TooltipWrapper } from "@widgetLibrarys/PublicSector/TooltipWrapper"
 
 export const WrappedRate: FC<WrappedRateProps> = (props, ref) => {
   const {
@@ -76,8 +76,8 @@ export const RateWidget: FC<RateWidgetProps> = (props) => {
       clearValue: () => {
         handleUpdateDsl({ value: 0 })
       },
-      validate: () => {},
-      clearValidation: () => {},
+      validate: () => { },
+      clearValidation: () => { },
     })
     return () => {
       handleDeleteGlobalData(displayName)

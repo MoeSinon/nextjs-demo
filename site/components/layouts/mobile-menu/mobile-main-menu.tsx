@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
 import { Routes } from '@/config/routes';
 import { useTranslation } from 'next-i18next';
-import DrawerWrapper from '@/components/ui/drawer/drawer-wrapper';
+import DrawerWrapper from '@components/ui/drawer/drawer-wrapper';
 import { useAtom } from 'jotai';
-import { drawerAtom } from '@/store/store/drawer-atom';
+import { drawerAtom } from '@store/store/drawer-atom';
 
 const headerLinks = [
   { href: Routes.shops, label: 'nav-menu-shops' },

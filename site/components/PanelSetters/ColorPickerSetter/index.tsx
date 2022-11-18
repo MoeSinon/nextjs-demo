@@ -7,11 +7,11 @@ import {
   ButtonContentWrapperStyle,
   colorContentStyle,
   inListSetterWrapperStyle,
-} from "@/components/PanelSetters/ColorPickerSetter/style"
-import { colorSchemes } from "@/widgetLibrary/PublicSector/colorSchemeOptions"
+} from "@components/PanelSetters/ColorPickerSetter/style"
+import { colorSchemes } from "@widgetLibrarys/PublicSector/colorSchemeOptions"
 import { globalColor, illaPrefix } from "@illa-design/theme"
 import { hexToHsva } from "@uiw/color-convert/src"
-import { ColorPicker } from "@/components/ColorPicker"
+import { ColorPicker } from "@components/ColorPicker"
 
 export const ColorPickerSetter: FC<any> = (props) => {
   const { attrName, handleUpdateDsl, value } = props

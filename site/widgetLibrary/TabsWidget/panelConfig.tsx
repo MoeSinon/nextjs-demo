@@ -5,11 +5,11 @@ import {
   VerticalEndIcon,
   VerticalStartIcon,
 } from "@illa-design/icon"
-import { PanelConfig } from "@/components/InspectPanel/interface"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { PanelConfig } from "@components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
-import { generatorEventHandlerConfig } from "@/widgetLibrary/PublicSector/utils/generatorEventHandlerConfig"
-import { TABS_EVENT_HANDLER_CONFIG } from "@/widgetLibrary/TabsWidget/eventHandlerConfig"
+import { generatorEventHandlerConfig } from "@widgetLibrarys/PublicSector/utils/generatorEventHandlerConfig"
+import { TABS_EVENT_HANDLER_CONFIG } from "@widgetLibrarys/TabsWidget/eventHandlerConfig"
 const { t } = useTranslation();
 const baseWidgetName = "tabs"
 export const TABS_PANEL_CONFIG: PanelConfig[] = [

@@ -3,8 +3,8 @@ import { RestApiConfigElementProps } from "./interface"
 import { useTranslation } from "next-i18next"
 import { Controller, useForm } from "react-hook-form"
 import { useDispatch, useSelector } from "react-redux"
-import { RootState } from "@/store/store"
-import { Resource } from "@/redux/resource/resourceState"
+import { RootState } from "@store/store"
+import { Resource } from "@redux/resource/resourceState"
 import {
   applyConfigItemLabelText,
   configItem,
@@ -21,18 +21,18 @@ import { Button, ButtonGroup } from "@illa-design/button"
 import { PaginationPreIcon } from "@illa-design/icon"
 import { Divider } from "@illa-design/divider"
 import { Select } from "@illa-design/select"
-import { InputRecordEditor } from "@/components/InputRecordEditor"
-import { BearerAuthPanel } from "@/components/Actions/RestApiConfigElement/BearerAuthPanel"
-import { BasicAuthPanel } from "@/components/Actions/RestApiConfigElement/BasicAuthPanel"
-import { Api } from "@//api/base"
+import { InputRecordEditor } from "@components/InputRecordEditor"
+import { BearerAuthPanel } from "@components/Actions/RestApiConfigElement/BearerAuthPanel"
+import { BasicAuthPanel } from "@components/Actions/RestApiConfigElement/BasicAuthPanel"
+import { Api } from "@api/base"
 import { Message } from "@illa-design/message"
-import { resourceActions } from "@/redux/resource/resourceSlice"
+import { resourceActions } from "@redux/resource/resourceSlice"
 import {
   BasicAuth,
   BearerAuth,
   RestApiAuth,
   RestApiResource,
-} from "@/redux/resource/restapiResource"
+} from "@redux/resource/restapiResource"
 
 function generateAuthContent(data: { [p: string]: any }): RestApiAuth | null {
   let authContent: RestApiAuth | null = null

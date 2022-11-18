@@ -17,7 +17,7 @@ import {
   titleTextStyle,
 } from "./styles"
 import { TypeQueryResult } from "tern/lib/tern"
-import { transTypeFromTern } from "@/components/CodeEditor/TernSever"
+import { transTypeFromTern } from "@components/CodeEditor/TernSever"
 
 const formatEvaluate = (data: any) => {
   let format = ""

@@ -1,6 +1,6 @@
 import { FC, useCallback, useMemo } from "react"
 import { ChartTypeSelectSetterProps } from "./interface"
-import { BaseSelectSetter } from "@/components/PanelSetters/SelectSetter/baseSelect"
+import { BaseSelectSetter } from "@components/PanelSetters/SelectSetter/baseSelect"
 import {
   BarChartIcon,
   LineChartIcon,
@@ -10,18 +10,18 @@ import {
 import {
   chartTypeIconCss,
   chartTypeStringCss,
-} from "@/components/PanelSetters/ChartSetter/style"
+} from "@components/PanelSetters/ChartSetter/style"
 import { useTranslation } from "next-i18next"
 import { useSelector } from "react-redux"
-import { RootState } from "@/store/store"
+import { RootState } from "@store/store"
 import {
   getCanvas,
   searchDsl,
-} from "@/redux/currentApp/editor/components/componentsSelector"
+} from "@redux/currentApp/editor/components/componentsSelector"
 import { get } from "lodash"
-import { ChartDatasetShape } from "@/components/PanelSetters/ChartSetter/chartDatasetsSetter/interface"
+import { ChartDatasetShape } from "@components/PanelSetters/ChartSetter/chartDatasetsSetter/interface"
 import { ChartType } from "chart.js"
-import { CHART_PRESET_COLOR } from "@/components/PanelSetters/ChartSetter/chartDatasetsSetter/listItem"
+import { CHART_PRESET_COLOR } from "@components/PanelSetters/ChartSetter/chartDatasetsSetter/listItem"
 
 const { t } = useTranslation();
 const typeOptions = [

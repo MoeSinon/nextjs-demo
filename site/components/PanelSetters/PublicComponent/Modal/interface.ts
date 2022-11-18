@@ -1,4 +1,4 @@
-import { PanelFieldConfig } from "@/components/InspectPanel/interface"
+import { PanelFieldConfig } from "@components/InspectPanel/interface"
 import { SerializedStyles } from "@emotion/react"
 import { ReactNode } from "react"
 

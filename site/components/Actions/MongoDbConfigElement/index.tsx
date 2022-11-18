@@ -19,22 +19,22 @@ import { Controller, useForm } from "react-hook-form"
 import { Button, ButtonGroup } from "@illa-design/button"
 import { PaginationPreIcon } from "@illa-design/icon"
 import { useDispatch, useSelector } from "react-redux"
-import { RootState } from "@/store/store"
-import { generateSSLConfig, Resource } from "@/redux/resource/resourceState"
-import { Api } from "@//api/base"
+import { RootState } from "@store/store"
+import { generateSSLConfig, Resource } from "@redux/resource/resourceState"
+import { Api } from "@api/base"
 import { Message } from "@illa-design/message"
 import {
   MongoDbConfig,
   MongoDbResource,
   MongoDbResourceInitial,
   MongoDbSSL,
-} from "@/redux/resource/mongodbResource"
-import { MongoDbGuiMode } from "@/components/Actions/MongoDbConfigElement/MongoDbGuiMode"
-import { MongoDbUriMode } from "@/components/Actions/MongoDbConfigElement/MongoDbUriMode"
+} from "@redux/resource/mongodbResource"
+import { MongoDbGuiMode } from "@components/Actions/MongoDbConfigElement/MongoDbGuiMode"
+import { MongoDbUriMode } from "@components/Actions/MongoDbConfigElement/MongoDbUriMode"
 import { sslStyle } from "../MysqlLikeConfigElement/style"
 import { Switch } from "@illa-design/switch"
 import { RadioGroup } from "@illa-design/radio"
-import { resourceActions } from "@/redux/resource/resourceSlice"
+import { resourceActions } from "@redux/resource/resourceSlice"
 
 export const MongoDbConfigElement: FC<MongoDbConfigElementProps> = (props) => {
   const { onBack, resourceId, onFinished } = props

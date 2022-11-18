@@ -1,19 +1,19 @@
 import { FC, useCallback, useMemo } from "react"
-import { ChartDataSourceSetterProps } from "@/components/PanelSetters/ChartSetter/interface"
+import { ChartDataSourceSetterProps } from "@components/PanelSetters/ChartSetter/interface"
 import { useSelector } from "react-redux"
-import { RootState } from "@/store/store"
+import { RootState } from "@store/store"
 import { get } from "lodash"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
-import { formatDataAsObject } from "@/utils/formatData"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
+import { formatDataAsObject } from "@utils/formatData"
 import {
   getCanvas,
   searchDsl,
-} from "@/redux/currentApp/editor/components/componentsSelector"
-import { isObject } from "@/utils/typeHelper"
-import { BaseSelectSetter } from "@/components/PanelSetters/SelectSetter/baseSelect"
-import { ChartDatasetShape } from "@/components/PanelSetters/ChartSetter/chartDatasetsSetter/interface"
+} from "@redux/currentApp/editor/components/componentsSelector"
+import { isObject } from "@utils/typeHelper"
+import { BaseSelectSetter } from "@components/PanelSetters/SelectSetter/baseSelect"
+import { ChartDatasetShape } from "@components/PanelSetters/ChartSetter/chartDatasetsSetter/interface"
 import { ChartType } from "chart.js"
-import { CHART_PRESET_COLOR } from "@/components/PanelSetters/ChartSetter/chartDatasetsSetter/listItem"
+import { CHART_PRESET_COLOR } from "@components/PanelSetters/ChartSetter/chartDatasetsSetter/listItem"
 
 export const ChartKeysSelectSetter: FC<ChartDataSourceSetterProps> = (
   props,

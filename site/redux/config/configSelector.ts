@@ -1,4 +1,4 @@
-import { RootState } from "@/store/store"
+import { RootState } from "@store/store"
 
 export const isOpenLeftPanel = (state: RootState) => {
   return state.config.openLeftPanel && state.config.mode === "edit"

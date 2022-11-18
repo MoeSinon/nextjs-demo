@@ -1,7 +1,7 @@
-import { ReactComponent as TableWidgetIcon } from "@/assets/widgetCover/table.svg"
-import { WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as TableWidgetIcon } from "@assets/widgetCover/table.svg"
+import { WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
-import { tansTableDataToColumns } from "@/widgetLibrary/TableWidget/utils"
+import { tansTableDataToColumns } from "@widgetLibrarys/TableWidget/utils"
 const { t } = useTranslation();
 const originData = [
   {

@@ -1,17 +1,17 @@
 import { createContext, ReactNode, FC, useCallback, useMemo } from "react"
 import { ViewItemShape } from "../interface"
-import { PanelFieldConfig } from "@/components/InspectPanel/interface"
+import { PanelFieldConfig } from "@components/InspectPanel/interface"
 import {
   generateNewViewItem,
   generateViewItemId,
 } from "../utils/generateNewOptions"
 import { useDispatch, useSelector } from "react-redux"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 import { cloneDeep, get } from "lodash"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { generateComponentNode } from "@/utils/generators/generateComponentNode"
-import { BasicContainerConfig } from "@/widgetLibrary/BasicContainer/BasicContainer"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { generateComponentNode } from "@utils/generators/generateComponentNode"
+import { BasicContainerConfig } from "@widgetLibrarys/BasicContainer/BasicContainer"
 
 interface ProviderProps {
   viewsList: ViewItemShape[]

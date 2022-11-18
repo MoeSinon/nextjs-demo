@@ -1,9 +1,9 @@
 import { createContext, ReactNode, FC, useState, useCallback } from "react"
 import { NotificationType, Notification } from "@illa-design/notification"
-import { isValidUrlScheme } from "@/utils/typeHelper"
+import { isValidUrlScheme } from "@utils/typeHelper"
 import { useSelector } from "react-redux"
-import { getCurrentUser } from "@/redux/currentUser/currentUserSelector"
-import { getBuilderInfo } from "@/redux/builderInfo/builderInfoSelector"
+import { getCurrentUser } from "@redux/currentUser/currentUserSelector"
+import { getBuilderInfo } from "@redux/builderInfo/builderInfoSelector"
 import { cloneDeep, unset } from "lodash"
 
 interface Injected {
@@ -40,7 +40,7 @@ const runScript = (script: string) => {
   try {
     // TODO: @WeiChen wait use parser
     const result = eval(script)
-  } catch (ignore) {}
+  } catch (ignore) { }
 }
 
 // {{goToURL("https://www.baidu.com",true)}}

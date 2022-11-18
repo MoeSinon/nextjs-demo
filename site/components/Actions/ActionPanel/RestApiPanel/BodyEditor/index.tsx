@@ -6,21 +6,21 @@ import {
   bodySelectorStyle,
 } from "./style"
 import { useTranslation } from "next-i18next"
-import { BodyEditorProps } from "@/components/Actions/ActionPanel/RestApiPanel/BodyEditor/interface"
+import { BodyEditorProps } from "@components/Actions/ActionPanel/RestApiPanel/BodyEditor/interface"
 import { Select } from "@illa-design/select"
-import { Params } from "@/redux/resource/restapiResource"
-import { RecordEditor } from "@/components/Actions/ActionPanel/RecordEditor"
-import { CodeEditor } from "@/components/CodeEditor"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
-import { EditorMode } from "@/components/CodeEditor/interface"
+import { Params } from "@redux/resource/restapiResource"
+import { RecordEditor } from "@components/Actions/ActionPanel/RecordEditor"
+import { CodeEditor } from "@components/CodeEditor"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
+import { EditorMode } from "@components/CodeEditor/interface"
 import { useDispatch, useSelector } from "react-redux"
-import { configActions } from "@/redux/config/configSlice"
+import { configActions } from "@redux/config/configSlice"
 import {
   RawBody,
   RawBodyContent,
   RawBodyInitial,
-} from "@/redux/currentApp/action/restapiAction"
-import { getSelectedAction } from "@/redux/config/configSelector"
+} from "@redux/currentApp/action/restapiAction"
+import { getSelectedAction } from "@redux/config/configSelector"
 
 export const BodyEditor: FC<BodyEditorProps> = (props) => {
   const { t } = useTranslation()

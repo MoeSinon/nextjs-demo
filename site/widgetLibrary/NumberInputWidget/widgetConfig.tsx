@@ -1,5 +1,5 @@
-import { ReactComponent as NumberInputWidgetIcon } from "@/assets/widgetCover/numberInput.svg"
-import { RESIZE_DIRECTION, WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as NumberInputWidgetIcon } from "@assets/widgetCover/numberInput.svg"
+import { RESIZE_DIRECTION, WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();
 export const NUMBER_INPUT_WIDGET_CONFIG: WidgetConfig = {

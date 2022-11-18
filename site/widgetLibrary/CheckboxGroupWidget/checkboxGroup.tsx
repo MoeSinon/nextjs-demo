@@ -4,15 +4,15 @@ import {
   CheckboxGroupWidgetProps,
   WrappedCheckboxGroupProps,
 } from "./interface"
-import { formatSelectOptions } from "@/widgetLibrary/PublicSector/utils/formatSelectOptions"
-import { Label } from "@/widgetLibrary/PublicSector/Label"
+import { formatSelectOptions } from "@widgetLibrarys/PublicSector/utils/formatSelectOptions"
+import { Label } from "@widgetLibrarys/PublicSector/Label"
 import {
   applyCenterLabelAndComponentWrapperStyle,
   applyValidateMessageWrapperStyle,
-} from "@/widgetLibrary/PublicSector/TransformWidgetWrapper/style"
-import { TooltipWrapper } from "@/widgetLibrary/PublicSector/TooltipWrapper"
-import { InvalidMessage } from "@/widgetLibrary/PublicSector/InvalidMessage"
-import { handleValidateCheck } from "@/widgetLibrary/PublicSector/InvalidMessage/utils"
+} from "@widgetLibrarys/PublicSector/TransformWidgetWrapper/style"
+import { TooltipWrapper } from "@widgetLibrarys/PublicSector/TooltipWrapper"
+import { InvalidMessage } from "@widgetLibrarys/PublicSector/InvalidMessage"
+import { handleValidateCheck } from "@widgetLibrarys/PublicSector/InvalidMessage/utils"
 
 export const WrappedCheckbox: FC<WrappedCheckboxGroupProps> = (props) => {
   const {
@@ -138,7 +138,7 @@ export const CheckboxWidget: FC<CheckboxGroupWidgetProps> = (props) => {
       validate: () => {
         return handleValidate(value)
       },
-      clearValidation: () => {},
+      clearValidation: () => { },
     })
     return () => {
       handleDeleteGlobalData(displayName)

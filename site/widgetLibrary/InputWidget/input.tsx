@@ -1,14 +1,14 @@
 import { FC, forwardRef, useCallback, useEffect, useRef, useState } from "react"
 import { Input } from "@illa-design/input"
 import { InputWidgetProps, WrappedInputProps } from "./interface"
-import { Label } from "@/widgetLibrary/PublicSector/Label"
+import { Label } from "@widgetLibrarys/PublicSector/Label"
 import {
   applyLabelAndComponentWrapperStyle,
   applyValidateMessageWrapperStyle,
-} from "@/widgetLibrary/PublicSector/TransformWidgetWrapper/style"
-import { InvalidMessage } from "@/widgetLibrary/PublicSector/InvalidMessage"
-import { TooltipWrapper } from "@/widgetLibrary/PublicSector/TooltipWrapper"
-import { handleValidateCheck } from "@/widgetLibrary/PublicSector/InvalidMessage/utils"
+} from "@widgetLibrarys/PublicSector/TransformWidgetWrapper/style"
+import { InvalidMessage } from "@widgetLibrarys/PublicSector/InvalidMessage"
+import { TooltipWrapper } from "@widgetLibrarys/PublicSector/TooltipWrapper"
+import { handleValidateCheck } from "@widgetLibrarys/PublicSector/InvalidMessage/utils"
 
 export const WrappedInput = forwardRef<HTMLInputElement, WrappedInputProps>(
   (props, ref) => {

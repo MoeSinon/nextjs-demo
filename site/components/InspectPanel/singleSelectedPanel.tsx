@@ -1,17 +1,17 @@
 import { FC, useCallback, useMemo } from "react"
 import { Divider } from "@illa-design/divider"
-import { PanelHeader } from "@/components/InspectPanel/header"
-import { SelectedProvider } from "@/components/InspectPanel/context/selectedContext"
-import { panelBuilder } from "@/widgetLibrary/panelBuilder"
+import { PanelHeader } from "@components/InspectPanel/header"
+import { SelectedProvider } from "@components/InspectPanel/context/selectedContext"
+import { panelBuilder } from "@widgetLibrarys/panelBuilder"
 import { fieldFactory } from "./utils/fieldFactory"
 import {
   singleSelectedPanelSetterWrapperStyle,
   singleSelectedPanelWrapperStyle,
-} from "@/components/InspectPanel/style"
+} from "@components/InspectPanel/style"
 import { useDispatch, useSelector } from "react-redux"
-import { getComponentNodeBySingleSelected } from "@/redux/currentApp/editor/components/componentsSelector"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { isObject } from "@/utils/typeHelper"
+import { getComponentNodeBySingleSelected } from "@redux/currentApp/editor/components/componentsSelector"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { isObject } from "@utils/typeHelper"
 
 export const SingleSelectedPanel: FC = () => {
   const dispatch = useDispatch()

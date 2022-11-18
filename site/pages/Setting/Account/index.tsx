@@ -1,17 +1,17 @@
-import { getLayout as getSiteLayout } from "@/components/layouts/tabPanel";
+import { getLayout as getSiteLayout } from "@components/layouts/tabPanel";
 import { useCallback, useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { getCurrentUser } from "@/redux/currentUser/currentUserSelector"
+import { getCurrentUser } from "@redux/currentUser/currentUserSelector"
 import { useTranslation } from "next-i18next"
 import { Input } from "@illa-design/input"
-import { publicButtonWrapperStyle } from "@/pages/Setting/Account/style"
+import { publicButtonWrapperStyle } from "@pages/Setting/Account/style"
 import { Button } from "@illa-design/button"
-import { Api } from "@//api/base"
-import { CurrentUser } from "@/redux/currentUser/currentUserState"
-import { currentUserActions } from "@/redux/currentUser/currentUserSlice"
+import { Api } from "@api/base"
+import { CurrentUser } from "@redux/currentUser/currentUserState"
+import { currentUserActions } from "@redux/currentUser/currentUserSlice"
 import { Message } from "@illa-design/message"
-import { LabelAndSetter } from "@/components/layouts/LabelAndSetter"
-import { SettingNavBar } from "@/components/layouts/navBar"
+import { LabelAndSetter } from "@components/layouts/LabelAndSetter"
+import { SettingNavBar } from "@components/layouts/navBar"
 
 export const SettingAccount = () => {
   const { t } = useTranslation()

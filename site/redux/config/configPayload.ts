@@ -1,4 +1,4 @@
-import { ActionContent } from "@/redux/currentApp/action/actionState"
+import { ActionContent } from "@redux/currentApp/action/actionState"
 import { Params } from "../resource/resourceState"
 
 export interface CacheContentPayload {

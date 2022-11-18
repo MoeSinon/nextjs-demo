@@ -14,34 +14,34 @@ import {
   getFreezeState,
   getIllaMode,
   isShowDot,
-} from "@/redux/config/configSelector"
-import { ScaleSquare } from "@/components/ScaleSquare"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
+} from "@redux/config/configSelector"
+import { ScaleSquare } from "@components/ScaleSquare"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
 import {
   applyComponentCanvasStyle,
   borderLineStyle,
-} from "@/components/DotPanel/style"
+} from "@components/DotPanel/style"
 import useMeasure from "react-use-measure"
-import { configActions } from "@/redux/config/configSlice"
+import { configActions } from "@redux/config/configSlice"
 import {
   DebounceUpdateReflow,
   DragInfo,
   DropCollectedInfo,
   DropResultInfo,
-} from "@/components/DotPanel/interface"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
+} from "@components/DotPanel/interface"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
 import {
   getDragResult,
   getReflowResult,
   isAddAction,
-} from "@/components/DotPanel/calc"
+} from "@components/DotPanel/calc"
 import { useDrop } from "react-dnd"
-import { PreviewPlaceholder } from "@/components/DotPanel/previewPlaceholder"
+import { PreviewPlaceholder } from "@components/DotPanel/previewPlaceholder"
 import { throttle } from "lodash"
-import { ContainerEmptyState } from "@/widgetLibrary/ContainerWidget/emptyState"
-import { FreezePlaceholder } from "@/components/DotPanel/freezePlaceholder"
-import { widgetBuilder } from "@/widgetLibrary/widgetBuilder"
-import { BasicContainer } from "@/widgetLibrary/BasicContainer/BasicContainer"
+import { ContainerEmptyState } from "@widgetLibrarys/ContainerWidget/emptyState"
+import { FreezePlaceholder } from "@components/DotPanel/freezePlaceholder"
+import { widgetBuilder } from "@widgetLibrarys/widgetBuilder"
+import { BasicContainer } from "@widgetLibrarys/BasicContainer/BasicContainer"
 
 const UNIT_HEIGHT = 8
 const BASIC_BLOCK_COLUMNS = 64

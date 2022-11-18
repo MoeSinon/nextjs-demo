@@ -8,33 +8,33 @@ import {
   Resource,
   ResourceContent,
   ResourceListState,
-} from "@/redux/resource/resourceState"
-import { getAllResources } from "@/redux/resource/resourceSelector"
+} from "@redux/resource/resourceState"
+import { getAllResources } from "@redux/resource/resourceSelector"
 import {
   appsContainerStyle,
   listTitleContainerStyle,
   listTitleStyle,
-} from "@/pages/Dashboard/Apps/style"
+} from "@pages/Dashboard/Apps/style"
 import { ColumnDef } from "@tanstack/react-table"
-import { ResourceTableData } from "@/pages/Dashboard/Resources/interface"
+import { ResourceTableData } from "@pages/Dashboard/Resources/interface"
 import {
   applyTableTextStyle,
   hoverStyle,
-} from "@/pages/Dashboard/Resources/style"
+} from "@pages/Dashboard/Resources/style"
 import { Space } from "@illa-design/space"
-import { getIconFromResourceType } from "@/components/Actions/getIcon"
-import { DashboardResourceItemMenu } from "@/components/DashboardResourceItemMenu"
-import { fromNow } from "@/utils/dayjs"
+import { getIconFromResourceType } from "@components/Actions/getIcon"
+import { DashboardResourceItemMenu } from "@components/DashboardResourceItemMenu"
+import { fromNow } from "@utils/dayjs"
 import { CellContext } from "@tanstack/table-core"
-import { ResourceGenerator } from "@/components/ResourceGenerator"
-import { getResourceNameFromResourceType } from "@/utils/actionResourceTransformer"
-import { MysqlLikeResource } from "@/redux/resource/mysqlLikeResource"
+import { ResourceGenerator } from "@components/ResourceGenerator"
+import { getResourceNameFromResourceType } from "@utils/actionResourceTransformer"
+import { MysqlLikeResource } from "@redux/resource/mysqlLikeResource"
 import {
   MongoDbConfig,
   MongoDbGuiConfigContent,
   MongoDbResource,
-} from "@/redux/resource/mongodbResource"
-import { RedisResource } from "@/redux/resource/redisResource"
+} from "@redux/resource/mongodbResource"
+import { RedisResource } from "@redux/resource/redisResource"
 
 export const DashboardResources: FC = () => {
   const { t } = useTranslation()

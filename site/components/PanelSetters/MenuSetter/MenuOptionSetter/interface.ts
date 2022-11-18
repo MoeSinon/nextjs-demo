@@ -1,6 +1,6 @@
-import { BaseSetter } from "@/components/PanelSetters/interface"
-import { PanelFieldConfig } from "@/components/InspectPanel/interface"
-import { MenuList, SubMenu } from "@/widgetLibrary/MenuWidget/interface"
+import { BaseSetter } from "@components/PanelSetters/interface"
+import { PanelFieldConfig } from "@components/InspectPanel/interface"
+import { MenuList, SubMenu } from "@widgetLibrarys/MenuWidget/interface"
 
 export interface HeaderProps {
   labelName: string

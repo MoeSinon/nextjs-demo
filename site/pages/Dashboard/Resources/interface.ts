@@ -1,4 +1,4 @@
-import { ResourceType } from "@/redux/resource/resourceState"
+import { ResourceType } from "@redux/resource/resourceState"
 
 export interface ResourceTableData {
   resourceType: ResourceType

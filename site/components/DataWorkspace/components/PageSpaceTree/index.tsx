@@ -1,5 +1,5 @@
 import { FC, useCallback } from "react"
-import { PanelBar } from "@/components/PanelBar"
+import { PanelBar } from "@components/PanelBar"
 import { useTranslation } from "next-i18next"
 import {
   homePageIconHotSpot,
@@ -8,15 +8,15 @@ import {
   pageNameStyle,
 } from "./style"
 import { PageItemProps } from "./interface"
-import { ReactComponent as HomepageIcon } from "@/assets/dataWorkspace/homepage.svg"
+import { ReactComponent as HomepageIcon } from "@assets/dataWorkspace/homepage.svg"
 import { useDispatch, useSelector } from "react-redux"
-import { getRootNodeExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
-import { generatePageConfig } from "@/utils/generators/generatePageOrSectionConfig"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { RootComponentNodeProps } from "@/redux/currentApp/editor/components/componentsState"
-import { executionActions } from "@/redux/currentApp/executionTree/executionSlice"
+import { getRootNodeExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
+import { generatePageConfig } from "@utils/generators/generatePageOrSectionConfig"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { RootComponentNodeProps } from "@redux/currentApp/editor/components/componentsState"
+import { executionActions } from "@redux/currentApp/executionTree/executionSlice"
 import { Dropdown } from "@illa-design/dropdown"
-import { ActionMenu } from "@/components/PagePanel/Components/PanelHeader/actionMenu"
+import { ActionMenu } from "@components/PagePanel/Components/PanelHeader/actionMenu"
 
 export const PageItem: FC<PageItemProps> = (props) => {
   const {

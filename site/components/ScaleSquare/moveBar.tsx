@@ -7,15 +7,15 @@ import {
   MOVE_BAR_HEIGHT,
   moveBarDisplayNameStyle,
   warningStyle,
-} from "@/components/ScaleSquare/style"
+} from "@components/ScaleSquare/style"
 import { DragIcon, LockIcon, WarningCircleIcon } from "@illa-design/icon"
 import {
   MoveBarPositionShape,
   MoveBarProps,
-} from "@/components/ScaleSquare/interface"
+} from "@components/ScaleSquare/interface"
 import { globalColor, illaPrefix } from "@illa-design/theme"
 import { useSelector } from "react-redux"
-import { getFreezeState } from "@/redux/config/configSelector"
+import { getFreezeState } from "@redux/config/configSelector"
 import { useTranslation } from "next-i18next"
 
 export const MoveBar: FC<MoveBarProps> = (props) => {

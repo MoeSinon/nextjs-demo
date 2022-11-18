@@ -1,15 +1,15 @@
-import { getLayout as getSiteLayout } from "@/components/layouts/tabPanel";
+import { getLayout as getSiteLayout } from "@components/layouts/tabPanel";
 import { useCallback, useEffect, useState } from "react"
 import { useTranslation } from "next-i18next"
-import { publicButtonWrapperStyle } from "@/pages/Setting/Account/style"
+import { publicButtonWrapperStyle } from "@pages/Setting/Account/style"
 import { Button } from "@illa-design/button"
-import { LabelAndSetter } from "@/components/layouts/LabelAndSetter"
+import { LabelAndSetter } from "@components/layouts/LabelAndSetter"
 import { Select } from "@illa-design/select"
 import { useSelector } from "react-redux"
-import { getCurrentUser } from "@/redux/currentUser/currentUserSelector"
-import { Api } from "@//api/base"
-import { CurrentUser } from "@/redux/currentUser/currentUserState"
-import { SettingNavBar } from "@/components/layouts/navBar"
+import { getCurrentUser } from "@redux/currentUser/currentUserSelector"
+import { Api } from "@api/base"
+import { CurrentUser } from "@redux/currentUser/currentUserState"
+import { SettingNavBar } from "@components/layouts/navBar"
 
 const options = [
   {

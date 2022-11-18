@@ -1,6 +1,6 @@
-import { BaseSetter } from "@/components/PanelSetters/interface"
-import { PanelLabelProps } from "@/components/InspectPanel/interface"
-import { BaseInputSetterProps } from "@/components/PanelSetters/InputSetter/interface"
+import { BaseSetter } from "@components/PanelSetters/interface"
+import { PanelLabelProps } from "@components/InspectPanel/interface"
+import { BaseInputSetterProps } from "@components/PanelSetters/InputSetter/interface"
 
 export type SelectOptions = (
   | string

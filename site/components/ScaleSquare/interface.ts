@@ -1,5 +1,5 @@
 import { HTMLAttributes } from "react"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
 
 export type ScaleSquareType = "error" | "normal" | "production"
 

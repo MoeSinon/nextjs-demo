@@ -1,12 +1,12 @@
 import { MenuProps } from "@illa-design/menu"
-import { BaseWidgetProps } from "@/widgetLibrary/interface"
+import { BaseWidgetProps } from "@widgetLibrarys/interface"
 import { HTMLAttributes } from "react"
 
 export type MenuHorizontalAlign = "flex-start" | "center" | "flex-end"
 
 export interface WrappedMenuProps
   extends HTMLAttributes<HTMLDivElement>,
-    MenuProps {
+  MenuProps {
   menuList?: MenuList[]
   emptyState?: string
   pageSize?: number
@@ -39,4 +39,4 @@ export interface MenuList extends SubMenu {
   subMenu?: SubMenu[]
 }
 
-export interface MenuWidgetProps extends WrappedMenuProps, BaseWidgetProps {}
+export interface MenuWidgetProps extends WrappedMenuProps, BaseWidgetProps { }

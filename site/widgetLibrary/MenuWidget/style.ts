@@ -1,5 +1,5 @@
 import { css, SerializedStyles } from "@emotion/react"
-import { MenuMode } from "@/widgetLibrary/MenuWidget/interface"
+import { MenuMode } from "@widgetLibrarys/MenuWidget/interface"
 
 export const menuItemLabelStyle = css`
   display: inline-flex;

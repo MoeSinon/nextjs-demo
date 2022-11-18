@@ -1,4 +1,4 @@
-import { getLayout as getSiteLayout } from '@/components/layouts/user';
+import { getLayout as getSiteLayout } from '@components/layouts/user';
 import { useRef, useState } from "react"
 import { useRouter } from 'next/router'
 import { Controller, SubmitHandler, useForm } from "react-hook-form"
@@ -11,7 +11,7 @@ import { Message } from "@illa-design/message"
 import { Countdown } from "@illa-design/statistic"
 import { WarningCircleIcon } from "@illa-design/icon"
 import { EMAIL_FORMAT } from "@/constants/regExp"
-import { Api } from "@//api/base"
+import { Api } from "@api/base"
 import {
   formLabelStyle,
   formTitleStyle,
@@ -23,12 +23,12 @@ import {
   errorIconStyle,
   checkboxTextStyle,
   descriptionStyle,
-} from "@/pages/Register/style"
+} from "@pages/Register/style"
 import { RegisterFields, RegisterResult } from "./interface"
 import { useDispatch } from "react-redux"
-import { currentUserActions } from "@/redux/currentUser/currentUserSlice"
-import { setLocalStorage } from "@/utils/storage"
-import { TextLink } from "@/components/TextLink"
+import { currentUserActions } from "@redux/currentUser/currentUserSlice"
+import { setLocalStorage } from "@utils/storage"
+import { TextLink } from "@components/TextLink"
 
 export function getLocalLanguage(): string {
   const lang = window.navigator.language

@@ -1,5 +1,5 @@
 import { v4 } from "uuid"
-import { ColumnItemShape } from "@/widgetLibrary/TableWidget/interface"
+import { ColumnItemShape } from "@widgetLibrarys/TableWidget/interface"
 
 export const generateColumnItemId = () => `column-${v4()}`
 

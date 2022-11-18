@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { ComponentsInitialState } from "@/redux/currentApp/editor/components/componentsState"
+import { ComponentsInitialState } from "@redux/currentApp/editor/components/componentsState"
 import {
   addComponentReducer,
   copyComponentReducer,
@@ -24,7 +24,7 @@ import {
   addSectionViewReducer,
   deleteSectionViewReducer,
   updateSectionViewPropsReducer,
-} from "@/redux/currentApp/editor/components/componentsReducer"
+} from "@redux/currentApp/editor/components/componentsReducer"
 
 const componentsSlice = createSlice({
   name: "components",

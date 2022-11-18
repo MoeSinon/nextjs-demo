@@ -1,5 +1,5 @@
-import { BaseSetter } from "@/components/PanelSetters/interface"
-import { PanelFieldConfig } from "@/components/InspectPanel/interface"
+import { BaseSetter } from "@components/PanelSetters/interface"
+import { PanelFieldConfig } from "@components/InspectPanel/interface"
 
 export interface ViewItemShape {
   id: string

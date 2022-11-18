@@ -13,7 +13,7 @@ import {
   movableIconWrapperStyle,
 } from "./style"
 import { DragIconAndLabelProps } from "./interface"
-import { BaseModal } from "@/components/PanelSetters/PublicComponent/Modal"
+import { BaseModal } from "@components/PanelSetters/PublicComponent/Modal"
 import { MenuListSetterContext } from "./context/menuListContext"
 import { Button } from "@illa-design/button"
 

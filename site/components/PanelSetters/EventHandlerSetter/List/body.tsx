@@ -1,7 +1,7 @@
 import { FC } from "react"
-import { ListItem } from "@/components/PanelSetters/EventHandlerSetter/List/item"
-import { ListBodyProps } from "@/components/PanelSetters/EventHandlerSetter/List/interface"
-import { EventHandlerEmpty } from "@/components/PanelSetters/EventHandlerSetter/List/empty"
+import { ListItem } from "@components/PanelSetters/EventHandlerSetter/List/item"
+import { ListBodyProps } from "@components/PanelSetters/EventHandlerSetter/List/interface"
+import { EventHandlerEmpty } from "@components/PanelSetters/EventHandlerSetter/List/empty"
 
 export const ListBody: FC<ListBodyProps> = (props) => {
   const { events } = props

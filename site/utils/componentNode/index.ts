@@ -4,8 +4,8 @@ import {
   getWidgetOrActionDynamicAttrPaths,
   isDynamicString,
   isPathInDynamicAttrPaths,
-} from "@/utils/evaluateDynamicString/utils"
-import { isObject } from "@/utils/typeHelper"
+} from "@utils/evaluateDynamicString/utils"
+import { isObject } from "@utils/typeHelper"
 
 enum DynamicAttrPathActions {
   ADD = "ADD",

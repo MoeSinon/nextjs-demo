@@ -1,13 +1,13 @@
 import { FC, useCallback, useMemo } from "react"
 import { useSelector } from "react-redux"
-import { RootState } from "@/store/store"
+import { RootState } from "@store/store"
 import { get, isEqual } from "lodash"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 import { TableDataInputSetterProps } from "./interface"
-import { BaseInput } from "@/components/PanelSetters/InputSetter/baseInput"
-import { tansTableDataToColumns } from "@/widgetLibrary/TableWidget/utils"
-import { evaluateDynamicString } from "@/utils/evaluateDynamicString"
-import { BUILDER_CALC_CONTEXT } from "@/pages/App/context/globalDataProvider"
+import { BaseInput } from "@components/PanelSetters/InputSetter/baseInput"
+import { tansTableDataToColumns } from "@widgetLibrarys/TableWidget/utils"
+import { evaluateDynamicString } from "@utils/evaluateDynamicString"
+import { BUILDER_CALC_CONTEXT } from "@pages/App/context/globalDataProvider"
 
 export const TableDataInputSetter: FC<TableDataInputSetterProps> = (props) => {
   const {

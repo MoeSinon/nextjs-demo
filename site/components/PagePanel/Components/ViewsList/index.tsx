@@ -7,12 +7,12 @@ import { useDispatch, useSelector } from "react-redux"
 import {
   getCanvas,
   searchDsl,
-} from "@/redux/currentApp/editor/components/componentsSelector"
+} from "@redux/currentApp/editor/components/componentsSelector"
 import {
   getRootNodeExecutionResult,
   getSectionExecutionResultArray,
-} from "@/redux/currentApp/executionTree/executionSelector"
-import { RootState } from "@/store/store"
+} from "@redux/currentApp/executionTree/executionSelector"
+import { RootState } from "@store/store"
 
 export const ViewList: FC<ViewListProps> = (props) => {
   const { sectionName } = props

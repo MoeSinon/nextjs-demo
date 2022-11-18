@@ -3,12 +3,12 @@ import {
   Connection,
   getPayload,
   transformComponentReduxPayloadToWsPayload,
-} from "@//api/ws"
-import { Signal, Target } from "@//api/ws/interface"
+} from "@api/ws"
+import { Signal, Target } from "@api/ws/interface"
 import {
   getCanvas,
   searchDsl,
-} from "@/redux/currentApp/editor/components/componentsSelector"
+} from "@redux/currentApp/editor/components/componentsSelector"
 import {
   DeleteComponentNodePayload,
   UpdateComponentPropsPayload,
@@ -25,11 +25,11 @@ import {
   AddSectionViewPayload,
   DeleteSectionViewPayload,
   UpdateSectionViewPropsPayload,
-} from "@/redux/currentApp/editor/components/componentsState"
+} from "@redux/currentApp/editor/components/componentsState"
 import {
   UpdateComponentContainerPayload,
   UpdateComponentsShapePayload,
-} from "@/redux/currentApp/editor/components/componentsPayload"
+} from "@redux/currentApp/editor/components/componentsPayload"
 
 export const reduxAsync: Redux.Middleware = (store) => (next) => (action) => {
   const { type, payload } = action

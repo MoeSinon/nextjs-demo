@@ -1,8 +1,8 @@
-import { ReactComponent as ChartWidgetIcon } from "@/assets/widgetCover/chart.svg"
-import { WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as ChartWidgetIcon } from "@assets/widgetCover/chart.svg"
+import { WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
-import store from "@/store/store"
-import { getActionList } from "@/redux/currentApp/action/actionSelector"
+import store from "@store/store"
+import { getActionList } from "@redux/currentApp/action/actionSelector"
 const { t } = useTranslation();
 
 export const CHART_WIDGET_CONFIG: WidgetConfig = {

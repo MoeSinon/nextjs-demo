@@ -8,7 +8,7 @@ import {
   useMemo,
 } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
 import {
   RenderFooterSectionProps,
   RenderHeaderSectionProps,
@@ -48,10 +48,10 @@ import {
   ChangeLayoutRightBar,
   ChangeLayoutTopBar,
 } from "./changeLayoutBar"
-import { SECTION_POSITION } from "@/redux/currentApp/editor/components/componentsState"
+import { SECTION_POSITION } from "@redux/currentApp/editor/components/componentsState"
 import { PreIcon, NextIcon } from "@illa-design/react"
 import { motion, AnimatePresence } from "framer-motion"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 import { useRouter } from 'next/router'
 
 export const HEADER_MIN_HEIGHT = 96

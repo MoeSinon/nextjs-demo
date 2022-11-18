@@ -1,4 +1,4 @@
-import { ValidateCheckProps } from "@/widgetLibrary/PublicSector/InvalidMessage/interface"
+import { ValidateCheckProps } from "@widgetLibrarys/PublicSector/InvalidMessage/interface"
 import { useTranslation } from "next-i18next"
 
 export const invalidMessage = new Map<string, string>([

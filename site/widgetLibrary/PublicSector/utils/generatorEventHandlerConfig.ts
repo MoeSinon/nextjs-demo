@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
-import { PanelFieldConfig } from "@/components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
+import { PanelFieldConfig } from "@components/InspectPanel/interface"
 const { t } = useTranslation();
 
 export const generatorEventHandlerConfig = (

@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router';
-import Logo from '@/components/ui/logo';
-import Input from '@/components/ui/forms/input';
-import PasswordInput from '@/components/ui/forms/password-input';
-import Button from '@/components/ui/button';
+import Logo from '@components/ui/logo';
+import Input from '@components/ui/forms/input';
+import PasswordInput from '@components/ui/forms/password-input';
+import Button from '@components/ui/button';
 import { useTranslation } from 'next-i18next';
-import { useModalAction } from '@/components/ui/modal/modal.context';
-import { Form } from '@/components/ui/forms/form';
+import { useModalAction } from '@components/ui/modal/modal.context';
+import { Form } from '@components/ui/forms/form';
 import type { RegisterUserInput } from '@/types';
 import * as yup from 'yup';
 import { useRegister } from '@/framework/user';

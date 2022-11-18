@@ -1,6 +1,6 @@
-import { ActionType } from "@/redux/currentApp/action/actionState"
+import { ActionType } from "@redux/currentApp/action/actionState"
 import { useTranslation } from "next-i18next"
-import { ResourceType } from "@/redux/resource/resourceState"
+import { ResourceType } from "@redux/resource/resourceState"
 
 export function getActionTypeFromResourceType(
   resourceType: ResourceType | null | undefined,

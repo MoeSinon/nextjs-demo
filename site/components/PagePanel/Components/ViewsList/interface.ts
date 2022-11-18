@@ -1,4 +1,4 @@
-import { SectionViewShape } from "@/redux/currentApp/editor/components/componentsState"
+import { SectionViewShape } from "@redux/currentApp/editor/components/componentsState"
 
 export interface HeaderProps {
   sectionName: string

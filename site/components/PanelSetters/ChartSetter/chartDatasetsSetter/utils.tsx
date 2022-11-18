@@ -1,7 +1,7 @@
 import { v4 } from "uuid"
-import { CHART_DATASET_AGGREGATION_METHOD } from "@/widgetLibrary/Chart"
+import { CHART_DATASET_AGGREGATION_METHOD } from "@widgetLibrarys/Chart"
 import { ChartType } from "chart.js"
-import { CHART_COLOR_TYPE_CONFIG } from "@/components/PanelSetters/ChartSetter/chartDatasetsSetter/listItem"
+import { CHART_COLOR_TYPE_CONFIG } from "@components/PanelSetters/ChartSetter/chartDatasetsSetter/listItem"
 import { difference } from "lodash"
 
 export let datasetNameSet = new Set<string>()

@@ -1,7 +1,7 @@
-import store, { RootState } from "@/store/store"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
+import store, { RootState } from "@store/store"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
 import { createSelector } from "@reduxjs/toolkit"
-import { getSelectedComponents } from "@/redux/config/configSelector"
+import { getSelectedComponents } from "@redux/config/configSelector"
 
 export function searchDSLByDisplayName(
   displayName: string,

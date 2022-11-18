@@ -1,9 +1,9 @@
 import {
   RawTreeSeedShape,
   RawTreeShape,
-} from "@/utils/executionTreeHelper/interface"
-import { generateRawAction } from "@/utils/executionTreeHelper/generateRawAction"
-import { generateRawWidget } from "@/utils/executionTreeHelper/generateRawWidget"
+} from "@utils/executionTreeHelper/interface"
+import { generateRawAction } from "@utils/executionTreeHelper/generateRawAction"
+import { generateRawWidget } from "@utils/executionTreeHelper/generateRawWidget"
 
 export class RawTreeFactory {
   static create(seeds: RawTreeSeedShape): RawTreeShape {

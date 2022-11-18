@@ -1,7 +1,7 @@
-import { BaseWidgetProps } from "@/widgetLibrary/interface"
-import { TooltipWrapperProps } from "@/widgetLibrary/PublicSector/TooltipWrapper/interface"
+import { BaseWidgetProps } from "@widgetLibrarys/interface"
+import { TooltipWrapperProps } from "@widgetLibrarys/PublicSector/TooltipWrapper/interface"
 import { TabsProps } from "@illa-design/tabs"
-import { viewListItemShaper } from "@/widgetLibrary/ContainerWidget/interface"
+import { viewListItemShaper } from "@widgetLibrarys/ContainerWidget/interface"
 
 export interface WrappedTabsProps extends TabsProps, BaseWidgetProps {
   value?: string
@@ -14,8 +14,8 @@ export interface WrappedTabsProps extends TabsProps, BaseWidgetProps {
 
 export interface TabsWidgetProps
   extends WrappedTabsProps,
-    BaseWidgetProps,
-    TooltipWrapperProps {
+  BaseWidgetProps,
+  TooltipWrapperProps {
   navigateContainer?: boolean
   linkWidgetDisplayName?: string
   currentKey?: string

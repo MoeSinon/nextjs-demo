@@ -1,4 +1,4 @@
-import { getLayout as getSiteLayout } from '@/components/layouts/user';
+import { getLayout as getSiteLayout } from '@components/layouts/user';
 import { useState } from "react"
 import { Controller, SubmitHandler, useForm } from "react-hook-form"
 import { useTranslation, Trans } from "next-i18next"
@@ -9,8 +9,8 @@ import { Message } from "@illa-design/message"
 import { Button } from "@illa-design/button"
 import { WarningCircleIcon } from "@illa-design/icon"
 import { EMAIL_FORMAT } from "@/constants/regExp"
-import { currentUserActions } from "@/redux/currentUser/currentUserSlice"
-import { Api } from "@//api/base"
+import { currentUserActions } from "@redux/currentUser/currentUserSlice"
+import { Api } from "@api/base"
 import {
   formLabelStyle,
   formTitleStyle,
@@ -23,11 +23,11 @@ import {
   errorIconStyle,
   forgotPwdStyle,
   forgotPwdContainerStyle,
-} from "@/pages/Login/style"
-import { TextLink } from "@/components/TextLink"
+} from "@pages/Login/style"
+import { TextLink } from "@components/TextLink"
 import { LoginFields } from "./interface"
-import { setLocalStorage } from "@/utils/storage"
-import { CurrentUser } from "@/redux/currentUser/currentUserState"
+import { setLocalStorage } from "@utils/storage"
+import { CurrentUser } from "@redux/currentUser/currentUserState"
 
 export const Login = () => {
   const { state } = window.history.state

@@ -1,4 +1,4 @@
-import { PanelFieldConfig } from "@/components/InspectPanel/interface"
+import { PanelFieldConfig } from "@components/InspectPanel/interface"
 import { createContext, ReactNode, FC, useCallback } from "react"
 import { v4 } from "uuid"
 import { cloneDeep } from "lodash"

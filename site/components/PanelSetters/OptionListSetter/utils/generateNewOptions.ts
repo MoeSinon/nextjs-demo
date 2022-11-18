@@ -1,5 +1,5 @@
 import { v4 } from "uuid"
-import { OptionItemShape } from "@/components/PanelSetters/OptionListSetter/interface"
+import { OptionItemShape } from "@components/PanelSetters/OptionListSetter/interface"
 
 export const generateOptionItemId = () => `option-${v4()}`
 

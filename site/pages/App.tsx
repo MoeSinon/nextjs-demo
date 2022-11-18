@@ -1,15 +1,15 @@
 import { css, Global } from "@emotion/react"
 import { globalStyle } from "./style"
 import { ConfigProvider } from "@illa-design/config-provider"
-import "@//api/base"
+import "@api/base"
 import { HTML5Backend } from "react-dnd-html5-backend"
-import { GlobalDataProvider } from "@/pages/App/context/globalDataProvider"
+import { GlobalDataProvider } from "@pages/App/context/globalDataProvider"
 import { DndProvider } from "react-dnd"
 import { useSelector } from "react-redux"
 import {
   getCurrentConfigLanguage,
   getCurrentTranslateLanguage,
-} from "@/redux/currentUser/currentUserSelector"
+} from "@redux/currentUser/currentUserSelector"
 import { useEffect } from "react"
 import { useTranslation } from "next-i18next"
 

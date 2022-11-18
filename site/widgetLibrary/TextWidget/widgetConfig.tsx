@@ -1,5 +1,5 @@
-import { ReactComponent as TextWidgetIcon } from "@/assets/widgetCover/text.svg"
-import { WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as TextWidgetIcon } from "@assets/widgetCover/text.svg"
+import { WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();
 export const TEXT_WIDGET_CONFIG: WidgetConfig = {

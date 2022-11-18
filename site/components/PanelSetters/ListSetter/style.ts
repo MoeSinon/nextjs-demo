@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 import { illaPrefix, globalColor } from "@illa-design/theme"
-import { publicPaddingStyle } from "@/components/InspectPanel/style"
+import { publicPaddingStyle } from "@components/InspectPanel/style"
 
 export const labelStyle = css`
   display: flex;

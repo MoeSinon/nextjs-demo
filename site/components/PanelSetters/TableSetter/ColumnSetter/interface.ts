@@ -1,10 +1,10 @@
-import { BaseSetter } from "@/components/PanelSetters/interface"
+import { BaseSetter } from "@components/PanelSetters/interface"
 import {
   PanelFieldConfig,
   PanelLabelProps,
-} from "@/components/InspectPanel/interface"
-import { ColumnItemShape } from "@/widgetLibrary/TableWidget/interface"
-import { ColumnsSelectSetter } from "@/components/PanelSetters/TableSetter/columsSelectSetter"
+} from "@components/InspectPanel/interface"
+import { ColumnItemShape } from "@widgetLibrarys/TableWidget/interface"
+import { ColumnsSelectSetter } from "@components/PanelSetters/TableSetter/columsSelectSetter"
 
 export interface HeaderProps {
   labelName: string

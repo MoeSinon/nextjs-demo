@@ -1,7 +1,7 @@
 import { FC, useRef, useMemo, useEffect } from "react"
-import { ContainerProps } from "@/widgetLibrary/ContainerWidget/interface"
-import { TooltipWrapper } from "@/widgetLibrary/PublicSector/TooltipWrapper"
-import { BasicContainer } from "@/widgetLibrary/BasicContainer/BasicContainer"
+import { ContainerProps } from "@widgetLibrarys/ContainerWidget/interface"
+import { TooltipWrapper } from "@widgetLibrarys/PublicSector/TooltipWrapper"
+import { BasicContainer } from "@widgetLibrarys/BasicContainer/BasicContainer"
 import { ContainerEmptyState } from "./emptyState"
 
 export const ContainerWidget: FC<ContainerProps> = (props) => {

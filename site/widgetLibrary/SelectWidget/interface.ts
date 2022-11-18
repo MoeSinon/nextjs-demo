@@ -1,23 +1,23 @@
 import { SelectProps } from "@illa-design/select"
-import { ValidateMessageOldProps } from "@/widgetLibrary/PublicSector/InvalidMessage/interface"
-import { BaseWidgetProps } from "@/widgetLibrary/interface"
-import LabelProps from "@/widgetLibrary/PublicSector/Label/interface"
-import { TooltipWrapperProps } from "@/widgetLibrary/PublicSector/TooltipWrapper/interface"
+import { ValidateMessageOldProps } from "@widgetLibrarys/PublicSector/InvalidMessage/interface"
+import { BaseWidgetProps } from "@widgetLibrarys/interface"
+import LabelProps from "@widgetLibrarys/PublicSector/Label/interface"
+import { TooltipWrapperProps } from "@widgetLibrarys/PublicSector/TooltipWrapper/interface"
 
 export interface WrappedSelectProps
   extends Omit<ValidateMessageOldProps, "value">,
-    Pick<
-      SelectProps,
-      | "options"
-      | "value"
-      | "placeholder"
-      | "disabled"
-      | "loading"
-      | "readOnly"
-      | "showSearch"
-      | "inputValue"
-      | "colorScheme"
-    > {
+  Pick<
+    SelectProps,
+    | "options"
+    | "value"
+    | "placeholder"
+    | "disabled"
+    | "loading"
+    | "readOnly"
+    | "showSearch"
+    | "inputValue"
+    | "colorScheme"
+  > {
   showClear?: SelectProps["allowClear"]
   invalid?: boolean
   prefixIcon?: string // TODO: not support yet
@@ -38,9 +38,9 @@ export interface WrappedSelectProps
 
 export interface SelectWidgetProps
   extends WrappedSelectProps,
-    BaseWidgetProps,
-    LabelProps,
-    TooltipWrapperProps {
+  BaseWidgetProps,
+  LabelProps,
+  TooltipWrapperProps {
   optionConfigureMode?: "dynamic" | "static"
   manualOptions?: {
     label: string

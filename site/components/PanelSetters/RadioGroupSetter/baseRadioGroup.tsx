@@ -4,7 +4,7 @@ import { BaseRadioGroupProps } from "./interface"
 import {
   applyRadioGroupWrapperStyle,
   radioGroupStyle,
-} from "@/components/PanelSetters/RadioGroupSetter/style"
+} from "@components/PanelSetters/RadioGroupSetter/style"
 
 export const BaseRadioGroupSetter: FC<BaseRadioGroupProps> = (props) => {
   const { value, options, isSetterSingleRow, attrName, handleUpdateDsl } = props

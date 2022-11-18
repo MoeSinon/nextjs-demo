@@ -1,7 +1,7 @@
 import { createContext, FC, ReactNode, useCallback } from "react"
-import { PanelFieldConfig } from "@/components/InspectPanel/interface"
+import { PanelFieldConfig } from "@components/InspectPanel/interface"
 import { generateNewSubMenuItem } from "../utils/generateNewMenu"
-import { MenuList } from "@/widgetLibrary/MenuWidget/interface"
+import { MenuList } from "@widgetLibrarys/MenuWidget/interface"
 
 interface ProviderProps {
   columnItems: MenuList[]

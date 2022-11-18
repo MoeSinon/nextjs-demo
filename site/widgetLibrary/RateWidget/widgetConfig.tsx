@@ -1,5 +1,5 @@
-import { ReactComponent as RateWidgetIcon } from "@/assets/widgetCover/rate.svg"
-import { RESIZE_DIRECTION, WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as RateWidgetIcon } from "@assets/widgetCover/rate.svg"
+import { RESIZE_DIRECTION, WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();
 export const RATE_WIDGET_CONFIG: WidgetConfig = {

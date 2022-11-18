@@ -2,8 +2,8 @@ import { FC, useContext } from "react"
 import { useTranslation } from "next-i18next"
 import { DropList } from "@illa-design/dropdown"
 import { globalColor, illaPrefix } from "@illa-design/theme"
-import { ActionMenuProps } from "@/components/PanelSetters/OptionListSetter/interface"
-import { BaseEventHandlerContext } from "@/components/PanelSetters/EventHandlerSetter/context"
+import { ActionMenuProps } from "@components/PanelSetters/OptionListSetter/interface"
+import { BaseEventHandlerContext } from "@components/PanelSetters/EventHandlerSetter/context"
 
 const { Item } = DropList
 

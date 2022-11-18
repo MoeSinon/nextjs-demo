@@ -4,19 +4,19 @@ import { useTranslation } from "next-i18next"
 import { DragPointIcon, WarningCircleIcon } from "@illa-design/icon"
 import { Trigger } from "@illa-design/trigger"
 import { get } from "lodash"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 import {
   applyOptionStyle,
   labelAndDragIconWrapperStyle,
   labelWrapperStyle,
   moveIconStyle,
-} from "@/components/PanelSetters/ContainerSetter/ViewsSetter/style"
+} from "@components/PanelSetters/ContainerSetter/ViewsSetter/style"
 import { globalColor, illaPrefix } from "@illa-design/theme"
-import { ViewListSetterContext } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/context/viewsListContext"
+import { ViewListSetterContext } from "@components/PanelSetters/ContainerSetter/ViewsSetter/context/viewsListContext"
 import {
   DragIconAndLabelProps,
   ViewItemShape,
-} from "@/components/PanelSetters/ContainerSetter/ViewsSetter/interface"
+} from "@components/PanelSetters/ContainerSetter/ViewsSetter/interface"
 
 interface optionIconProps {
   isSelected: boolean

@@ -4,8 +4,8 @@ import {
   unselectedTipIconStyle,
   unselectedTipTextStyle,
   unselectedTipWrapperStyle,
-} from "@/components/InspectPanel/style"
-import { ReactComponent as NoComponentSelected } from "@/assets/no-component-selected-icon.svg"
+} from "@components/InspectPanel/style"
+import { ReactComponent as NoComponentSelected } from "@assets/no-component-selected-icon.svg"
 import { Empty } from "@illa-design/empty"
 
 export const EmptySelected: FC = () => {

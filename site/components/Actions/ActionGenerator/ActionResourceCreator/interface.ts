@@ -1,5 +1,5 @@
-import { ResourceType } from "@/redux/resource/resourceState"
-import { ActionCreatorPage } from "@/components/Actions/ActionGenerator/interface"
+import { ResourceType } from "@redux/resource/resourceState"
+import { ActionCreatorPage } from "@components/Actions/ActionGenerator/interface"
 
 export interface ResourceEditorProps {
   resourceId?: string

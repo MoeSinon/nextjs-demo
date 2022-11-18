@@ -4,24 +4,24 @@ import {
   transformRadioStyle,
   transformSpaceStyle,
   transformTitleStyle,
-} from "@/components/Actions/ActionPanel/TransformerComponent/style"
-import { CodeEditor } from "@/components/CodeEditor"
-import { PanelLabel } from "@/components/InspectPanel/label"
+} from "@components/Actions/ActionPanel/TransformerComponent/style"
+import { CodeEditor } from "@components/CodeEditor"
+import { PanelLabel } from "@components/InspectPanel/label"
 import { useTranslation } from "next-i18next"
 import { RadioGroup } from "@illa-design/radio"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useDispatch, useSelector } from "react-redux"
 import {
   getCachedAction,
   getSelectedAction,
-} from "@/redux/config/configSelector"
-import { configActions } from "@/redux/config/configSlice"
-import { TransformerAction } from "@/redux/currentApp/action/transformerAction"
+} from "@redux/config/configSelector"
+import { configActions } from "@redux/config/configSlice"
+import { TransformerAction } from "@redux/currentApp/action/transformerAction"
 import {
   Transformer,
   TransformerInitial,
   TransformerInitialTrue,
-} from "@/redux/currentApp/action/actionState"
+} from "@redux/currentApp/action/actionState"
 
 export const TransformerComponent: FC = () => {
   const { t } = useTranslation()

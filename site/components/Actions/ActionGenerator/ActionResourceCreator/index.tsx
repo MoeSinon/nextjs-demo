@@ -1,11 +1,11 @@
 import { FC, ReactNode, useMemo } from "react"
 import { ResourceEditorProps } from "./interface"
 import { useSelector } from "react-redux"
-import { getAllResources } from "@/redux/resource/resourceSelector"
-import { MysqlLikeConfigElement } from "@/components/Actions/MysqlLikeConfigElement"
-import { RestApiConfigElement } from "@/components/Actions/RestApiConfigElement"
-import { MongoDbConfigElement } from "@/components/Actions/MongoDbConfigElement"
-import { RedisConfigElement } from "@/components/Actions/RedisConfigElement"
+import { getAllResources } from "@redux/resource/resourceSelector"
+import { MysqlLikeConfigElement } from "@components/Actions/MysqlLikeConfigElement"
+import { RestApiConfigElement } from "@components/Actions/RestApiConfigElement"
+import { MongoDbConfigElement } from "@components/Actions/MongoDbConfigElement"
+import { RedisConfigElement } from "@components/Actions/RedisConfigElement"
 
 export const ActionResourceCreator: FC<ResourceEditorProps> = (props) => {
   const { onBack, onFinished, resourceType } = props

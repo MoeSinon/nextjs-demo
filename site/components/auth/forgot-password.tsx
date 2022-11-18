@@ -5,9 +5,9 @@ import type {
   ResetPasswordUserInput,
   VerifyForgotPasswordUserInput,
 } from '@/types';
-import { Form } from '@/components/ui/forms/form';
-import Input from '@/components/ui/forms/input';
-import Button from '@/components/ui/button';
+import { Form } from '@components/ui/forms/form';
+import Input from '@components/ui/forms/input';
+import Button from '@components/ui/button';
 
 import {
   StateMachineProvider,
@@ -15,15 +15,15 @@ import {
   useStateMachine,
   GlobalState,
 } from 'little-state-machine';
-import { useModalAction } from '@/components/ui/modal/modal.context';
-import PasswordInput from '@/components/ui/forms/password-input';
+import { useModalAction } from '@components/ui/modal/modal.context';
+import PasswordInput from '@components/ui/forms/password-input';
 import {
   useForgotPassword,
   useVerifyForgotPasswordToken,
   useResetPassword,
 } from '@/framework/user';
 import { useTranslation } from 'next-i18next';
-import Logo from '@/components/ui/logo';
+import Logo from '@components/ui/logo';
 import Alert from '../ui/alert';
 import { ArrowPrevIcon } from '../icons/arrow-prev';
 import { ArrowNextIcon } from '../icons/arrow-next';

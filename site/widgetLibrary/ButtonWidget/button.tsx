@@ -1,8 +1,8 @@
 import { FC, useEffect } from "react"
 import { Button } from "@illa-design/button"
 import { ButtonWidgetProps, WrappedButtonProps } from "./interface"
-import { buttonLayoutStyle } from "@/widgetLibrary/ButtonWidget/style"
-import { TooltipWrapper } from "@/widgetLibrary/PublicSector/TooltipWrapper"
+import { buttonLayoutStyle } from "@widgetLibrarys/ButtonWidget/style"
+import { TooltipWrapper } from "@widgetLibrarys/PublicSector/TooltipWrapper"
 
 export const WrappedButton: FC<WrappedButtonProps> = (props) => {
   const {

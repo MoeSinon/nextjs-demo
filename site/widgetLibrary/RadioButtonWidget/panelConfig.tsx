@@ -1,9 +1,9 @@
 import { HorizontalStartIcon, HorizontalEndIcon } from "@illa-design/icon"
-import { PanelConfig } from "@/components/InspectPanel/interface"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { PanelConfig } from "@components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
-import { generatorEventHandlerConfig } from "@/widgetLibrary/PublicSector/utils/generatorEventHandlerConfig"
-import { RADIO_BUTTON_EVENT_HANDLER_CONFIG } from "@/widgetLibrary/RadioButtonWidget/eventHandlerConfig"
+import { generatorEventHandlerConfig } from "@widgetLibrarys/PublicSector/utils/generatorEventHandlerConfig"
+import { RADIO_BUTTON_EVENT_HANDLER_CONFIG } from "@widgetLibrarys/RadioButtonWidget/eventHandlerConfig"
 const { t } = useTranslation();
 const baseWidgetName = "radioButton"
 export const RADIO_BUTTON_PANEL_CONFIG: PanelConfig[] = [

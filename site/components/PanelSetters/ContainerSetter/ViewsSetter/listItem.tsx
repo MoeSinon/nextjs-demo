@@ -4,20 +4,20 @@ import {
   copyIconStyle,
   iconStyle,
   listItemTriggerWrapperStyle,
-} from "@/components/PanelSetters/ContainerSetter/ViewsSetter/style"
-import { ViewItemShape } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/interface"
+} from "@components/PanelSetters/ContainerSetter/ViewsSetter/style"
+import { ViewItemShape } from "@components/PanelSetters/ContainerSetter/ViewsSetter/interface"
 import { CopyIcon, ReduceIcon } from "@illa-design/icon"
-import { DragIconAndLabel } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/dragIconAndLabel"
-import { ViewListSetterContext } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/context/viewsListContext"
-import { BaseModal } from "@/components/PanelSetters/PublicComponent/Modal"
+import { DragIconAndLabel } from "@components/PanelSetters/ContainerSetter/ViewsSetter/dragIconAndLabel"
+import { ViewListSetterContext } from "@components/PanelSetters/ContainerSetter/ViewsSetter/context/viewsListContext"
+import { BaseModal } from "@components/PanelSetters/PublicComponent/Modal"
 import { Trigger } from "@illa-design/trigger"
 import { useTranslation } from "next-i18next"
 import { useDrag, useDrop, XYCoord } from "react-dnd"
-import { DragItem } from "@/components/PanelSetters/OptionListSetter/interface"
+import { DragItem } from "@components/PanelSetters/OptionListSetter/interface"
 import { Identifier } from "dnd-core"
-import { SelectedProvider } from "@/components/InspectPanel/context/selectedContext"
+import { SelectedProvider } from "@components/InspectPanel/context/selectedContext"
 import { useSelector } from "react-redux"
-import { getComponentNodeBySingleSelected } from "@/redux/currentApp/editor/components/componentsSelector"
+import { getComponentNodeBySingleSelected } from "@redux/currentApp/editor/components/componentsSelector"
 
 interface ListItemProps {
   value: ViewItemShape

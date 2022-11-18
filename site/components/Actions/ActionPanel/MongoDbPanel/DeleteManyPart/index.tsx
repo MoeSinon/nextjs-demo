@@ -3,15 +3,15 @@ import {
   codeEditorLabelStyle,
   mongoItemCodeEditorStyle,
   mongoItemStyle,
-} from "@/components/Actions/ActionPanel/MongoDbPanel/style"
-import { CodeEditor } from "@/components/CodeEditor"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+} from "@components/Actions/ActionPanel/MongoDbPanel/style"
+import { CodeEditor } from "@components/CodeEditor"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
-import { MongoDbActionPartProps } from "@/components/Actions/ActionPanel/MongoDbPanel/interface"
-import { DeleteManyContent } from "@/redux/currentApp/action/mongoDbAction"
-import { getCachedAction } from "@/redux/config/configSelector"
+import { MongoDbActionPartProps } from "@components/Actions/ActionPanel/MongoDbPanel/interface"
+import { DeleteManyContent } from "@redux/currentApp/action/mongoDbAction"
+import { getCachedAction } from "@redux/config/configSelector"
 import { useDispatch, useSelector } from "react-redux"
-import { configActions } from "@/redux/config/configSlice"
+import { configActions } from "@redux/config/configSlice"
 
 export const DeleteManyPart: FC<MongoDbActionPartProps> = (props) => {
   const { t } = useTranslation()

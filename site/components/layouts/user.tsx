@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next"
-import { ReactComponent as Logo } from "@/assets/illa-logo-white.svg"
-import Seo from '@/components/seo/seo';
+import { ReactComponent as Logo } from "@assets/illa-logo-white.svg"
+import Seo from '@components/seo/seo';
 import {
   asideStyle,
   containerStyle,

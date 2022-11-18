@@ -1,7 +1,7 @@
 import { FC, memo } from "react"
-import { WorkSpaceTreeNodeProps } from "@/components/DataWorkspace/components/WorkSpaceTreeItem/interface"
+import { WorkSpaceTreeNodeProps } from "@components/DataWorkspace/components/WorkSpaceTreeItem/interface"
 import { useDispatch, useSelector } from "react-redux"
-import { getExpandedKeys } from "@/redux/config/configSelector"
+import { getExpandedKeys } from "@redux/config/configSelector"
 import { isArray, isObject } from "@illa-design/system"
 import {
   applyExpandIconStyle,
@@ -13,12 +13,12 @@ import {
   jsonItemStyle,
   jsonNameStyle,
   jsonValueStyle,
-} from "@/components/DataWorkspace/components/WorkSpaceTreeItem/style"
-import { configActions } from "@/redux/config/configSlice"
+} from "@components/DataWorkspace/components/WorkSpaceTreeItem/style"
+import { configActions } from "@redux/config/configSlice"
 import { CaretRightIcon } from "@illa-design/icon"
 import { motion } from "framer-motion"
 import { css } from "@emotion/react"
-import { applyJsonValueColorStyle } from "@/components/DataWorkspace/style"
+import { applyJsonValueColorStyle } from "@components/DataWorkspace/style"
 
 export const renderJsonValue = (value: any) => {
   const type = typeof value

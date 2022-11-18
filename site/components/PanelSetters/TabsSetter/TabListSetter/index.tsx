@@ -6,7 +6,7 @@ import { ListBody } from "./listBody"
 import { TabListSetterProvider } from "./context/tabListContext"
 import { get } from "lodash"
 import { useSelector } from "react-redux"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 import { setterPublicWrapper, viewSetterWrapperStyle } from "./style"
 import { useTranslation } from "next-i18next"
 

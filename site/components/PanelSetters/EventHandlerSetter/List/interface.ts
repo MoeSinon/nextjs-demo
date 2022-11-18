@@ -1,4 +1,4 @@
-import { PanelLabelProps } from "@/components/InspectPanel/interface"
+import { PanelLabelProps } from "@components/InspectPanel/interface"
 
 export interface EventHandlerSetterHeaderProps
   extends Pick<PanelLabelProps, "labelName" | "labelDesc"> {

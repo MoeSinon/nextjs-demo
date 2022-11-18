@@ -1,4 +1,4 @@
-import { EventHandlerConfig } from "@/widgetLibrary/interface"
+import { EventHandlerConfig } from "@widgetLibrarys/interface"
 
 export const BAR_PROGRESS_EVENT_HANDLER_CONFIG: EventHandlerConfig = {
   events: [],

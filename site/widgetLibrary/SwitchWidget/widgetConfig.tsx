@@ -1,5 +1,5 @@
-import { ReactComponent as SwitchWidgetIcon } from "@/assets/widgetCover/switch.svg"
-import { RESIZE_DIRECTION, WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as SwitchWidgetIcon } from "@assets/widgetCover/switch.svg"
+import { RESIZE_DIRECTION, WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();
 export const SWITCH_WIDGET_CONFIG: WidgetConfig = {

@@ -1,8 +1,8 @@
 import { Diff } from "deep-diff"
-import { RawTreeShape } from "@/utils/executionTreeHelper/interface"
-import { isDynamicString } from "@/utils/evaluateDynamicString/utils"
-import { isInt, isObject } from "@/utils/typeHelper"
-import { extractIdentifiersFromCode } from "@/utils/ast/ast"
+import { RawTreeShape } from "@utils/executionTreeHelper/interface"
+import { isDynamicString } from "@utils/evaluateDynamicString/utils"
+import { isInt, isObject } from "@utils/typeHelper"
+import { extractIdentifiersFromCode } from "@utils/ast/ast"
 import { toPath } from "lodash"
 
 export enum RawTreeDiffEvent {

@@ -1,11 +1,11 @@
 import { useEffect, FC, ReactNode } from "react"
-import { getLocalStorage } from "@/utils/storage"
+import { getLocalStorage } from "@utils/storage"
 import { useDispatch, useSelector } from "react-redux"
-import { getCurrentUser } from "@/redux/currentUser/currentUserSelector"
-import { Api } from "@//api/base"
-import { CurrentUser } from "@/redux/currentUser/currentUserState"
-import { currentUserActions } from "@/redux/currentUser/currentUserSlice"
-import { clearRequestPendingPool } from "@//api/helpers/axiosPendingPool"
+import { getCurrentUser } from "@redux/currentUser/currentUserSelector"
+import { Api } from "@api/base"
+import { CurrentUser } from "@redux/currentUser/currentUserState"
+import { currentUserActions } from "@redux/currentUser/currentUserSlice"
+import { clearRequestPendingPool } from "@api/helpers/axiosPendingPool"
 import { useRouter } from 'next/router'
 
 interface CheckIsLoginWrapperProps {

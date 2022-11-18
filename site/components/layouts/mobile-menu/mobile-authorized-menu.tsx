@@ -1,9 +1,9 @@
 import { siteSettings } from '@/config/site';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
-import DrawerWrapper from '@/components/ui/drawer/drawer-wrapper';
+import DrawerWrapper from '@components/ui/drawer/drawer-wrapper';
 import { useAtom } from 'jotai';
-import { drawerAtom } from '@/store/store/drawer-atom';
+import { drawerAtom } from '@store/store/drawer-atom';
 import { useLogout, useUser } from '@/framework/user';
 
 export default function MobileAuthorizedMenu() {

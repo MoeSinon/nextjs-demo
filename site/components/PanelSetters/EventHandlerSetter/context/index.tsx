@@ -1,6 +1,6 @@
 import { createContext, ReactNode, FC, useCallback } from "react"
-import { PanelFieldConfig } from "@/components/InspectPanel/interface"
-import { generateOptionItemId } from "@/components/PanelSetters/OptionListSetter/utils/generateNewOptions"
+import { PanelFieldConfig } from "@components/InspectPanel/interface"
+import { generateOptionItemId } from "@components/PanelSetters/OptionListSetter/utils/generateNewOptions"
 
 interface ProviderProps {
   eventItems: any[]

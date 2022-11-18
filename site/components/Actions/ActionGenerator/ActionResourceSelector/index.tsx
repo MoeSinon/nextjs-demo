@@ -10,24 +10,24 @@ import {
   resourceItemTimeStyle,
   resourceItemTitleStyle,
 } from "./style"
-import { getIconFromActionType } from "@/components/Actions/getIcon"
-import { getAllResources } from "@/redux/resource/resourceSelector"
+import { getIconFromActionType } from "@components/Actions/getIcon"
+import { getAllResources } from "@redux/resource/resourceSelector"
 import { List } from "@illa-design/list"
-import { fromNow } from "@/utils/dayjs"
+import { fromNow } from "@utils/dayjs"
 import { useTranslation } from "next-i18next"
 import {
   ActionContent,
   ActionItem,
   actionItemInitial,
-} from "@/redux/currentApp/action/actionState"
-import { Api } from "@//api/base"
-import { getAppInfo } from "@/redux/currentApp/appInfo/appInfoSelector"
+} from "@redux/currentApp/action/actionState"
+import { Api } from "@api/base"
+import { getAppInfo } from "@redux/currentApp/appInfo/appInfoSelector"
 import { Message } from "@illa-design/message"
-import { actionActions } from "@/redux/currentApp/action/actionSlice"
-import { configActions } from "@/redux/config/configSlice"
-import { DisplayNameGenerator } from "@/utils/generators/generateDisplayName"
-import { getInitialContent } from "@/redux/currentApp/action/getInitialContent"
-import { getResourceTypeFromActionType } from "@/utils/actionResourceTransformer"
+import { actionActions } from "@redux/currentApp/action/actionSlice"
+import { configActions } from "@redux/config/configSlice"
+import { DisplayNameGenerator } from "@utils/generators/generateDisplayName"
+import { getInitialContent } from "@redux/currentApp/action/getInitialContent"
+import { getResourceTypeFromActionType } from "@utils/actionResourceTransformer"
 
 export const ActionResourceSelector: FC<ActionResourceSelectorProps> = (
   props,

@@ -3,9 +3,9 @@ import { DragItem, ListItemProps } from "./interface"
 import { useDrag, useDrop, XYCoord } from "react-dnd"
 import { Identifier } from "dnd-core"
 import { optionListItemStyle } from "./style"
-import { DragIconAndLabel } from "@/components/PanelSetters/OptionListSetter/dragIconAndLabel"
-import { More } from "@/components/PanelSetters/OptionListSetter/more"
-import { OptionListSetterContext } from "@/components/PanelSetters/OptionListSetter/context/optionListContext"
+import { DragIconAndLabel } from "@components/PanelSetters/OptionListSetter/dragIconAndLabel"
+import { More } from "@components/PanelSetters/OptionListSetter/more"
+import { OptionListSetterContext } from "@components/PanelSetters/OptionListSetter/context/optionListContext"
 
 export const ListItem: FC<ListItemProps> = (props) => {
   const { id, label, value, index } = props

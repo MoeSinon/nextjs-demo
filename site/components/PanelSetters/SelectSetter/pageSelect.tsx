@@ -2,8 +2,8 @@ import { FC, useMemo } from "react"
 import { useSelector } from "react-redux"
 import { Select } from "@illa-design/select"
 import { BaseSelectSetterProps } from "./interface"
-import { applyBaseSelectWrapperStyle } from "@/components/PanelSetters/SelectSetter/style"
-import { getPageExecutionResultArray } from "@/redux/currentApp/executionTree/executionSelector"
+import { applyBaseSelectWrapperStyle } from "@components/PanelSetters/SelectSetter/style"
+import { getPageExecutionResultArray } from "@redux/currentApp/executionTree/executionSelector"
 
 export const EventTargetPageSelect: FC<BaseSelectSetterProps> = (props) => {
   const {

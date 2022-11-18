@@ -1,5 +1,5 @@
-import { isObject } from "@/utils/typeHelper"
-import { RawTreeShape } from "@/utils/executionTreeHelper/interface"
+import { isObject } from "@utils/typeHelper"
+import { RawTreeShape } from "@utils/executionTreeHelper/interface"
 import { cloneDeep, flatten, get, set, unset } from "lodash"
 import {
   getAllPaths,
@@ -7,25 +7,25 @@ import {
   getWidgetOrActionDynamicAttrPaths,
   isDynamicString,
   wrapFunctionCode,
-} from "@/utils/evaluateDynamicString/utils"
-import { getSnippets } from "@/utils/evaluateDynamicString/dynamicConverter"
+} from "@utils/evaluateDynamicString/utils"
+import { getSnippets } from "@utils/evaluateDynamicString/dynamicConverter"
 import toposort from "toposort"
 import {
   DependenciesState,
   ExecutionErrorType,
   ExecutionState,
-} from "@/redux/currentApp/executionTree/executionState"
-import { evaluateDynamicString } from "@/utils/evaluateDynamicString"
+} from "@redux/currentApp/executionTree/executionState"
+import { evaluateDynamicString } from "@utils/evaluateDynamicString"
 import {
   convertPathToString,
   extractReferencesFromScript,
   getImmediateParentsOfPropertyPaths,
   isAction,
   isWidget,
-} from "@/utils/executionTreeHelper/utils"
-import { validationFactory } from "@/utils/validationFactory"
+} from "@utils/executionTreeHelper/utils"
+import { validationFactory } from "@utils/validationFactory"
 import { applyChange, Diff, diff } from "deep-diff"
-import { runAction } from "@/components/Actions/ActionPanel/utils/runAction"
+import { runAction } from "@components/Actions/ActionPanel/utils/runAction"
 
 export class ExecutionTreeFactory {
   dependenciesState: DependenciesState = {}

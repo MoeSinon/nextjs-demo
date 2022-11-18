@@ -1,5 +1,5 @@
 import { v4 } from "uuid"
-import { ViewItemShape } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/interface"
+import { ViewItemShape } from "@components/PanelSetters/ContainerSetter/ViewsSetter/interface"
 
 export let viewNameSet = new Set<string>()
 

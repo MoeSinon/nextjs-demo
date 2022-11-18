@@ -3,7 +3,7 @@ import { get } from "lodash"
 import { FxIcon } from "@illa-design/icon"
 import { Switch } from "@illa-design/switch"
 import { DynamicSwitchProps } from "./interface"
-import { PanelLabel } from "@/components/InspectPanel/label"
+import { PanelLabel } from "@components/InspectPanel/label"
 import {
   applyCustomIconStyle,
   applyLabelWrapperStyle,
@@ -12,8 +12,8 @@ import {
   dynamicSwitchWrapperStyle,
 } from "./style"
 import { BaseInput } from "../InputSetter/baseInput"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
-import { DynamicIcon } from "@/components/PanelSetters/PublicComponent/DynamicIcon"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
+import { DynamicIcon } from "@components/PanelSetters/PublicComponent/DynamicIcon"
 
 export const DynamicSwitchSetter: FC<DynamicSwitchProps> = (props) => {
   const {

@@ -1,4 +1,4 @@
-import { EventHandlerConfig } from "@/widgetLibrary/interface"
+import { EventHandlerConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 
 const { t } = useTranslation();

@@ -1,6 +1,6 @@
-import { WidgetShape } from "@/utils/executionTreeHelper/interface"
-import { generateAllTypePathsFromWidgetConfig } from "@/utils/generators/generateAllTypePathsFromWidgetConfig"
-import { widgetBuilder } from "@/widgetLibrary/widgetBuilder"
+import { WidgetShape } from "@utils/executionTreeHelper/interface"
+import { generateAllTypePathsFromWidgetConfig } from "@utils/generators/generateAllTypePathsFromWidgetConfig"
+import { widgetBuilder } from "@widgetLibrarys/widgetBuilder"
 
 export const generateRawWidget = (widget: WidgetShape) => {
   const { $widgetType } = widget

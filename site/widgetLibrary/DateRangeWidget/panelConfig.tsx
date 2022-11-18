@@ -1,9 +1,9 @@
 import { HorizontalEndIcon, HorizontalStartIcon } from "@illa-design/icon"
-import { PanelConfig } from "@/components/InspectPanel/interface"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { PanelConfig } from "@components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 import { useTranslation } from "next-i18next"
-import { generatorEventHandlerConfig } from "@/widgetLibrary/PublicSector/utils/generatorEventHandlerConfig"
-import { DATE_RANGE_EVENT_HANDLER_CONFIG } from "@/widgetLibrary/DateRangeWidget/eventHandlerConfig"
+import { generatorEventHandlerConfig } from "@widgetLibrarys/PublicSector/utils/generatorEventHandlerConfig"
+import { DATE_RANGE_EVENT_HANDLER_CONFIG } from "@widgetLibrarys/DateRangeWidget/eventHandlerConfig"
 const { t } = useTranslation();
 
 const baseWidgetName = "date-range"

@@ -1,4 +1,4 @@
-import Link from '@/components/ui/link';
+import Link from '@components/ui/link';
 import { Routes } from '@/config/routes';
 import { useTranslation } from 'next-i18next';
 

@@ -1,5 +1,5 @@
 import { css, SerializedStyles } from "@emotion/react"
-import { HorizontalAlign } from "@/widgetLibrary/TextWidget/interface"
+import { HorizontalAlign } from "@widgetLibrarys/TextWidget/interface"
 
 export function applyAlignStyle(
   horizontalAlign?: HorizontalAlign,

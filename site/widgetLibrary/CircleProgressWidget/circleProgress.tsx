@@ -4,8 +4,8 @@ import {
   WrappedCircleProgressProps,
   CircleProgressWidgetProps,
 } from "./interface"
-import { applyContainerCss } from "@/widgetLibrary/CircleProgressWidget/style"
-import { TooltipWrapper } from "@/widgetLibrary/PublicSector/TooltipWrapper"
+import { applyContainerCss } from "@widgetLibrarys/CircleProgressWidget/style"
+import { TooltipWrapper } from "@widgetLibrarys/PublicSector/TooltipWrapper"
 
 export const WrappedCircleProgress = forwardRef<
   any,

@@ -1,22 +1,22 @@
 import { FC } from "react"
-import { MongoDbConfigModeProps } from "@/components/Actions/MongoDbConfigElement/interface"
+import { MongoDbConfigModeProps } from "@components/Actions/MongoDbConfigElement/interface"
 import {
   applyConfigItemLabelText,
   configItem,
   labelContainer,
-} from "@/components/Actions/MongoDbConfigElement/style"
+} from "@components/Actions/MongoDbConfigElement/style"
 import { getColor } from "@illa-design/theme"
 import { Controller } from "react-hook-form"
 import { useTranslation } from "next-i18next"
 import { Input } from "@illa-design/input"
-import { Resource, ResourceContent } from "@/redux/resource/resourceState"
+import { Resource, ResourceContent } from "@redux/resource/resourceState"
 import { useSelector } from "react-redux"
-import { RootState } from "@/store/store"
+import { RootState } from "@store/store"
 import {
   MongoDbResource,
   MongoDbUriConfigContent,
   MongoDbUriConfigContentInitial,
-} from "@/redux/resource/mongodbResource"
+} from "@redux/resource/mongodbResource"
 
 export const MongoDbUriMode: FC<MongoDbConfigModeProps> = (props) => {
   const { resourceId, control } = props

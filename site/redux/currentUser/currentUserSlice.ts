@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { updateCurrentUserReducer } from "@/redux/currentUser/currentUserReducer"
-import { CurrentUserInitialState } from "@/redux/currentUser/currentUserState"
+import { updateCurrentUserReducer } from "@redux/currentUser/currentUserReducer"
+import { CurrentUserInitialState } from "@redux/currentUser/currentUserState"
 
 const currentUserSlice = createSlice({
   name: "currentUser",

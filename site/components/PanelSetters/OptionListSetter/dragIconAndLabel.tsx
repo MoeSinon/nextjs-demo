@@ -8,11 +8,11 @@ import {
   labelNameAndIconStyle,
   labelNameWrapperStyle,
   movableIconWrapperStyle,
-} from "@/components/PanelSetters/OptionListSetter/style"
-import { DragIconAndLabelProps } from "@/components/PanelSetters/OptionListSetter/interface"
-import { OptionListSetterContext } from "@/components/PanelSetters/OptionListSetter/context/optionListContext"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
-import { BaseModal } from "@/components/PanelSetters/PublicComponent/Modal"
+} from "@components/PanelSetters/OptionListSetter/style"
+import { DragIconAndLabelProps } from "@components/PanelSetters/OptionListSetter/interface"
+import { OptionListSetterContext } from "@components/PanelSetters/OptionListSetter/context/optionListContext"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
+import { BaseModal } from "@components/PanelSetters/PublicComponent/Modal"
 
 export const DragIconAndLabel: FC<DragIconAndLabelProps> = (props) => {
   const { index } = props

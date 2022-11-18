@@ -1,4 +1,4 @@
-import { JSToString, stringToJS } from "@/utils/evaluateDynamicString/utils"
+import { JSToString, stringToJS } from "@utils/evaluateDynamicString/utils"
 
 export const realInputValue = (
   attrValue: string,

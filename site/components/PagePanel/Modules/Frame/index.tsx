@@ -1,23 +1,23 @@
 import { FC, useCallback, useMemo } from "react"
-import { PanelBar } from "@/components/PanelBar"
+import { PanelBar } from "@components/PanelBar"
 import { useTranslation } from "next-i18next"
 import { InputNumber, Modal, Switch } from "@illa-design/react"
-import { ReactComponent as FrameFixedIcon } from "@/assets/rightPagePanel/frame-fixed.svg"
-import { ReactComponent as FrameResponsiveIcon } from "@/assets/rightPagePanel/frame-responsive.svg"
-import { PageLabel } from "@/components/PagePanel/Components/Label"
-import { LayoutSelect } from "@/components/PagePanel/Components/LayoutSelect"
-import { LeftAndRightLayout } from "@/components/PagePanel/Layout/leftAndRight"
-import { SetterPadding } from "@/components/PagePanel/Layout/setterPadding"
-import { PanelDivider } from "@/components/PagePanel/Layout/divider"
+import { ReactComponent as FrameFixedIcon } from "@assets/rightPagePanel/frame-fixed.svg"
+import { ReactComponent as FrameResponsiveIcon } from "@assets/rightPagePanel/frame-responsive.svg"
+import { PageLabel } from "@components/PagePanel/Components/Label"
+import { LayoutSelect } from "@components/PagePanel/Components/LayoutSelect"
+import { LeftAndRightLayout } from "@components/PagePanel/Layout/leftAndRight"
+import { SetterPadding } from "@components/PagePanel/Layout/setterPadding"
+import { PanelDivider } from "@components/PagePanel/Layout/divider"
 import { useDispatch, useSelector } from "react-redux"
 import {
   getCanvas,
   searchDsl,
-} from "@/redux/currentApp/editor/components/componentsSelector"
-import { PageNodeProps } from "@/redux/currentApp/editor/components/componentsState"
-import { PanelActionBar } from "@/components/PagePanel/Components/PanelActionBar"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { getCanvasShape } from "@/redux/config/configSelector"
+} from "@redux/currentApp/editor/components/componentsSelector"
+import { PageNodeProps } from "@redux/currentApp/editor/components/componentsState"
+import { PanelActionBar } from "@components/PagePanel/Components/PanelActionBar"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { getCanvasShape } from "@redux/config/configSelector"
 import {
   BODY_MIN_HEIGHT,
   BODY_MIN_WIDTH,
@@ -25,10 +25,10 @@ import {
   HEADER_MIN_HEIGHT,
   LEFT_MIN_WIDTH,
   RIGHT_MIN_WIDTH,
-} from "@/components/DotPanel/renderSection"
+} from "@components/DotPanel/renderSection"
 import { groupWrapperStyle } from "./style"
-import { getRootNodeExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
-import { RootState } from "@/store/store"
+import { getRootNodeExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
+import { RootState } from "@store/store"
 
 const getRealCanvasWidth = (
   canvasSize: "fixed" | "responsive",

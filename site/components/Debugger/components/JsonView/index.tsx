@@ -3,11 +3,11 @@ import { isArray, isObject, isString } from "@illa-design/system"
 import {
   applyExpandIconStyle,
   jsonContentAnimation,
-} from "@/components/Debugger/components/ErrorItem/style"
+} from "@components/Debugger/components/ErrorItem/style"
 import { CaretRightIcon } from "@illa-design/icon"
 import { motion } from "framer-motion"
 import { JsonViewProps } from "./interface"
-import { applyJsonValueColorStyle } from "@/components/DataWorkspace/style"
+import { applyJsonValueColorStyle } from "@components/DataWorkspace/style"
 import {
   applyLevelStyle,
   itemDescStyle,

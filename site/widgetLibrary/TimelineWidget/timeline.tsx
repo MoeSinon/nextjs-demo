@@ -3,7 +3,7 @@ import { Timeline, TimelineItem } from "@illa-design/timeline"
 import {
   WrappedTimelineProps,
   TimelineWidgetProps,
-} from "@/widgetLibrary/TimelineWidget/interface"
+} from "@widgetLibrarys/TimelineWidget/interface"
 
 export const WrappedTimeline = forwardRef<any, WrappedTimelineProps>(
   (props, ref) => {

@@ -6,11 +6,11 @@ import {
   messageWrapperStyle,
 } from "./style"
 import { CanvasPanelProps } from "./interface"
-import { DotPanel } from "@/components/DotPanel"
+import { DotPanel } from "@components/DotPanel"
 import { useDispatch, useSelector } from "react-redux"
 import { LockIcon } from "@illa-design/icon"
-import { getFreezeState, getIllaMode } from "@/redux/config/configSelector"
-import { FocusManager } from "@/utils/focusManager"
+import { getFreezeState, getIllaMode } from "@redux/config/configSelector"
+import { FocusManager } from "@utils/focusManager"
 
 export const CanvasPanel: FC<CanvasPanelProps> = (props) => {
   const { ...otherProps } = props

@@ -2,9 +2,9 @@ import { get } from "lodash"
 import {
   PanelConfig,
   PanelFieldGroupConfig,
-} from "@/components/InspectPanel/interface"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
-import { isObject } from "@/utils/typeHelper"
+} from "@components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
+import { isObject } from "@utils/typeHelper"
 
 export const generateAllTypePathsFromWidgetConfig = (
   panelConfig: PanelConfig[],

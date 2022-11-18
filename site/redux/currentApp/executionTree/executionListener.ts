@@ -1,16 +1,16 @@
 import { AnyAction, isAnyOf, Unsubscribe } from "@reduxjs/toolkit"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import { AppListenerEffectAPI, AppStartListening } from "@/store/store"
-import { actionActions } from "@/redux/currentApp/action/actionSlice"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import { AppListenerEffectAPI, AppStartListening } from "@store/store"
+import { actionActions } from "@redux/currentApp/action/actionSlice"
 import {
   getExecutionResult,
   getRawTree,
-} from "@/redux/currentApp/executionTree/executionSelector"
+} from "@redux/currentApp/executionTree/executionSelector"
 import { diff } from "deep-diff"
-import { executionActions } from "@/redux/currentApp/executionTree/executionSlice"
-import { RawTreeShape } from "@/utils/executionTreeHelper/interface"
-import { actionDisplayNameMapFetchResult } from "@/components/Actions/ActionPanel/utils/runAction"
-import { ExecutionTreeFactory } from "@/utils/executionTreeHelper/executionTreeFactory"
+import { executionActions } from "@redux/currentApp/executionTree/executionSlice"
+import { RawTreeShape } from "@utils/executionTreeHelper/interface"
+import { actionDisplayNameMapFetchResult } from "@components/Actions/ActionPanel/utils/runAction"
+import { ExecutionTreeFactory } from "@utils/executionTreeHelper/executionTreeFactory"
 
 export let executionTree: ExecutionTreeFactory | undefined
 

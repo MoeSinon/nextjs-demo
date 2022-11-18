@@ -7,8 +7,8 @@ import {
   methodNameStyle,
 } from "./style"
 import { EventAndMethodLabelProps } from "./interface"
-import { BaseModal } from "@/components/PanelSetters/PublicComponent/Modal"
-import { BaseEventHandlerContext } from "@/components/PanelSetters/EventHandlerSetter/context"
+import { BaseModal } from "@components/PanelSetters/PublicComponent/Modal"
+import { BaseEventHandlerContext } from "@components/PanelSetters/EventHandlerSetter/context"
 import { useTranslation } from "next-i18next"
 
 const { t } = useTranslation();

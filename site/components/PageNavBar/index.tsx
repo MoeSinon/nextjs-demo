@@ -1,7 +1,7 @@
 import { FC, useCallback, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useTranslation } from "next-i18next"
-import { ReactComponent as Logo } from "@/assets/illa-logo.svg"
+import { ReactComponent as Logo } from "@assets/illa-logo.svg"
 import {
   BugIcon,
   CaretRightIcon,
@@ -16,8 +16,8 @@ import {
 import { Trigger } from "@illa-design/trigger"
 import { Message } from "@illa-design/message"
 import { Button, ButtonGroup } from "@illa-design/button"
-import { PageNavBarProps } from "@/components/PageNavBar/interface"
-import { configActions } from "@/redux/config/configSlice"
+import { PageNavBarProps } from "@components/PageNavBar/interface"
+import { configActions } from "@redux/config/configSlice"
 import {
   getFreezeState,
   getIllaMode,
@@ -25,8 +25,8 @@ import {
   isOpenDebugger,
   isOpenLeftPanel,
   isOpenRightPanel,
-} from "@/redux/config/configSelector"
-import { getAppInfo } from "@/redux/currentApp/appInfo/appInfoSelector"
+} from "@redux/config/configSelector"
+import { getAppInfo } from "@redux/currentApp/appInfo/appInfoSelector"
 import {
   descriptionStyle,
   informationStyle,
@@ -38,12 +38,12 @@ import {
   windowIconBodyStyle,
   windowIconStyle,
 } from "./style"
-import { Api } from "@//api/base"
+import { Api } from "@api/base"
 import { Badge } from "@illa-design/badge"
-import { DeployResp } from "@/components/PageNavBar/resp"
-import { fromNow } from "@/utils/dayjs"
+import { DeployResp } from "@components/PageNavBar/resp"
+import { fromNow } from "@utils/dayjs"
 import { globalColor, illaPrefix } from "@illa-design/theme"
-import { getExecutionDebuggerData } from "@/redux/currentApp/executionTree/executionSelector"
+import { getExecutionDebuggerData } from "@redux/currentApp/executionTree/executionSelector"
 
 export const PageNavBar: FC<PageNavBarProps> = (props) => {
   const { className } = props

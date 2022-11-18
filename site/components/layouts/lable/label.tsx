@@ -1,9 +1,9 @@
 import { FC } from "react"
-import { LabelProps } from "@/components/layouts/lable/interface"
+import { LabelProps } from "@components/layouts/lable/interface"
 import {
   labelExtInfoStyles,
   labelStyles,
-} from "@/pages/Setting/Components/style"
+} from "@pages/Setting/Components/style"
 
 export const SettingLabel: FC<LabelProps> = (props) => {
   const { label, extInfo } = props

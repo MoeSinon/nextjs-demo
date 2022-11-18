@@ -1,9 +1,9 @@
-import { BaseSetter } from "@/components/PanelSetters/interface"
+import { BaseSetter } from "@components/PanelSetters/interface"
 import {
   PanelFieldConfig,
   PanelLabelProps,
-} from "@/components/InspectPanel/interface"
-import { CHART_DATASET_AGGREGATION_METHOD } from "@/widgetLibrary/Chart"
+} from "@components/InspectPanel/interface"
+import { CHART_DATASET_AGGREGATION_METHOD } from "@widgetLibrarys/Chart"
 import { ChartType } from "chart.js"
 
 export interface ListItemProps {

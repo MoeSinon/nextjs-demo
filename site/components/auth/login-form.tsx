@@ -1,18 +1,18 @@
 import { signIn } from 'next-auth/react';
-import Logo from '@/components/ui/logo';
-import Alert from '@/components/ui/alert';
-import Input from '@/components/ui/forms/input';
-import PasswordInput from '@/components/ui/forms/password-input';
-import Button from '@/components/ui/button';
+import Logo from '@components/ui/logo';
+import Alert from '@components/ui/alert';
+import Input from '@components/ui/forms/input';
+import PasswordInput from '@components/ui/forms/password-input';
+import Button from '@components/ui/button';
 import { useTranslation } from 'next-i18next';
 import * as yup from 'yup';
-import { GoogleIcon } from '@/components/icons/google';
-import { useModalAction } from '@/components/ui/modal/modal.context';
-import { MobileIcon } from '@/components/icons/mobile-icon';
-import { Form } from '@/components/ui/forms/form';
+import { GoogleIcon } from '@components/icons/google';
+import { useModalAction } from '@components/ui/modal/modal.context';
+import { MobileIcon } from '@components/icons/mobile-icon';
+import { Form } from '@components/ui/forms/form';
 import { useLogin } from '@/framework/user';
 import type { LoginUserInput } from '@/types';
-import { AnonymousIcon } from '@/components/icons/anonymous-icon';
+import { AnonymousIcon } from '@components/icons/anonymous-icon';
 import { useRouter } from 'next/router';
 import { Routes } from '@/config/routes';
 

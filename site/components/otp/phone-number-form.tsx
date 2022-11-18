@@ -1,8 +1,8 @@
 import { Controller, SubmitHandler } from 'react-hook-form';
 import { useTranslation } from 'next-i18next';
-import { Form } from '@/components/ui/forms/form';
-import PhoneInput from '@/components/ui/forms/phone-input';
-import Button from '@/components/ui/button';
+import { Form } from '@components/ui/forms/form';
+import PhoneInput from '@components/ui/forms/phone-input';
+import Button from '@components/ui/button';
 import * as yup from 'yup';
 
 type FormValues = {

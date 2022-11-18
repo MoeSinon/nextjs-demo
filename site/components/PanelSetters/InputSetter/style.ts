@@ -2,7 +2,7 @@ import { css, SerializedStyles } from "@emotion/react"
 import {
   fixedWidthStyle,
   listSetterWidthStyle,
-} from "@/components/PanelSetters/style"
+} from "@components/PanelSetters/style"
 import { globalColor, illaPrefix } from "@illa-design/theme"
 
 export const applyInputSetterWrapperStyle = (

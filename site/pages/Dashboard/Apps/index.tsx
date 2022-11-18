@@ -9,17 +9,17 @@ import { List, ListItem, ListItemMeta } from "@illa-design/list"
 import { Divider } from "@illa-design/divider"
 import { Empty } from "@illa-design/empty"
 import { Message } from "@illa-design/message"
-import { DashboardApp } from "@/redux/dashboard/apps/dashboardAppState"
-import { getDashboardApps } from "@/redux/dashboard/apps/dashboardAppSelector"
+import { DashboardApp } from "@redux/dashboard/apps/dashboardAppState"
+import { getDashboardApps } from "@redux/dashboard/apps/dashboardAppSelector"
 import {
   appsContainerStyle,
   hoverStyle,
   listTitleContainerStyle,
   listTitleStyle,
 } from "./style"
-import { DashboardItemMenu } from "@/components/DashboardItemMenu"
-import { CreateNewModal } from "@/components/CreateNewModal"
-import { fromNow } from "@/utils/dayjs"
+import { DashboardItemMenu } from "@components/DashboardItemMenu"
+import { CreateNewModal } from "@components/CreateNewModal"
+import { fromNow } from "@utils/dayjs"
 
 export const DashboardApps: FC = () => {
   const { t } = useTranslation()

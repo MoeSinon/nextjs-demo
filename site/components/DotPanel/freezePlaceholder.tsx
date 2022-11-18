@@ -1,6 +1,6 @@
 import { FC, useMemo } from "react"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
-import { applyFreezePlaceholderShapeStyle } from "@/components/DotPanel/style"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
+import { applyFreezePlaceholderShapeStyle } from "@components/DotPanel/style"
 
 interface FreezePlaceholderProps {
   effectMap: Map<string, ComponentNode>

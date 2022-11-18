@@ -1,5 +1,5 @@
-import { ReactComponent as CheckboxWidgetIcon } from "@/assets/widgetCover/checkBox.svg"
-import { RESIZE_DIRECTION, WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as CheckboxWidgetIcon } from "@assets/widgetCover/checkBox.svg"
+import { RESIZE_DIRECTION, WidgetConfig } from "@widgetLibrarys/interface"
 import { v4 } from "uuid"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();

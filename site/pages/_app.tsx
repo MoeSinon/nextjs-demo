@@ -2,7 +2,7 @@ import App from "./App"
 import type { AppProps } from 'next/app'
 import { Provider } from "react-redux"
 import store from "../store/store"
-import "@/utils/dayjs"
+import "@utils/dayjs"
 
 import * as Sentry from "@sentry/react"
 import { BrowserTracing } from "@sentry/tracing"
@@ -17,7 +17,7 @@ import { BrowserTracing } from "@sentry/tracing"
 // }
 
 export default function MyApp({ APP }: AppProps) {
-  return(
+  return (
     <Provider store={store}>
       <App />
     </Provider>

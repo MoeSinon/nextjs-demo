@@ -1,5 +1,5 @@
 import { get, max, mean, min, sum } from "lodash"
-import { CHART_DATASET_AGGREGATION_METHOD } from "@/widgetLibrary/Chart/interface"
+import { CHART_DATASET_AGGREGATION_METHOD } from "@widgetLibrarys/Chart/interface"
 
 export const formatDataWithSum = (
   originData: Record<string, unknown[]>,
@@ -134,7 +134,7 @@ export const formatData = (
   }
 }
 
-export const rotateGroupByData = function(matrix: number[][]) {
+export const rotateGroupByData = function (matrix: number[][]) {
   const result: number[][] = new Array(matrix[0]?.length || 0)
     .fill(0)
     .map(() => {

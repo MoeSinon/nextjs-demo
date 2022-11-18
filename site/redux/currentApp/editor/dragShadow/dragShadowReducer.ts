@@ -2,7 +2,7 @@ import { CaseReducer, PayloadAction } from "@reduxjs/toolkit"
 import {
   DragShadow,
   DragShadowState,
-} from "@/redux/currentApp/editor/dragShadow/dragShadowState"
+} from "@redux/currentApp/editor/dragShadow/dragShadowState"
 
 export const updateDragShadowReducer: CaseReducer<
   DragShadowState,

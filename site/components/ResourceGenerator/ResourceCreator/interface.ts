@@ -1,5 +1,5 @@
-import { ResourceType } from "@/redux/resource/resourceState"
-import { ResourceCreatorPage } from "@/pages/Dashboard/components/ResourceGenerator/interface"
+import { ResourceType } from "@redux/resource/resourceState"
+import { ResourceCreatorPage } from "@pages/Dashboard/components/ResourceGenerator/interface"
 
 export interface ResourceCreatorProps {
   resourceId?: string

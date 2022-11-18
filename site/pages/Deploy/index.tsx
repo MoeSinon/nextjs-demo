@@ -1,16 +1,16 @@
 import { FC, useEffect } from "react"
-import { CanvasPanel } from "@/components/CanvasPanel"
+import { CanvasPanel } from "@components/CanvasPanel"
 import {
   deployContainerStyle,
   deployLogoStyle,
   logoStyle,
-} from "@/pages/Deploy/style"
+} from "@pages/Deploy/style"
 import { Loading } from "@illa-design/loading"
 import { useInitBuilderApp } from "@/hooks/useInitApp"
 import { Unsubscribe } from "@reduxjs/toolkit"
-import { startAppListening } from "@/store/store"
-import { setupExecutionListeners } from "@/redux/currentApp/executionTree/executionListener"
-import { ReactComponent as Logo } from "@/assets/illa-logo.svg"
+import { startAppListening } from "@store/store"
+import { setupExecutionListeners } from "@redux/currentApp/executionTree/executionListener"
+import { ReactComponent as Logo } from "@assets/illa-logo.svg"
 
 export const Deploy: FC = () => {
   const loadingState = useInitBuilderApp("production")

@@ -11,21 +11,21 @@ import {
 } from "./style"
 import { LoadingIcon, WarningCircleIcon } from "@illa-design/icon"
 import { useTranslation } from "next-i18next"
-import { ActionListItemProps } from "@/components/Actions/ActionListItem/interface"
+import { ActionListItemProps } from "@components/Actions/ActionListItem/interface"
 import { useDispatch, useSelector } from "react-redux"
-import { RootState } from "@/store/store"
+import { RootState } from "@store/store"
 import {
   getCachedAction,
   getSelectedAction,
-} from "@/redux/config/configSelector"
-import { getIconFromActionType } from "@/components/Actions/getIcon"
+} from "@redux/config/configSelector"
+import { getIconFromActionType } from "@components/Actions/getIcon"
 import { Input } from "@illa-design/input"
-import { isValidDisplayName } from "@/utils/typeHelper"
-import { DisplayNameGenerator } from "@/utils/generators/generateDisplayName"
+import { isValidDisplayName } from "@utils/typeHelper"
+import { DisplayNameGenerator } from "@utils/generators/generateDisplayName"
 import { Message } from "@illa-design/message"
-import { Api } from "@//api/base"
-import { actionActions } from "@/redux/currentApp/action/actionSlice"
-import { getAppInfo } from "@/redux/currentApp/appInfo/appInfoSelector"
+import { Api } from "@api/base"
+import { actionActions } from "@redux/currentApp/action/actionSlice"
+import { getAppInfo } from "@redux/currentApp/appInfo/appInfoSelector"
 
 const Item = DropList.Item
 

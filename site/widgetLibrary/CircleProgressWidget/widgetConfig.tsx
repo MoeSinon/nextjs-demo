@@ -1,5 +1,5 @@
-import { ReactComponent as CircleProgressWidgetIcon } from "@/assets/widgetCover/circleProgress.svg"
-import { WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as CircleProgressWidgetIcon } from "@assets/widgetCover/circleProgress.svg"
+import { WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 const { t } = useTranslation();
 

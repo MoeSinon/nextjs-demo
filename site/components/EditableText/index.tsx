@@ -5,8 +5,8 @@ import { PenIcon } from "@illa-design/icon"
 import { Message } from "@illa-design/message"
 import { EditableTextProps } from "./interface"
 import { EditableTextWrapperStyle, textStyle } from "./style"
-import { isValidDisplayName } from "@/utils/typeHelper"
-import { DisplayNameGenerator } from "@/utils/generators/generateDisplayName"
+import { isValidDisplayName } from "@utils/typeHelper"
+import { DisplayNameGenerator } from "@utils/generators/generateDisplayName"
 
 export const EditableText: FC<EditableTextProps> = (props) => {
   const { displayName, updateDisplayNameByBlur } = props

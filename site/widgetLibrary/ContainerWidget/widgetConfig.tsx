@@ -1,8 +1,8 @@
-import { ReactComponent as ContainerWidgetIcon } from "@/assets/widgetCover/container.svg"
-import { WidgetConfig } from "@/widgetLibrary/interface"
+import { ReactComponent as ContainerWidgetIcon } from "@assets/widgetCover/container.svg"
+import { WidgetConfig } from "@widgetLibrarys/interface"
 import { useTranslation } from "next-i18next"
 import { v4 } from "uuid"
-import { BasicContainerConfig } from "@/widgetLibrary/BasicContainer/BasicContainer"
+import { BasicContainerConfig } from "@widgetLibrarys/BasicContainer/BasicContainer"
 const { t } = useTranslation();
 
 const defaultListView = [

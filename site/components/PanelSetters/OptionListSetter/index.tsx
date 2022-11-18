@@ -3,8 +3,8 @@ import { OptionListHeader } from "./header"
 import { ListBody } from "./body"
 import { OptionListSetterProps } from "./interface"
 import { ListStyle } from "./style"
-import { generateNewOptionItem } from "@/components/PanelSetters/OptionListSetter/utils/generateNewOptions"
-import { OptionListSetterProvider } from "@/components/PanelSetters/OptionListSetter/context/optionListContext"
+import { generateNewOptionItem } from "@components/PanelSetters/OptionListSetter/utils/generateNewOptions"
+import { OptionListSetterProvider } from "@components/PanelSetters/OptionListSetter/context/optionListContext"
 import { useTranslation } from "next-i18next"
 
 export const OptionListSetter: FC<OptionListSetterProps> = (props) => {

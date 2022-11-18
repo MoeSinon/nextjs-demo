@@ -1,29 +1,29 @@
 import { FC, memo, useCallback, useMemo } from "react"
-import { Header } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/header"
+import { Header } from "@components/PanelSetters/ContainerSetter/ViewsSetter/header"
 import {
   ViewItemShape,
   ViewSetterProps,
-} from "@/components/PanelSetters/ContainerSetter/ViewsSetter/interface"
-import { generateNewViewItem } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/utils/generateNewOptions"
-import { ListBody } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/listBody"
-import { ViewListSetterProvider } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/context/viewsListContext"
+} from "@components/PanelSetters/ContainerSetter/ViewsSetter/interface"
+import { generateNewViewItem } from "@components/PanelSetters/ContainerSetter/ViewsSetter/utils/generateNewOptions"
+import { ListBody } from "@components/PanelSetters/ContainerSetter/ViewsSetter/listBody"
+import { ViewListSetterProvider } from "@components/PanelSetters/ContainerSetter/ViewsSetter/context/viewsListContext"
 import { get } from "lodash"
 import { useDispatch, useSelector } from "react-redux"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 import {
   setterPublicWrapper,
   viewSetterWrapperStyle,
-} from "@/components/PanelSetters/ContainerSetter/ViewsSetter/style"
-import { generateComponentNode } from "@/utils/generators/generateComponentNode"
-import { BasicContainerConfig } from "@/widgetLibrary/BasicContainer/BasicContainer"
-import { componentsActions } from "@/redux/currentApp/editor/components/componentsSlice"
-import store, { RootState } from "@/store/store"
+} from "@components/PanelSetters/ContainerSetter/ViewsSetter/style"
+import { generateComponentNode } from "@utils/generators/generateComponentNode"
+import { BasicContainerConfig } from "@widgetLibrarys/BasicContainer/BasicContainer"
+import { componentsActions } from "@redux/currentApp/editor/components/componentsSlice"
+import store, { RootState } from "@store/store"
 import { useTranslation } from "next-i18next"
 import {
   getCanvas,
   searchDsl,
-} from "@/redux/currentApp/editor/components/componentsSelector"
-import { ComponentNode } from "@/redux/currentApp/editor/components/componentsState"
+} from "@redux/currentApp/editor/components/componentsSelector"
+import { ComponentNode } from "@redux/currentApp/editor/components/componentsState"
 
 export const ViewsSetter: FC<ViewSetterProps> = memo(
   (props: ViewSetterProps) => {

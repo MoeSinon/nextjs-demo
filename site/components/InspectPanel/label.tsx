@@ -2,7 +2,7 @@ import { FC, memo } from "react"
 import { Trigger } from "@illa-design/trigger"
 import { applyLabelTipsStyle } from "./style"
 import { PanelLabelProps } from "./interface"
-import { Text } from "@/widgetLibrary/TextWidget"
+import { Text } from "@widgetLibrarys/TextWidget"
 
 export const PanelLabel: FC<PanelLabelProps> = memo(
   (props: PanelLabelProps) => {

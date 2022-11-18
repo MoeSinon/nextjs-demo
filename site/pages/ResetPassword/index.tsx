@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { getLayout as getSiteLayout } from '@/components/layouts/user';
+import { getLayout as getSiteLayout } from '@components/layouts/user';
 import { Controller, SubmitHandler, useForm } from "react-hook-form"
 import { useTranslation } from "next-i18next"
 import { Input, Password } from "@illa-design/input"
@@ -10,7 +10,7 @@ import { Message } from "@illa-design/message"
 import { Countdown } from "@illa-design/statistic"
 import { EMAIL_FORMAT } from "@/constants/regExp"
 import { useRouter } from 'next/router'
-import { Api } from "@//api/base"
+import { Api } from "@api/base"
 import {
   formLabelStyle,
   formTitleStyle,
@@ -20,7 +20,7 @@ import {
   gridValidStyle,
   errorMsgStyle,
   errorIconStyle,
-} from "@/pages/ResetPassword/style"
+} from "@pages/ResetPassword/style"
 import { ResetPwdFields } from "./interface"
 
 export const ResetPassword = () => {

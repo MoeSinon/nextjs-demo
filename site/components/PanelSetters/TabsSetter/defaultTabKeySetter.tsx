@@ -1,11 +1,11 @@
 import { FC, useCallback, useMemo } from "react"
 import { TabsDefaultKeySetterProps } from "./interface"
-import { BaseInput } from "@/components/PanelSetters/InputSetter/baseInput"
+import { BaseInput } from "@components/PanelSetters/InputSetter/baseInput"
 import { useSelector } from "react-redux"
-import { RootState } from "@/store/store"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { RootState } from "@store/store"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 import { get } from "lodash"
-import { ViewItemShape } from "@/components/PanelSetters/ContainerSetter/ViewsSetter/interface"
+import { ViewItemShape } from "@components/PanelSetters/ContainerSetter/ViewsSetter/interface"
 
 export const TabsDefaultKeySetter: FC<TabsDefaultKeySetterProps> = (props) => {
   const {

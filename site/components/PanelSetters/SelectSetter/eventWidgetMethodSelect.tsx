@@ -2,11 +2,11 @@ import { FC, useEffect, useMemo } from "react"
 import { Select } from "@illa-design/select"
 import { get } from "lodash"
 import { BaseSelectSetterProps } from "./interface"
-import { applyBaseSelectWrapperStyle } from "@/components/PanelSetters/SelectSetter/style"
+import { applyBaseSelectWrapperStyle } from "@components/PanelSetters/SelectSetter/style"
 import { useSelector } from "react-redux"
-import { getWidgetExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
-import { widgetBuilder } from "@/widgetLibrary/widgetBuilder"
-import { getCachedAction } from "@/redux/config/configSelector"
+import { getWidgetExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
+import { widgetBuilder } from "@widgetLibrarys/widgetBuilder"
+import { getCachedAction } from "@redux/config/configSelector"
 
 export const EventWidgetMethodSelect: FC<BaseSelectSetterProps> = (props) => {
   const {

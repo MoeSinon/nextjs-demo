@@ -1,21 +1,21 @@
 import { FC, useState } from "react"
 import { ActionTypeSelectorProps } from "./interface"
-import { ActionTypeList } from "@/components/Actions/ActionGenerator/config"
+import { ActionTypeList } from "@components/Actions/ActionGenerator/config"
 import { categoryStyle, containerStyle, resourceListStyle } from "./style"
 import { Spin } from "@illa-design/spin"
-import { DisplayNameGenerator } from "@/utils/generators/generateDisplayName"
-import { getInitialContent } from "@/redux/currentApp/action/getInitialContent"
+import { DisplayNameGenerator } from "@utils/generators/generateDisplayName"
+import { getInitialContent } from "@redux/currentApp/action/getInitialContent"
 import {
   ActionContent,
   ActionItem,
   actionItemInitial,
-} from "@/redux/currentApp/action/actionState"
-import { Api } from "@//api/base"
+} from "@redux/currentApp/action/actionState"
+import { Api } from "@api/base"
 import { Message } from "@illa-design/message"
-import { actionActions } from "@/redux/currentApp/action/actionSlice"
-import { configActions } from "@/redux/config/configSlice"
+import { actionActions } from "@redux/currentApp/action/actionSlice"
+import { configActions } from "@redux/config/configSlice"
 import { useDispatch, useSelector } from "react-redux"
-import { getAppInfo } from "@/redux/currentApp/appInfo/appInfoSelector"
+import { getAppInfo } from "@redux/currentApp/appInfo/appInfoSelector"
 import { useTranslation } from "next-i18next"
 import { ActionCard } from "../ActionCard"
 

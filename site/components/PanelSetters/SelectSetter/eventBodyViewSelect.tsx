@@ -2,14 +2,14 @@ import { FC, useMemo } from "react"
 import { useSelector } from "react-redux"
 import { Select } from "@illa-design/select"
 import { BaseSelectSetterProps } from "./interface"
-import { applyBaseSelectWrapperStyle } from "@/components/PanelSetters/SelectSetter/style"
+import { applyBaseSelectWrapperStyle } from "@components/PanelSetters/SelectSetter/style"
 import { get } from "lodash"
 import {
   getCanvas,
   searchDsl,
-} from "@/redux/currentApp/editor/components/componentsSelector"
-import { RootState } from "@/store/store"
-import { PageNode } from "@/redux/currentApp/editor/components/componentsState"
+} from "@redux/currentApp/editor/components/componentsSelector"
+import { RootState } from "@store/store"
+import { PageNode } from "@redux/currentApp/editor/components/componentsState"
 
 export const EventTargetViewSelect: FC<BaseSelectSetterProps> = (props) => {
   const {

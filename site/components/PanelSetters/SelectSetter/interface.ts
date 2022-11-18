@@ -1,6 +1,6 @@
-import { BaseSetter } from "@/components/PanelSetters/interface"
-import { PanelLabelProps } from "@/components/InspectPanel/interface"
-import { VALIDATION_TYPES } from "@/utils/validationFactory"
+import { BaseSetter } from "@components/PanelSetters/interface"
+import { PanelLabelProps } from "@components/InspectPanel/interface"
+import { VALIDATION_TYPES } from "@utils/validationFactory"
 
 export interface BaseSelectSetterProps extends BaseSetter {
   options?: any

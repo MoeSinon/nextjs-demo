@@ -1,4 +1,4 @@
-import { getType, isObject, Types } from "@/utils/typeHelper"
+import { getType, isObject, Types } from "@utils/typeHelper"
 import { filterBindingSegmentsAndRemoveQuotes } from "./utils"
 import { EVALUATION_TYPE } from "./interface"
 

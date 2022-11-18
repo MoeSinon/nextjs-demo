@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next"
 import { DragPointIcon, WarningCircleIcon } from "@illa-design/icon"
 import { Trigger } from "@illa-design/trigger"
 import { get } from "lodash"
-import { getExecutionResult } from "@/redux/currentApp/executionTree/executionSelector"
+import { getExecutionResult } from "@redux/currentApp/executionTree/executionSelector"
 import {
   labelAndDragIconWrapperStyle,
   labelWrapperStyle,

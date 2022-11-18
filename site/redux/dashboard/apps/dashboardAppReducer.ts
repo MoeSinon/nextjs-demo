@@ -2,11 +2,11 @@ import { CaseReducer, PayloadAction } from "@reduxjs/toolkit"
 import {
   AddDashboardAppPayload,
   RenameDashboardAppPayload,
-} from "@/redux/dashboard/apps/dashboardAppPayload"
+} from "@redux/dashboard/apps/dashboardAppPayload"
 import {
   DashboardApp,
   DashboardAppsState,
-} from "@/redux/dashboard/apps/dashboardAppState"
+} from "@redux/dashboard/apps/dashboardAppState"
 
 export const updateDashboardAppListReducer: CaseReducer<
   DashboardAppsState,

@@ -1,6 +1,6 @@
-import { BaseSetter } from "@/components/PanelSetters/interface"
-import { PanelLabelProps } from "@/components/InspectPanel/interface"
-import { BaseSelectSetterProps } from "@/components/PanelSetters/SelectSetter/interface"
+import { BaseSetter } from "@components/PanelSetters/interface"
+import { PanelLabelProps } from "@components/InspectPanel/interface"
+import { BaseSelectSetterProps } from "@components/PanelSetters/SelectSetter/interface"
 
 export interface ChartDataSourceSetterProps
   extends BaseSetter,

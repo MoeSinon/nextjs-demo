@@ -3,7 +3,7 @@
   "viewportHeight": 500,
   "component": {
     "testFiles": "**/tests/*.e2e.{ts,tsx}",
-    "componentFolder": "src"
+    "componentFolder": "site"
   },
   "defaultCommandTimeout": 20000
 }

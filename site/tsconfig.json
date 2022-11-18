@@ -22,14 +22,35 @@
     "jsxImportSource": "@emotion/react",
     "baseUrl": ".",
     "paths": {
-      "@/api/*": [
-        "pages/api/graphql/*"
+      "@api/*": [
+        "api/*"
       ],
-      "@/api/static/*": [
-        "api/static/*"
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@widgetLibrarys/*": [
+        "widgetLibrary/*"
+      ],
+      "@store/*": [
+        "store/*"
+      ],
+      "@redux/*": [
+        "redux/*"
+      ],
+      "@middleware/*": [
+        "middleware/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@components*": [
+        "components/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
       ],
       "@/*": [
-        "src/*"
+        "/*"
       ],
       "@assets/*": [
         "public/assets/*"
@@ -37,16 +58,10 @@
     },
     "incremental": true,
   },
-  "include": [
-    "next-env.d.ts",
-    "./src/**/*.tsx",
-    "./src/**/*.ts",
-    "public/style.ts"
-  ],
+  "include": ["next-env.d.ts", "**/*.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"],
   "exclude": [
     "node_modules",
-    "api/rest",
-    "./src/**/tests/*.e2e.tsx",
-    "./src/**/tests/*.e2e.ts"
+    "**/*.e2e.tsx",
+    "**/*.e2e.ts"
   ]
 }

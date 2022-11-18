@@ -23,10 +23,10 @@
     "baseUrl": ".",
     "paths": {
       "@/api/*": [
-        "src/api/graphql/*"
+        "api/graphql/*"
       ],
       "@/api/static/*": [
-        "src/api/static/*"
+        "api/static/*"
       ],
       "@/*": [
         "src/*"
@@ -45,7 +45,7 @@
   ],
   "exclude": [
     "node_modules",
-    "src/api/rest",
+    "api/rest",
     "./src/**/tests/*.e2e.tsx",
     "./src/**/tests/*.e2e.ts"
   ]
